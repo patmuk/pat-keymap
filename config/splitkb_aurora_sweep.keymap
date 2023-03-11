@@ -8,7 +8,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
  
 #define CMK 0
 #define SYM 1
@@ -17,6 +19,10 @@
 #define FUN 4
 #define DAN 5
 #define LCK 6
+
+&led_strip {
+    chain-length = <23>;
+};
 
 &caps_word {
    continue-list = <UNDERSCORE MINUS BACKSPACE>;
