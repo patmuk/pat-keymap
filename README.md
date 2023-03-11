@@ -18,3 +18,9 @@ cradio_visualEditor:    variant of cardio, adapted to work with the visual edito
 https://nickcoutsos.github.io/keymap-editor/ - an editor, which works with .keymap files. However, it doesn't show all layers at once.
 
 http://www.keyboard-layout-editor.com/#/gists/07709e4831a3a660797160b0fc885558 - shows all layers in one picture - but doesn't work with keymap files directly
+
+Or:
+For QMK:
+https://config.qmk.fm/#/ferris/sweep/LAYOUT_split_3x5_2
+Convert to ZMK:
+https://aaronsantiago.github.io/qmk-to-zmk/
