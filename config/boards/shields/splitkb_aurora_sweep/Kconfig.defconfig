@@ -20,6 +20,16 @@ config ZMK_RGB_UNDERGLOW
 	select WS2812_STRIP
 	select SPI
 
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
+
 config ZMK_DISPLAY
 	
 if ZMK_DISPLAY
