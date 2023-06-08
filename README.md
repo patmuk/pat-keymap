@@ -1,3 +1,11 @@
+# build
+## remote (prefered)
+in github -> actions -> run workflows -> build
+## local
+Download ZMK/app, and within this folder:
+west build -b nice_nano_v2 -- -DSHIELD=pats_left -DZMK_CONFIG="./config"
+
+
 # zmk-config
 Initially taken from [Pnohty 1.2](https://github.com/rayduck/pnohty/)
 
@@ -13,6 +21,11 @@ config/info.json:       layout for visual editors
 cradio_visualEditor:    variant of cardio, adapted to work with the visual editor
 
 ## editors
+CLI https://github.com/caksoylar/keymap-drawer
+webapp https://caksoylar-keymap-drawer-streamlitapp-2a0rau.streamlit.app
+
+
+
 (all work online only)
 
 https://nickcoutsos.github.io/keymap-editor/ - an editor, which works with .keymap files. However, it doesn't show all layers at once.
