@@ -1,10 +1,15 @@
-# build
-## remote (prefered)
+## build
+### remote (prefered)
 in github -> actions -> run workflows -> build
-## local
+### local
 Download ZMK/app, and within this folder:
 west build -b nice_nano_v2 -- -DSHIELD=pats_left -DZMK_CONFIG="./config"
 
+## flash
+1. press the reset button twice -> nice!nano mounts as folder
+2. in terqminal, copy each uf2 to each half, e.g.
+   1. cp firmware-pat/splitkb_aurora_sweep_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/CURRENT.UF2
+3. wait until the drive unmounts itself
 
 # zmk-config
 Initially taken from [Pnohty 1.2](https://github.com/rayduck/pnohty/)
