@@ -1,9 +1,21 @@
 // indebted and with much reference to dxmh's zmk-config
 
+/ {
 compatible = "zmk,combos";
 #define LONG_TIMEOUT_MS 100
 #define NORMAL_LAYERS 0 1 2 3 4 5
 #define LOCK_LAYER 6
+
+behaviors {
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      release-after-ms = <1000>;
+      quick-release;
+    };
+};
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
@@ -26,3 +38,5 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
+
+};
