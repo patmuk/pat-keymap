@@ -1,0 +1,28 @@
+// indebted and with much reference to dxmh's zmk-config
+
+compatible = "zmk,combos";
+#define LONG_TIMEOUT_MS 100
+#define NORMAL_LAYERS 0 1 2 3 4 5
+#define LOCK_LAYER 6
+
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS>; \
+  };
+
+#define COMBO_LONG(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS>; \
+    timeout-ms = <LONG_TIMEOUT_MS>; \
+  };
+
+#define LAYER_COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
