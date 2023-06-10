@@ -1,7 +1,7 @@
 // indebted and with much reference to dxmh's zmk-config
 
 / {
-compatible = "zmk,combos";
+compatible = "zmk,combos,bindings";
 #define LONG_TIMEOUT_MS 100
 #define NORMAL_LAYERS 0 1 2 3 4 5
 #define LOCK_LAYER 6
