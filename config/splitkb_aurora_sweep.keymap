@@ -42,37 +42,80 @@
 / {
     combos {
         COMBO(tab, &kp TAB, 1 2)
-        COMBO(shift, &skq LSHFT, 7 8)
-        COMBO(ctrl, &sk LCTL, 21 22)
-        COMBO(backspace, &kp BSPC, 27 28)
-        COMBO(cmd, &sk LCMD, 30 31)
-        COMBO(opt, &sk LALT, 32 33)
+//        COMBO(shift, &skq LSHFT, 7 8)
+//        COMBO(cmd, &sk LCMD, 13 12)
+//        COMBO(cmd, &sk RCMD, 16 17)
+//        COMBO(opt, &sk LALT, 13 11)
+//        COMBO(opt, &sk RALT, 16 18)
+//        COMBO(ctrl, &sk LCTL, 13 10)
+//        COMBO(ctrl, &sk RCTL, 16 19)
+//        COMBO(backspace, &kp BSPC, 27 28)
         COMBO(q, &kp Q, 1 3)
         COMBO(z, &kp Z, 21 23)
         COMBO_LONG(capsword, &caps_word, 14 15)
+// un-/lock keyboard
         LAYER_COMBO(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
     };
 
     keymap {
         compatible = "zmk,keymap";
-            colemak_layer {
+//              colemak_layer {
+//   // -----------------------------------------------------------------
+//   // |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |     |
+//   // |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |
+//   // |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |-FUN-|
+//   //                   |-SYM-| SPC | | RET |-NUM-|
+//                        bindings = <
+//   //┌──────┬───────┬───────┬───────┬───────┐ ┌───────┬───────┬──────────┬─────────┬─────────┐
+//       &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L    &kp U      &kp Y     &none
+//   //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
+//       &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N    &kp E      &kp I     &kp O
+//   //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
+//      &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA   &kp DOT   &mo FUN
+//   //└──────┴───────┴───────┴───────┴───────┘ └───────┴───────┴──────────┴─────────┴─────────┘
+//                           &mo SYM &kp SPACE   &kp RET &mo NUM
+//   //                     └───────┴─────────┘ └───────┴───────┘                        
+//   >;
+//                };
+
+
+// Hands Down neu
+// https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu?authuser=0
+// w  f  m  p  v   /  .  q  "  '  z
+// r  s  n  t  b   ,  a  e  i  h  j
+// x  c  l  d  g   -  u  o  y  k  
+//
+// Hands Down Elan
+// vz g  h  p  kq  /* (< {[ '! "?
+// r s n t f   j a e c i 
+// x m l d b   -+ u o w  y 
+// ,; .:  ␣  ⏎ 
+//
+            hands_down_neu {
 // -----------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |     |
-// |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |-FUN-|
-//                   |-SYM-| SPC | | RET |-NUM-|
+// |  w  |  f  |  m  |  p  |  v  | |  /  |  .  |  j  | "/' |  z  |
+// |  r  |s/CTL|n/ALT|t/CMD|  b  | |  ,  |a/CMD|e/ALT|i/CMD|  h  |
+// |  x  |  c  |  l  |  d  |  g  | |  -  |  u  |  o  |  y  |  k  |
+//                   |SHIFT| REP | | SPACE| layer 1 |
+// hold          & CapsWord|&CHORD| | alt+BSPC |  |
+// shift &           |SHIFT|CapsWord| | BSP  | Layer 2 |
+// REP &             | ? |   REP  | | RET    | Layer 3 |
+// shift & REP &     | --- | --- |  | alt+BSP | Layer 4 |
+// recommendation z = w&f, qu = u&y 
+// q = w&f
                         bindings = <
 //┌──────┬───────┬───────┬───────┬───────┐ ┌───────┬───────┬──────────┬─────────┬─────────┐
-   &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L    &kp U      &kp Y     &none
+   &kp w   &kp f   &kp m   &kp p   &kp v     &kp /  &kp DOT   &kp j      &kp "     &kp z
 //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
-   &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N    &kp E      &kp I     &kp O
+   &kp r &mt LCTRL s &mt LALT n &mt LCMD t  &kp b   &kp COMMA  &mt RCMD a   &mt RALT e      &mt RCTRL i     &kp h
 //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
-   &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA   &kp DOT   &mo FUN
+   &kp x   &kp c   &kp l   &kp d   &kp g     &kp -   &kp u    &kp o      &kp y     &kp k
 //└──────┴───────┴───────┴───────┴───────┘ └───────┴───────┴──────────┴─────────┴─────────┘
-                        &mo SYM &kp SPACE   &kp RET &mo NUM
-//                     └───────┴─────────┘ └───────┴───────┘                        
+                       &kp LSHFT &kp SPACE   &kp RET &kp SPACE
+//                     └─────────┴───────┘ └───────┴───────┘                        
 >;
                 };
+
                 symbol_layer {
 // -----------------------------------------------------------------
 // |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |
