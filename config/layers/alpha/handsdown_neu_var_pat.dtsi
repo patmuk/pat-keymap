@@ -1,0 +1,206 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/* = ⇧ =   34 Keys - Hands Down neu - variante Pat
+    ╭──────────────────╮ ╭───────────────╮
+    │ W  F  M  P  V    │ │ /  .  J  '  Z │
+    │ R  S  N  T  B    │ │ ,  E  A  I  H │
+    │ X  C  L  D  G    │ │ -  U  O  Y  K │
+    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
+             ╰─────────╯ ╰────────╯         */
+/*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
+    ╭──────────────╮ ╭─────────────────╮
+    │ Qu           │ │                 │
+    │ / \          │ │                 │
+    │ W  F  _  _  _│ │_  _     _  _  _ │
+    │ _  _  _  _  _│ │_  E -Ä- A  _  _ │
+    │              │ │   │ \           │
+    │              │ │   Ü  Ö          │
+    │              │ │   │    \        │
+    │ _  _  _  _  _│ │_  U     O  _  _ │
+    ╰────────╮ _  _│ │_  _ ╭───────────╯
+             ╰─────╯ ╰─────╯         
+*/   
+ 
+// LEFT SIDE
+// TOP 
+#define P_W LTP
+#define P_F LTR
+#define P_M LTM
+#define P_P LTII
+#define P_V LTIO
+// MIDDLE
+#define P_R LMP
+#define P_S LMR
+#define P_N LMM
+#define P_T LMII
+#define P_B LMIO
+// BOTTOM
+#define P_X LBP
+#define P_C LBR
+#define P_L LBM
+#define P_D LBII
+#define P_G LBIO
+// THUMB
+#define P_SHIFT LTI
+#define P_CapsW LTO
+
+// RIGHT SIDE
+// TOP 
+#define P_SLASH RTIO
+#define P_DOT RTII
+#define P_J RTM
+#define P_GRAVE RTR
+#define P_Z RTP
+// MIDDLE
+#define P_COMMA RMIO
+#define P_E RMII
+#define P_A RMM
+#define P_I RMR
+#define P_H RMP
+// BOTTOM
+#define P_MINUS RBIO
+#define P_U RBII
+#define P_O RBM
+#define P_Y RBR
+#define P_K RBP
+// THUMB
+#define P_BACKSPACE RTI
+#define P_LAYER1 RTO
+
+&caps_word {
+   continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
+/*           34 Keys
+ ╭──────────────╮ ╭──────────────╮
+ │ 0  1  2  3  4│ │ 5  6  7  8  9│
+ │10 11 12 13 14│ │15 16 17 18 19│
+ │20 21 22 23 24│ │25 26 27 28 29│
+ ╰────────╮30 31│ │32 33╭────────╯
+          ╰─────╯ ╰─────╯         */
+/*    34 Keys - Hands Down neu
+ https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu?authuser=0
+ ╭───────────────╮ ╭─────────────────╮
+ │ w  f  m  p  v │ │ /  .  q  "  '  z│
+ │ r  s  n  t  b │ │ ,  a  e  i  h  j│
+ │ x  c  l  d  g │ │ -  u  o  y  k   │     
+ ╰─────────╮,; .:│ │ ␣  ⏎╭───────────╯
+           ╰─────╯ ╰─────╯         
+*/
+/ {
+   hands_down_neu {
+/*     34 Keys - Hands Down neu - variante Pat
+ ╭────────────────╮ ╭───────────────╮
+ │ w  f  m  p  v  │ │ /  .  j  '  z │
+ │ r  s  n  t  b  │ │ ,  e  a  i  h │
+ │ x  c  l  d  g  │ │ -  u  o  y  k │
+ ╰────────╮ ⇧ REP │ │ ␣ -L0- ╭──────╯
+          ╰───────╯ ╰────────╯         
+*/
+/* = ⇧ =   34 Keys - Hands Down neu - variante Pat
+    ╭──────────────────╮ ╭───────────────╮
+    │ W  F  M  P  V    │ │ │  :  J  "  Z │
+    │ R  S  N  T  B    │ │ ;  E  A  I  H │
+    │ X  C  L  D  G    │ │ _  U  O  Y  K │
+    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
+             ╰─────────╯ ╰────────╯         */
+/*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
+    ╭──────────────╮ ╭─────────────────╮
+    │ Qu           │ │                 │
+    │ / \          │ │                 │
+    │ W  F  _  _  _│ │_  _     _  _  _ │
+    │ _  _  _  _  _│ │_  E -Ä- A  _  _ │
+    │              │ │   │ \           │
+    │              │ │   Ü  Ö          │
+    │              │ │   │    \        │
+    │ _  _  _  _  _│ │_  U     O  _  _ │
+    ╰────────╮ _  _│ │_  _ ╭───────────╯
+             ╰─────╯ ╰─────╯         
+*/   
+      behaviors {
+         rep_capsw: rep_caps_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REP_CAPS_WORD";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>, <&caps_word>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         spc_bspc: space_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_BACKSPACE";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp BACKSPACE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         l0_l1: layer0_layer1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LAYER0_LAYER1";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&to 1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         minus_under: minus_underscore {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_UNDERSCORE";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         slh_pipe: fwslash_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FWSLASH_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp PIPE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FWSLASH_PIPE";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         comma_semi: comma_semicolon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+      };
+      combos {
+         compatible = "zmk,combos";
+
+         // COMBO(tab, &kp TAB, TLR TLM)
+         // COMBO(shift, &skq LSHFT, TRM TRR)
+         // COMBO(ctrl, &sk LCTL, BLR BLM)
+         // COMBO(backspace, &kp BSPC, BRM BRR)
+         // COMBO(cmd, &sk LCMD, LTI LTO)
+         // COMBO(opt, &sk LALT, RTO RTI)
+         COMBO(qu, &kp Q &kp U, LTP LTR)
+         //COMBO(z, &kp Z, MLP MLM)
+         //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
+      };
+      keymap {
+         compatible = "zmk,keymap";
+         bindings = <
+//╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
+   &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
+//├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
+   &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp E &kp I   &kp H
+//├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
+   &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
+//╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
+                 &kp LSHFT &rep_capsw  &spc_bspc    &l0_l1
+//              ╰─────────┴──────────╯╰────────────┴──────╯
+         >;
+      };
+   };
+};
+

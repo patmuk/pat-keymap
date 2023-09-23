@@ -42,3 +42,9 @@ For QMK:
 https://config.qmk.fm/#/ferris/sweep/LAYOUT_split_3x5_2
 Convert to ZMK:
 https://aaronsantiago.github.io/qmk-to-zmk/
+
+## inspiration / credits
+- https://dlip.github.io/posts/hybrid-keyboard-chording-with-zmk/
+- https://github.com/rayduck/pnohty
+- https://www.charachorder.com/en-ch
+- https://www.youtube.com/results?search_query=ben+vallack+keyboard

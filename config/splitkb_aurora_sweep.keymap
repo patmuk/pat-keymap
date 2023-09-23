@@ -12,16 +12,29 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#include "definitions.dtsi"
+#include "definitions/definitions.dtsi"
 
 #define ALP 0 // Alphabeth characters
-#define SEN 7 // Sentence layer for chording
 #define SYM 1 // Symboles
 #define NUM 2 // Numbers
 #define NAV 3 // Navigation
 #define FUN 4 // Function Keys
 #define DAN 5 // DANGER!
 #define LCK 6 // Lock KB
+#define SEN 7 // Sentence layer for chording
+
+//ALP 0
+#include "layers/alpha/handsdown_neu_var_pat.dtsi"
+//CMD combos
+#include "layers/command.dtsi"
+//LCK combo
+#include "layers/lock.dtsi"
+//SYM 1
+#include "layers/symbols.dtsi"
+//NUM 2
+//FUN
+
+#include "chording/combos.dtsi"
 
 &led_strip {
     chain-length = <23>;
@@ -40,82 +53,9 @@
          ╰─────╯ ╰─────╯         */
 
 / {
-    combos {
-        COMBO(tab, &kp TAB, 1 2)
-//        COMBO(shift, &skq LSHFT, 7 8)
-//        COMBO(cmd, &sk LCMD, 13 12)
-//        COMBO(cmd, &sk RCMD, 16 17)
-//        COMBO(opt, &sk LALT, 13 11)
-//        COMBO(opt, &sk RALT, 16 18)
-//        COMBO(ctrl, &sk LCTL, 13 10)
-//        COMBO(ctrl, &sk RCTL, 16 19)
-//        COMBO(backspace, &kp BSPC, 27 28)
-        COMBO(q, &kp Q, 1 3)
-        COMBO(z, &kp Z, 21 23)
-        COMBO_LONG(capsword, &caps_word, 14 15)
-// un-/lock keyboard
-        LAYER_COMBO(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
-    };
 
     keymap {
         compatible = "zmk,keymap";
-//              colemak_layer {
-//   // -----------------------------------------------------------------
-//   // |  Q  |  W  |  F  |  P  |  B  | |  J  |  L  |  U  |  Y  |     |
-//   // |  A  |  R  |  S  |  T  |  G  | |  M  |  N  |  E  |  I  |  O  |
-//   // |  Z  |  X  |  C  |  D  |  V  | |  K  |  H  |  ,  |  .  |-FUN-|
-//   //                   |-SYM-| SPC | | RET |-NUM-|
-//                        bindings = <
-//   //┌──────┬───────┬───────┬───────┬───────┐ ┌───────┬───────┬──────────┬─────────┬─────────┐
-//       &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L    &kp U      &kp Y     &none
-//   //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
-//       &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N    &kp E      &kp I     &kp O
-//   //├──────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼──────────┼─────────┼─────────┤
-//      &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA   &kp DOT   &mo FUN
-//   //└──────┴───────┴───────┴───────┴───────┘ └───────┴───────┴──────────┴─────────┴─────────┘
-//                           &mo SYM &kp SPACE   &kp RET &mo NUM
-//   //                     └───────┴─────────┘ └───────┴───────┘                        
-//   >;
-//                };
-
-
-// Hands Down neu
-// https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu?authuser=0
-// w  f  m  p  v   /  .  q  "  '  z
-// r  s  n  t  b   ,  a  e  i  h  j
-// x  c  l  d  g   -  u  o  y  k  
-//
-// Hands Down Elan
-// vz g  h  p  kq  /* (< {[ '! "?
-// r s n t f   j a e c i 
-// x m l d b   -+ u o w  y 
-// ,; .:  ␣  ⏎ 
-//
-            hands_down_neu {
-// -----------------------------------------------------------------
-// |  w  |  f  |  m  |  p  |  v  | |  /  |  .  |  j  | '/" |  z  |
-// |  r  |s/CTL|n/ALT|t/CMD|  b  | |  ,  |a/CMD|e/ALT|i/CMD|  h  |
-// |  x  |  c  |  l  |  d  |  g  | |  -  |  u  |  o  |  y  |  k  |
-//                   |SHIFT| REP | | SPACE| layer 1 |
-// hold          & CapsWord|&CHORD| | alt+BSPC |  |
-// shift &           |SHIFT|CapsWord| | BSP  | Layer 2 |
-// REP &             | ? |   REP  | | RET    | Layer 3 |
-// shift & REP &     | --- | --- |  | alt+BSP | Layer 4 |
-// recommendation z = w&f, qu = u&y 
-// q = w&f
-                        bindings = <
-//┌──────┬──────────┬──────────┬──────────┬───────┐ ┌───────────┬───────────┬───────────┬────────────┬─────────┐
-   &kp W     &kp F     &kp M       &kp P    &kp V     &kp SLASH   &kp DOT        &kp J    &kp SQT       &kp Z
-//├──────┼──────────┼──────────┼──────────┼───────┤ ├───────────┼───────────┼───────────┼────────────┼─────────┤
-   &kp R &mt LCTRL S &mt LALT N &mt LCMD T  &kp B     &kp COMMA   &mt RCMD A   &mt RALT E  &mt RCTRL I   &kp H
-//├──────┼──────────┼──────────┼──────────┼───────┤ ├───────────┼───────────┼───────────┼────────────┼─────────┤
-   &kp X     &kp C     &kp L       &kp D    &kp G     &kp MINUS      &kp U      &kp O       &kp Y       &kp K
-//└──────┴──────────┴──────────┴──────────┴───────┘ └───────────┴───────────┴───────────┴────────────┴─────────┘
-                               &kp LSHFT &kp SPACE   &kp RET &kp SPACE
-//                            └─────────┴─────────┘ └───────┴─────────┘                        
->;
-                };
-
                 symbol_layer {
 // -----------------------------------------------------------------
 // |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |

@@ -1,0 +1,64 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+&caps_word {
+   continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
+/*           34 Keys
+ ╭──────────────╮ ╭──────────────╮
+ │ 0  1  2  3  4│ │ 5  6  7  8  9│
+ │10 11 12 13 14│ │15 16 17 18 19│
+ │20 21 22 23 24│ │25 26 27 28 29│
+ ╰────────╮30 31│ │32 33╭────────╯
+          ╰─────╯ ╰─────╯         */
+/ {
+/* Pressing REP+ 
+ ╭───────────────────────────────────────────╮ ╭───────────────────────────╮
+ │ find_all    find   redo  undo  switch_app │ │ _    _     _     _      _ │
+ │ find_prv    LCTRL  LALT  LCMD  TAB        │ │ ESC  RCMD  RALT  RCTRL  _ │
+ │ select_all  cut    copy  paste switch_win │ │ +    _     _     _      _ │
+ ╰────────────────────────────────╮  ⇧   REP │ │ ␣   -L2- ╭────────────────╯
+                                  ╰──────────╯ ╰──────────╯         
+*/
+   combos {
+      compatible = "zmk,combos";
+
+      COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), 31 0)
+      COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), 31 0)
+      COMBO_LONG(find_prv, &kp LS(KP_ENTER), 31 10)
+      COMBO_LONG_MAC(select_all_mac, &kp LG(A), 31 20)
+      COMBO_LONG_WIN(select_all_win, &kp LC(A), 31 20)
+      COMBO_LONG_MAC(find_mac, &kp LG(F), 31 1)
+      COMBO_LONG_WIN(find_win, &kp LC(F), 31 1)
+      COMBO_LONG_MAC(cut_mac, &kp LG(X), 31 21)
+      COMBO_LONG_WIN(cut_win, &kp LC(X), 31 21)
+      COMBO_LONG_MAC(copy_mac, &kp LG(C), 31 22)
+      COMBO_LONG_WIN(copy_win, &kp LC(C), 31 22)
+      COMBO_LONG_MAC(paste_mac, &kp LG(V), 31 23)
+      COMBO_LONG_WIN(paste_win, &kp LC(V), 31 23)
+      COMBO_LONG_MAC(switch_window_mac, &kp LG(GRAVE), 31 24)
+      COMBO_LONG_MAC(redo_mac, &kp LG(LS(Z)), 31 2)
+      COMBO_LONG_WIN(redo_win, &kp LC(LS(Z)), 31 2)
+      COMBO_LONG_MAC(undo_mac, &kp LG(Z), 31 3)
+      COMBO_LONG_WIN(undo_win, &kp LC(Z), 31 3)
+      COMBO_LONG_MAC(switch_app_mac, &kp LG(TAB), 31 4)
+      COMBO_LONG_WIN(switch_app_win, &kp LA(TAB), 31 4)
+      COMBO_LONG(Tab, &kp TAB, 31 14)
+      COMBO_LONG(ESC, &kp ESC, 31 15)
+   
+      COMBO_LONG(LCTR, &sk LCTRL, 31 11)
+      COMBO_LONG(LALT, &sk LALT, 31 12)
+      COMBO_LONG(LCMD, &sk LCMD, 31 13)
+      COMBO_LONG(RCMD, &sk RCMD, 31 16)
+      COMBO_LONG(RALT, &sk RALT, 31 17)
+      COMBO_LONG(RCTR, &sk RCTRL, 31 18)
+
+      COMBO_LONG(L2, &to 2, 31 33)
+   };
+};

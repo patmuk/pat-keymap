@@ -1,10 +1,14 @@
 // indebted and with much reference to dxmh's zmk-config
 
+#include "key_positions.dtsi"
+
 / {
 compatible = "zmk,combos,bindings";
 #define LONG_TIMEOUT_MS 100
-#define NORMAL_LAYERS 0 1 2 3 4 5
-#define LOCK_LAYER 6
+#define NORMAL_LAYERS 0 1
+#define NORMAL_LAYERS_MAC 3 4
+#define NORMAL_LAYERS_WIN 5 6
+#define LOCK_LAYER 7
 
 behaviors {
     skq: sticky_key_quick_release {
@@ -29,6 +33,22 @@ behaviors {
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <NORMAL_LAYERS>; \
+    timeout-ms = <LONG_TIMEOUT_MS>; \
+  };
+
+#define COMBO_LONG_MAC(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS NORMAL_LAYERS_MAC>; \
+    timeout-ms = <LONG_TIMEOUT_MS>; \
+  };
+
+#define COMBO_LONG_WIN(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS NORMAL_LAYERS_WIN>; \
     timeout-ms = <LONG_TIMEOUT_MS>; \
   };
 

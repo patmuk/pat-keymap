@@ -1,0 +1,49 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#include "definitions.dtsi"
+
+&caps_word {
+   continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
+/*           34 Keys
+╭──────────────╮ ╭──────────────╮
+│ 0  1  2  3  4│ │ 5  6  7  8  9│
+│10 11 12 13 14│ │15 16 17 18 19│
+│20 21 22 23 24│ │25 26 27 28 29│
+╰────────╮30 31│ │32 33╭────────╯
+         ╰─────╯ ╰─────╯         */
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+//              colemak_layer {
+/*           34 Keys
+╭───────────────╮ ╭─────────────────╮
+│ Q  W  F  P  B │ │ J  L  U  Y      │
+│ A  R  S  T  G │ │ M  N  E  I  O   │
+│ Z  X  C  D  V │ │ K  H  ,  . -FUN-│
+╰─────╮-SYM- SPC│ │RET -NUM-╭───────╯
+      ╰─────────╯ ╰─────────╯         */
+                        bindings = <
+//╭──────┬──────┬──────┬──────┬───────╮╭─────┬──────┬───────────┬───────┬───────╮
+   &kp Q  &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y      
+//├──────┼──────┼──────┼──────┼───────┤├─────┼──────┼───────────┼───────┼───────┤
+   &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I   &kp O
+//├──────┼──────┼──────┼──────┼───────┤├─────┼──────┼───────────┼───────┼───────┤
+   &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT &mo FUN
+//╰──────┴──────┴──╮                  ││                 ╭──────┴───────┴───────╯
+                    &mo SYM  &kp SPACE   &kp RET  &mo NUM
+//                 ╰────────┴─────────╯ ╰────────┴───────╯
+   >;
+                };
+        };
+};

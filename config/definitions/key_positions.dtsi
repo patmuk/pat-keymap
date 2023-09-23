@@ -1,0 +1,53 @@
+/*           34 Keys
+╭──────────────╮ ╭──────────────╮
+│ 0  1  2  3  4│ │ 5  6  7  8  9│
+│10 11 12 13 14│ │15 16 17 18 19│
+│20 21 22 23 24│ │25 26 27 28 29│
+╰────────╮30 31│ │32 33╭────────╯
+         ╰─────╯ ╰─────╯         */
+
+// LEFT SIDE
+// TOP 
+#define LTP 0
+#define LTR 1
+#define LTM 2
+#define LTII 3
+#define LTIO 4
+// MIDDLE
+#define LMP 10
+#define LMR 11
+#define LMM 12
+#define LMII 13
+#define LMIO 14
+// BOTTOM
+#define LBP 20
+#define LBR 21
+#define LBM 22
+#define LBII 23
+#define LBIO 24
+// THUMB
+#define LTI 30
+#define LTO 31
+
+// RIGHT SIDE
+// TOP 
+#define RTIO 5
+#define RTII 6
+#define RTM 7
+#define RTR 8
+#define RTP 9
+// MIDDLE
+#define RMIO 15
+#define RMII 16
+#define RMM 17
+#define RMR 18
+#define RMP 19
+// BOTTOM
+#define RBIO 25
+#define RBII 26
+#define RBM 27
+#define RBR 28
+#define RBP 29
+// THUMB
+#define RTI 33
+#define RTO 32
