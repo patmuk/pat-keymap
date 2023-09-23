@@ -387,6 +387,7 @@ macros { \
     MACRO(m_spell, &kp S &kp P &kp E &kp L &kp L &kp SPC)
     MACRO(m_spelled, &kp S &kp P &kp E &kp L &kp L &kp E &kp D &kp SPC)
     MACRO(m_spelling, &kp S &kp P &kp E &kp L &kp L &kp I &kp N &kp G &kp SPC)
+    MACRO(m_standard, &kp S &kp T &kp A &kp N &kp D &kp A &kp R &kp D &kp SPC)
     MACRO(m_stand, &kp S &kp T &kp A &kp N &kp D &kp SPC)
     MACRO(m_stood, &kp S &kp T &kp O &kp O &kp D &kp SPC)
     MACRO(m_standing, &kp S &kp T &kp A &kp N &kp D &kp I &kp N &kp G &kp SPC)
