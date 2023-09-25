@@ -26,11 +26,11 @@
 //ALP 0
 // #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 //CMD combos
-#include "layers/command.dtsi"
+// #include "layers/command.dtsi"
 //LCK combo
-#include "layers/lock.dtsi"
+// #include "layers/lock.dtsi"
 //SYM 1
-#include "layers/symbols.dtsi"
+// #include "layers/symbols.dtsi"
 //NUM 2
 //FUN
 
