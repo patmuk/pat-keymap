@@ -61,13 +61,13 @@
 hands_down_neu {
          bindings = <
 //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
-   &kp W &kp F &kp M &kp P &kp V       &kp p    &kp p &kp J &kp SQT &kp Z
+   &kp W &kp F &kp M &kp P &kp V       &kp Q    &kp Q  &kp J &kp SQT &kp Z
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   &kp R &kp S &kp N &kp T &kp B       &kp p  &kp A      &kp E &kp I   &kp H
+   &kp R &kp S &kp N &kp T &kp B       &kp Q  &kp A      &kp E &kp I   &kp H
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   &kp X &kp C &kp L &kp D &kp G       &kp p &kp U      &kp O &kp Y   &kp K
+   &kp X &kp C &kp L &kp D &kp G       &kp Q &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
-                 &kp LSHFT &kp p        &kp p    &kp p
+                 &kp LSHFT &&key_repeat  &kp Q    &kp Q
 //              ╰─────────┴──────────╯╰────────────┴──────╯
          >;
       };
