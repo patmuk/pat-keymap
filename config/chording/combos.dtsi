@@ -3,7 +3,8 @@
     timeout-ms = <80>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <LCK>; \// chording only with a specific key pressed
+//    layers = <LCK>; \// chording only with a specific key pressed
+    layers = <6>; \// chording only with a specific key pressed
   };
 
 #include "./macros.dtsi"
