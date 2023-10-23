@@ -201,7 +201,7 @@
          // COMBO(opt, &sk LALT, RTO RTI)
          COMBO(qu, &macro_m_QU, LTP LTR)
          COMBO(ae, &macro_m_AE, RMII RMM)
-         COMBO(ae, &macro_m_pound, RMM RMR)
+         COMBO(pound, &macro_m_pound, RMM RMR)
          //COMBO(z, &kp Z, MLP MLM)
          //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
       };
