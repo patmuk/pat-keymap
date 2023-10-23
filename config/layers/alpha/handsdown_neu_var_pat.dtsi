@@ -57,8 +57,8 @@
 #define P_Z RTP
 // MIDDLE
 #define P_COMMA RMIO
-#define P_E RMII
-#define P_A RMM
+#define P_A RMII
+#define P_E RMM
 #define P_I RMR
 #define P_H RMP
 // BOTTOM
@@ -203,10 +203,13 @@
       };
    };
    CHORD(QU, &kp Q &kp U, LTP LTR)
-   CHORD(shift_AE, &kp LA(U) &kp LS(A), P_A P_E)
+   CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E)
    CHORD(ae, &kp LA(U) &kp A, P_A P_E)
-   CHORD(shift_UE, &kp LA(U) &kp LS(U), P_U P_E)
+   MOD_MORPH(AE, &ae, &shift_ae, MOD_LSFT|MOD_RSFT)
+   CHORD(shift_ue, &kp LA(U) &kp LS(U), P_U P_E)
    CHORD(ue, &kp LA(U) &kp U, P_U P_E)
-   CHORD(shift_OE, &kp LA(U) &kp LS(O), P_O P_E)
+   MOD_MORPH(UE, &ue, &shift_ue, MOD_LSFT|MOD_RSFT)
+   CHORD(shift_oe, &kp LA(U) &kp LS(O), P_O P_E)
    CHORD(oe, &kp LA(U) &kp O, P_O P_E)
+   MOD_MORPH(OE, &oe, &shift_oe, MOD_LSFT|MOD_RSFT)
 
