@@ -3,14 +3,14 @@
 #include "key_positions.dtsi"
 
 / {
-compatible = "zmk,combos,bindings";
-#define LONG_TIMEOUT_MS 100
-#define NORMAL_LAYERS 0 1
-#define NORMAL_LAYERS_MAC 3 4
-#define NORMAL_LAYERS_WIN 5 6
-#define LOCK_LAYER 7
+  compatible = "zmk,bindings";
+  #define LONG_TIMEOUT_MS 100
+  #define NORMAL_LAYERS 0 1
+  #define NORMAL_LAYERS_MAC 3 4
+  #define NORMAL_LAYERS_WIN 5 6
+  #define LOCK_LAYER 7
 
-behaviors {
+  behaviors {
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
       label = "STICKY_KEY_QUICK_RELEASE";
@@ -19,57 +19,71 @@ behaviors {
       release-after-ms = <1000>;
       quick-release;
     };
-
-    // #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
-    //      mm_##NAME: mm_##NAME {\
-    //         compatible = "zmk,behavior-mod-morph";\
-    //         label = str(mm_##NAME);\
-    //         #binding-cells = <0>;\
-    //         bindings = <BINDING_PURE>, <BINDING_MODED>;\
-    //         mods = <(MODS)>;\
-    //      };\
-
+  };
 };
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <NORMAL_LAYERS>; \
+  / {\
+    combos {\
+      compatible = "zmk,combos";\
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <NORMAL_LAYERS>; \
+      };\
+    };\
   };
 
 #define COMBO_LONG(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <NORMAL_LAYERS>; \
-    timeout-ms = <LONG_TIMEOUT_MS>; \
+  / {\
+    combos {\
+      compatible = "zmk,combos";\
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <NORMAL_LAYERS>; \
+        timeout-ms = <LONG_TIMEOUT_MS>; \
+      };\
+    };\
   };
 
 #define COMBO_LONG_MAC(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <NORMAL_LAYERS NORMAL_LAYERS_MAC>; \
-    timeout-ms = <LONG_TIMEOUT_MS>; \
+  / {\
+    combos {\
+      compatible = "zmk,combos";\
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <NORMAL_LAYERS NORMAL_LAYERS_MAC>; \
+        timeout-ms = <LONG_TIMEOUT_MS>; \
+      };\
+    };\
   };
 
 #define COMBO_LONG_WIN(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <NORMAL_LAYERS NORMAL_LAYERS_WIN>; \
-    timeout-ms = <LONG_TIMEOUT_MS>; \
+  / {\
+    combos {\
+      compatible = "zmk,combos";\
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <NORMAL_LAYERS NORMAL_LAYERS_WIN>; \
+        timeout-ms = <LONG_TIMEOUT_MS>; \
+      };\
+    };\
   };
 
 #define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
+  / {\
+    combos {\
+      compatible = "zmk,combos";\
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+      };\
+   };\
   };
-
-};
 
 #define str(s) #s
 #define MACRO(NAME, BINDINGS) \
