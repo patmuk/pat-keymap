@@ -175,8 +175,9 @@
       };
       macros { \
          MACRO(m_QU, &kp Q &kp U)
+         MACRO(m_AE, &kp LA(DOUBLE_QUOTES) &kp A)
          // MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
-         macro_m_AE: macro_m_AE {
+         macro_m_pound: macro_m_pound {
             label = "macro_m_AE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -184,7 +185,7 @@
             tap-ms = <40>;
             bindings = <&macro_press   &kp LALT>
                      , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
-                     // , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08>
+                     // , <&macro_tap     &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp PLUS &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08>
                      , <&macro_release &kp LALT>
                      ;
          };
@@ -200,6 +201,7 @@
          // COMBO(opt, &sk LALT, RTO RTI)
          COMBO(qu, &macro_m_QU, LTP LTR)
          COMBO(ae, &macro_m_AE, RMII RMM)
+         COMBO(ae, &macro_m_pound, RMM RMR)
          //COMBO(z, &kp Z, MLP MLM)
          //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
       };
