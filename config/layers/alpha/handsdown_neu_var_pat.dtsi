@@ -155,7 +155,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "FWSLASH_PIPE";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp PIPE>;
+            bindings = <&kp FSLH>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
          dot_colon: dot_colon {
@@ -191,10 +191,9 @@
          hands_down_neu {
             bindings = <
 //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
-   // &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
-   &kp W &kp F &kp M &kp P &kp V       &kp A    &kp B  &kp J &kp SQT &kp Z
+   &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp A  &kp A  &kp A
+   &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp E &kp I   &kp H
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
    &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
