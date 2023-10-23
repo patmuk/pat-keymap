@@ -203,13 +203,13 @@
       };
    };
    CHORD(QU, &kp Q &kp U, LTP LTR)
-   CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E)
+   CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E P_SHIFT)
    CHORD(ae, &kp LA(U) &kp A, P_A P_E)
-   MOD_MORPH(AE, &combo_ae, &combo_shift_ae, MOD_LSFT|MOD_RSFT)
-   CHORD(shift_ue, &kp LA(U) &kp LS(U), P_U P_E)
+   // MOD_MORPH(AE, &combo_ae, &combo_shift_ae, MOD_LSFT|MOD_RSFT)
+   CHORD(shift_ue, &kp LA(U) &kp LS(U), P_U P_E P_SHIFT)
    CHORD(ue, &kp LA(U) &kp U, P_U P_E)
-   MOD_MORPH(UE, &combo_ue, &combo_shift_ue, MOD_LSFT|MOD_RSFT)
-   CHORD(shift_oe, &kp LA(U) &kp LS(O), P_O P_E)
+   // MOD_MORPH(UE, &combo_ue, &combo_shift_ue, MOD_LSFT|MOD_RSFT)
+   CHORD(shift_oe, &kp LA(U) &kp LS(O), P_O P_E P_SHIFT)
    CHORD(oe, &kp LA(U) &kp O, P_O P_E)
-   MOD_MORPH(OE, &combo_oe, &combo_shift_oe, MOD_LSFT|MOD_RSFT)
+   // MOD_MORPH(OE, &combo_oe, &combo_shift_oe, MOD_LSFT|MOD_RSFT)
 
