@@ -197,7 +197,8 @@
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
    &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
-                 &kp LSHFT &mt &mo LCK &rep_capsw   &spc_bspc    &l0_l1
+//                 &kp LSHFT &mt &mo LCK &rep_capsw   &spc_bspc    &l0_l1
+                 &kp LSHFT &rep_capsw   &spc_bspc    &l0_l1
 //              ╰─────────┴──────────╯╰────────────┴──────╯
             >;
          };
