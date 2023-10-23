@@ -203,10 +203,10 @@
       };
    };
    CHORD(QU, &kp Q &kp U, LTP LTR)
-   CHORD(AE, &kp LA(U) &kp LS(A), P_A P_E)
+   CHORD(shift_AE, &kp LA(U) &kp LS(A), P_A P_E)
    CHORD(ae, &kp LA(U) &kp A, P_A P_E)
-   CHORD(UE, &kp LA(U) &kp LS(U), P_U P_E)
+   CHORD(shift_UE, &kp LA(U) &kp LS(U), P_U P_E)
    CHORD(ue, &kp LA(U) &kp U, P_U P_E)
-   CHORD(OE, &kp LA(U) &kp LS(O), P_O P_E)
+   CHORD(shift_OE, &kp LA(U) &kp LS(O), P_O P_E)
    CHORD(oe, &kp LA(U) &kp O, P_O P_E)
 
