@@ -26,11 +26,11 @@
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 //CMD combos
-//#include "layers/command.dtsi"
+#include "layers/command.dtsi"
 //LCK combo
-//#include "layers/lock.dtsi"
+#include "layers/lock.dtsi"
 //SYM 1
-//#include "layers/symbols.dtsi"
+#include "layers/symbols.dtsi"
 //NUM 2
 //FUN
 
@@ -90,61 +90,61 @@
 //                                  └──────────┴─────────┘ └───────┴───────────┘                        
                 //         >;
                 // };
-//                number_layer { // 2
+                number_layer { // 2
 // -----------------------------------------------------------------
 // |     |  4  |  5  |  6  |     | |     |  |  |  -  |  /  |     |
 // |  .  |  1  |  2  |  3  |     | |     |  '  |  _  |  =  |-NAV-|
 // |  ~  |  7  |  8  |  9  |     | |     |  +  |  ?  |  !  |     |
 //                   |  0  | SPC | | RET |_NUM_|
-//                        bindings = <
+                        bindings = <
 //┌──────────┬────────┬────────┬────────┬──────────┐ ┌────────┬──────────┬───────────┬───────────┬────────┐
-//   &kp BSPC    &kp N4   &kp N5   &kp N6   &none        &none    &kp PIPE   &kp MINUS   &kp FSLH    &none
+   &kp BSPC    &kp N4   &kp N5   &kp N6   &none        &none    &kp PIPE   &kp MINUS   &kp FSLH    &none
 //├──────────┼────────┼────────┼────────┼──────────┤ ├────────┼──────────┼───────────┼───────────┼────────┤
-//   &kp DOT     &kp N1   &kp N2   &kp N3   &none        &none   &kp SQT    &kp UNDER   &kp EQUAL   &mo NAV  
+   &kp DOT     &kp N1   &kp N2   &kp N3   &none        &none   &kp SQT    &kp UNDER   &kp EQUAL   &mo NAV  
 //├──────────┼────────┼────────┼────────┼──────────┤ ├────────┼──────────┼───────────┼───────────┼────────┤
-//   &kp TILDE   &kp N7   &kp N8   &kp N9   &none        &none   &kp PLUS   &kp QMARK   &kp EXCL    &none
+   &kp TILDE   &kp N7   &kp N8   &kp N9   &none        &none   &kp PLUS   &kp QMARK   &kp EXCL    &none
 //└──────────┴────────┴────────┴────────┴──────────┘ └────────┴──────────┴───────────┴───────────┴────────┘
-//                                 &kp N0   &kp SPACE   &kp RET   &trans
+                                 &kp N0   &kp SPACE   &kp RET   &trans
 //                             └────────┴──────────┘ └────────┴───────┘                        
-//                        >;
-//                };
-//                nav_layer { // 3
+                        >;
+                };
+                nav_layer { // 3
 // -----------------------------------------------------------------
 // |     |     |     |     |     | |     |     |     |     |     |
 // |     |     |     |     |     | | LFT | DWN | U P |RIGHT|_NAV_|
 // |     |     |     |     |     | | HOM |PG_DN|PG_UP| END |     |
 //                   |     | SPC | | RET |_NUM_|
-//                        bindings = <
+                        bindings = <
 //┌───────┬───────┬───────┬───────┬───────┐ ┌──────────┬───────────┬───────────┬───────────┬────────┐
-//    &none   &none   &none   &none   &none    &none      &none       &none       &none       &none 
+    &none   &none   &none   &none   &none    &none      &none       &none       &none       &none 
 //├───────┼───────┼───────┼───────┼───────┤ ├──────────┼───────────┼───────────┼───────────┼────────┤
-//    &none   &none   &none   &none   &none    &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &trans  
+    &none   &none   &none   &none   &none    &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &trans  
 //├───────┼───────┼───────┼───────┼───────┤ ├──────────┼───────────┼───────────┼───────────┼────────┤
-//    &none   &none   &none   &none   &none    &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &none 
+    &none   &none   &none   &none   &none    &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &none 
 //└───────┴───────┴───────┴───────┴───────┘ └──────────┴───────────┴───────────┴───────────┴────────┘
-//                            &none   &trans   &trans      &trans
+                            &none   &trans   &trans      &trans
 //                        └───────┴───────┘ └──────────┴───────────┘                        
-//                        >;
-//                };
-//                fun_layer { // 4
+                        >;
+                };
+                fun_layer { // 4
 // -----------------------------------------------------------------
 // |     | F 6 | F 5 | F 4 | F10 | | <!> | <!> | <!> | <!> |     |
 // |CAPSL| F 3 | F 2 | F 1 | F11 | | BT2 |VMUTE|VOLDN|VOLUP| <!> |
 // |-!!!-| F 9 | F 8 | F 7 | F12 | | BT0 | BT1 |BRIDN|BRIUP|_FUN_|
 //                   |     | SPC | | RET |     |
-//                        bindings = <
+                        bindings = <
 //┌──────────┬────────┬────────┬────────┬─────────┐ ┌──────────────┬──────────────┬──────────────┬──────────────┬───────┐
-//    &none      &kp F6   &kp F5   &kp F4   &kp F10     &none          &none          &none          &none          &none
+    &none      &kp F6   &kp F5   &kp F4   &kp F10     &none          &none          &none          &none          &none
 //├──────────┼────────┼────────┼────────┼─────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼───────┤
-//    &kp CAPS   &kp F3   &kp F2   &kp F1   &kp F11     &bt BT_SEL 2   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &none
+    &kp CAPS   &kp F3   &kp F2   &kp F1   &kp F11     &bt BT_SEL 2   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &none
 //├──────────┼────────┼────────┼────────┼─────────┤ ├──────────────┼──────────────┼──────────────┼──────────────┼───────┤
-//    &mo DAN    &kp F9   &kp F8   &kp F7   &kp F12     &bt BT_SEL 0   &bt BT_SEL 1   &kp C_BRI_DN   &kp C_BRI_UP   &trans
+    &mo DAN    &kp F9   &kp F8   &kp F7   &kp F12     &bt BT_SEL 0   &bt BT_SEL 1   &kp C_BRI_DN   &kp C_BRI_UP   &trans
 //└──────────┴────────┴────────┴────────┴─────────┘ └──────────────┴──────────────┴──────────────┴──────────────┴───────┘
-//                                 &none    &trans      &trans         &none 
+                                 &none    &trans      &trans         &none 
 //                             └────────┴─────────┘ └──────────────┴──────────────┘                        
-//                        >;
-//                };
-//                danger_layer { // 5
+                        >;
+                };
+                danger_layer { // 5
 // -----------------------------------------------------------------
 // |     |     |     |     |     | |BTCLR| BLE | USB |RESET|     |
 // |     |     |     |     |     | |     |     |     |     |BOOTL|
@@ -152,32 +152,32 @@
 //                   |     |     | |     |     |
                     // impactful buttons
                     // Bluetooth clear, reset, chaning BLE/USB preference, bootloader
-//                    bindings = <
+                    bindings = <
 //┌───────┬───────┬───────┬───────┬───────┐ ┌────────────┬──────────────┬──────────────┬────────────┬─────────────┐
-//    &none   &none   &none   &none   &none     &bt BT_CLR   &out OUT_BLE   &out OUT_USB   &sys_reset   &none
+    &none   &none   &none   &none   &none     &bt BT_CLR   &out OUT_BLE   &out OUT_USB   &sys_reset   &none
 //├───────┼───────┼───────┼───────┼───────┤ ├────────────┼──────────────┼──────────────┼────────────┼─────────────┤
-//    &none   &none   &none   &none   &none     &none        &none          &none          &none        &bootloader
+    &none   &none   &none   &none   &none     &none        &none          &none          &none        &bootloader
 //├───────┼───────┼───────┼───────┼───────┤ ├────────────┼──────────────┼──────────────┼────────────┼─────────────┤
-//    &trans  &none   &none   &none   &none     &none        &none          &none          &none        &trans
+    &trans  &none   &none   &none   &none     &none        &none          &none          &none        &trans
 //└───────┴───────┴───────┴───────┴───────┘ └────────────┴──────────────┴──────────────┴────────────┴─────────────┘
-//                            &none   &none     &none        &none
+                            &none   &none     &none        &none
 //                        └───────┴───────┘ └────────────┴──────────────┘                        
-//                    >;
-//                };
-//                lock_layer { // 6
+                    >;
+                };
+                lock_layer { // 6
                     // only way out is the lock combo
                     // other combos are disabled too
-//                    bindings = <
+                    bindings = <
 //┌───────┬───────┬───────┬───────┬───────┐ ┌───────┬───────┬───────┬───────┬───────┐
-//    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
+    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
 //├───────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼───────┼───────┼───────┤
-//    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
+    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
 //├───────┼───────┼───────┼───────┼───────┤ ├───────┼───────┼───────┼───────┼───────┤
-//    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
+    &none   &none   &none   &none   &none     &none   &none   &none   &none   &none 
 //└───────┴───────┴───────┴───────┴───────┘ └───────┴───────┴───────┴───────┴───────┘
-//                            &none   &none     &none   &none 
+                            &none   &none     &none   &none 
 //                        └───────┴───────┘ └───────┴───────┘                        
-//                    >;
-//                };
+                    >;
+                };
         };
 };
