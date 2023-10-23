@@ -172,7 +172,7 @@
          //    bindings = <&kp COMMA>, <&kp SEMICOLON>;
          //    mods = <(MOD_LSFT|MOD_RSFT)>;
          // };
-         MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
+         // MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
 
       };
       combos {
@@ -194,7 +194,7 @@
 //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
    &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   &kp R &kp S &kp N &kp T &kp B       &mm_comma_semi  &kp A      &kp E &kp I   &kp H
+   &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp E &kp I   &kp H
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
    &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
@@ -215,4 +215,4 @@
    CHORD(oe, &kp LA(U) &kp O, P_O P_E)
    // MOD_MORPH(OE, &combo_oe, &combo_shift_oe, MOD_LSFT|MOD_RSFT)
 
-   // MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
