@@ -156,7 +156,7 @@
             label = "FWSLASH_PIPE";
             #binding-cells = <0>;
             // bindings = <&kp FSLH>, <&kp PIPE>;
-            bindings = <KP_SLASH>, <&kp PIPE>;
+            bindings = <&kp KP_SLASH>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
          dot_colon: dot_colon {
