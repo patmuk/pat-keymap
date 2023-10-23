@@ -34,7 +34,7 @@
 //NUM 2
 //FUN
 
-#include "chording/combos.dtsi"
+//#include "chording/combos.dtsi"
 
 &led_strip {
     chain-length = <23>;
