@@ -151,14 +151,6 @@
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
-         slh_pipe: fwslash_pipe {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FWSLASH_PIPE";
-            #binding-cells = <0>;
-            // bindings = <&kp FSLH>, <&kp PIPE>;
-            bindings = <&kp KP_SLASH>, <&kp PIPE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-         };
          dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             label = "FWSLASH_PIPE";
@@ -171,6 +163,14 @@
             label = "COMMA_SEMI";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+         };
+         slh_pipe: fwslash_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FWSLASH_PIPE";
+            #binding-cells = <0>;
+            // bindings = <&kp FSLH>, <&kp PIPE>;
+            bindings = <&kp C>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
       };
