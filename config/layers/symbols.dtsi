@@ -43,20 +43,20 @@
        keymap {
          compatible = "zmk,keymap";
          bindings = <
-//╭────────┬────────┬─────────┬────────┬───────╮╭─────────┬─────────┬────────┬─────────┬────────╮
-   &kp RBKT &kp RBRC &kp RPAR  &kp GT   &none    &kp BSLH  &kp EXCL  &none    &kp GRAVE &none
-//├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
-   &"mm_()"   &mm_cornered_braces   &mm_paranthesis    &mm_LG_T    &kp INS  &kp QMARK &none     &kp AMPS &kp AT    &kp HASH
-//├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
-   &none     &none   &kp TILDE &kp DLLR &kp DEL  &trans    &kp EQUAL &none    &none     &none
-//╰────────┴────────┴─╮                        ││                   ╭────────┴─────────┴────────╯
-                       &kp LSHFT &key_repeat     &trans    &to 0
-//                    ╰─────────┴──────────────╯╰─────────┴─────────╯
+//╭───────────┬──────────────┬──────────┬─────────┬───────╮╭─────────┬──────────┬─────────┬──────────┬─────────╮
+   &kp RBKT     &kp RBRC       &kp RPAR   &kp GT   &none    &kp BSLH   &kp EXCL   &none     &kp GRAVE  &none
+//├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼─────────┼──────────┼─────────┤
+   &mm_braces   &mm_c_braces   &mm_pars   &mm_LG_T &kp INS  &kp QMARK  &none      &kp AMPS  &kp AT     &kp HASH
+//├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼─────────┼──────────┼─────────┤
+   &none        &none          &kp TILDE  &kp DLLR &kp DEL  &trans     &kp EQUAL  &none     &none      &none
+//╰───────────┴──────────────┴╮                           ││                    ╭─────────┴──────────┴─────────╯
+                               &kp LSHFT  &key_repeat       &trans     &to 0
+//                            ╰─────────┴─────────────────╯╰─────────┴──────────╯
          >;
       };
    };
 };
-   MOD_MORPH("()", &kp LBKT, &kp RBKT, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(cornered_braces, &kp LBRC, &kp RBRC, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(paranthesis, &kp LPAR, &kp RPAR, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(braces, &kp LBKT, &kp RBKT, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(c_braces, &kp LBRC, &kp RBRC, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(pars, &kp LPAR, &kp RPAR, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(LG_T, &kp GT, &kp LT, MOD_LSFT|MOD_RSFT)
