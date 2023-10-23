@@ -162,7 +162,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_COLON";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp COLON>;
+            bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
          comma_semi: comma_semicolon {
