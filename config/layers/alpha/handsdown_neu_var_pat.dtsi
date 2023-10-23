@@ -191,17 +191,14 @@
          hands_down_neu {
             bindings = <
 //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
-   // &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
-   &kp W &kp F &kp M &kp P &kp V          &kp A        &kp A   &kp J &kp A &kp Z
+   &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   // &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp E &kp I   &kp H
-   &kp R &kp S &kp N &kp T &kp B       &kp A  &kp A      &kp E &kp I   &kp H
+   &kp R &kp S &kp N &kp T &kp B       &comma_semi  &kp A      &kp E &kp I   &kp H
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
-   // &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
-   &kp X &kp C &kp L &kp D &kp G       &kp A &kp U      &kp O &kp Y   &kp K
+   &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
 //                 &kp LSHFT &mt &mo LCK &rep_capsw   &spc_bspc    &l0_l1
-                 &kp LSHFT &rep_capsw   &kp A    &kp A
+                 &kp LSHFT &rep_capsw   &spc_bspc    &l0_l1
 //              ╰─────────┴──────────╯╰────────────┴──────╯
             >;
          };
