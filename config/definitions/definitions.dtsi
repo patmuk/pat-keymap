@@ -81,12 +81,16 @@ behaviors {
       COMBO(##NAME, &macro_m_##NAME, KEYPOS) \
     };\
   };
-// #define CHORD(NAME, BINDINGS, KEYPOS) \
-//   MACRO(m_##NAME, BINDINGS) \
-//   COMBO(##NAME, &macro_m_##NAME, KEYPOS) \
 
-// #define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
-//   MACRO(m_##NAME, BINDINGS) \
-//   COMBO_LAYER(##NAME, &macro_m_##NAME, KEYPOS, LAYER) \
+#define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
+/ { \
+    macros { \
+      MACRO(m_##NAME, BINDINGS) \
+    }; \
+    combos { \
+      compatible = "zmk,combos";\
+      COMBO_LAYER(##NAME, &macro_m_##NAME, KEYPOS, LAYER) \
+    };\
+  };
 
 
