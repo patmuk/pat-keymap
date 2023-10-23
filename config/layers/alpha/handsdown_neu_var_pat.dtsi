@@ -205,9 +205,14 @@
       };
    };
    CHORD(QU, &kp Q &kp U, LTP LTR)
-   CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E P_SHIFT)
-   CHORD(ae, &kp LA(U) &kp A, P_A P_E)
+   // CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E P_SHIFT)
+   // CHORD(ae, &kp LA(U) &kp A, P_A P_E)
+   MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
+   MACRO(m_ae, &kp LA(U) &kp A)
+   MOD_MORPH(ae, &macro_m_ae, &macro_m_ae, MOD_LSFT|MOD_RSFT)
+   COMBO(ae, &mm_ae, P_A P_E)
    // MOD_MORPH(AE, &combo_ae, &combo_shift_ae, MOD_LSFT|MOD_RSFT)
+
    CHORD(shift_ue, &kp LA(U) &kp LS(U), P_U P_E P_SHIFT)
    CHORD(ue, &kp LA(U) &kp U, P_U P_E)
    // MOD_MORPH(UE, &combo_ue, &combo_shift_ue, MOD_LSFT|MOD_RSFT)
