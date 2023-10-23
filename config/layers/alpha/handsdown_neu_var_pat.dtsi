@@ -161,18 +161,20 @@
    MOD_MORPH(slh_pipe, &kp SLASH, &kp PIPE, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(dot_colon, &kp DOT, &kp COLON, MOD_LSFT|MOD_RSFT)
 
-   // CHORD(shift_ae, &kp LA(U) &kp LS(A), P_A P_E P_SHIFT)
-   // CHORD(ae, &kp LA(U) &kp A, P_A P_E)
+   //Umlaute
    MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
    MACRO(m_ae, &kp LA(U) &kp A)
    MOD_MORPH(ae, &macro_m_ae, &macro_m_shift_ae, MOD_LSFT|MOD_RSFT)
    COMBO(ae, &mm_ae, P_A P_E)
-   // MOD_MORPH(AE, &combo_ae, &combo_shift_ae, MOD_LSFT|MOD_RSFT)
 
-   CHORD(shift_ue, &kp LA(U) &kp LS(U), P_U P_E P_SHIFT)
-   CHORD(ue, &kp LA(U) &kp U, P_U P_E)
-   // MOD_MORPH(UE, &combo_ue, &combo_shift_ue, MOD_LSFT|MOD_RSFT)
-   CHORD(shift_oe, &kp LA(U) &kp LS(O), P_O P_E P_SHIFT)
-   CHORD(oe, &kp LA(U) &kp O, P_O P_E)
-   // MOD_MORPH(OE, &combo_oe, &combo_shift_oe, MOD_LSFT|MOD_RSFT)
+   MACRO(m_shift_oe, &kp LA(U) &kp LS(O))
+   MACRO(m_oe, &kp LA(U) &kp O)
+   MOD_MORPH(oe, &macro_m_oe, &macro_m_shift_oe, MOD_LSFT|MOD_RSFT)
+   COMBO(oe, &mm_oe, P_O P_E)
+
+   MACRO(m_shift_ue, &kp LA(U) &kp LS(U))
+   MACRO(m_ue, &kp LA(U) &kp U)
+   MOD_MORPH(ue, &macro_m_ue, &macro_m_shift_ue, MOD_LSFT|MOD_RSFT)
+   COMBO(ue, &mm_ue, P_U P_E)
+
 
