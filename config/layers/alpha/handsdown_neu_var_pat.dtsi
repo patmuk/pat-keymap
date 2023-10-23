@@ -173,6 +173,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
       };
+      macros { \
+         MACRO(m_QU, &kp Q &kp U)
+      };
       combos {
          compatible = "zmk,combos";
 
@@ -182,7 +185,7 @@
          // COMBO(backspace, &kp BSPC, BRM BRR)
          // COMBO(cmd, &sk LCMD, LTI LTO)
          // COMBO(opt, &sk LALT, RTO RTI)
-         COMBO(qu, &kp Q &kp U, LTP LTR)
+         COMBO(qu, &macro_m_QU, LTP LTR)
          //COMBO(z, &kp Z, MLP MLM)
          //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
       };
