@@ -175,7 +175,7 @@
       };
       macros { \
          MACRO(m_QU, &kp Q &kp U)
-         MACRO(m_AE, &kp LA(DOUBLE_QUOTES) &kp A)
+         MACRO(m_AE, &kp LA(U) &kp A)
          // MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
          macro_m_pound: macro_m_pound {
             label = "macro_m_pound";
