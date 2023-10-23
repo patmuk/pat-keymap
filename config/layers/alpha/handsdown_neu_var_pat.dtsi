@@ -176,7 +176,12 @@
       macros { \
          MACRO(m_QU, &kp Q &kp U)
          // MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
-         MACRO(m_AE, &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
+         ZMK_MACRO(m_AE,
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&macro_press   &kp LALT>
+                     , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+                     , <&macro_release &kp LALT>
       };
       combos {
          compatible = "zmk,combos";
