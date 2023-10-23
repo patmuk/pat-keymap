@@ -7,11 +7,5 @@
 ╰────────╮30 31│ │32 33╭────────╯
          ╰─────╯ ╰─────╯         */
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-        // un-/lock keyboard
-        COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
-    };
-};
+// un-/lock keyboard
+COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
