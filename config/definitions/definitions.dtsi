@@ -71,9 +71,7 @@ behaviors {
   };
 
 #define CHORD(NAME, BINDINGS, KEYPOS) \
-  macros { \
-    MACRO(m_##NAME, BINDINGS) \
-  }; \
+  MACRO(m_##NAME, BINDINGS) \
   combos { \
     compatible = "zmk,combos"; \
     COMBO(##NAME, &macro_m_##NAME, KEYPOS) \
