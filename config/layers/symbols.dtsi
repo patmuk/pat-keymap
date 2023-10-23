@@ -40,43 +40,13 @@
     │ _  _  _  _  _    │ │ _  _  _  _  _ │
     ╰────────╮ ⇧  REP  │ │⌫ -L0- ╭──────╯
              ╰─────────╯ ╰────────╯         */
-      behaviors {
-         LRBKT: square_brackets {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SQ_BRACK";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-         };
-         LRBRC: cornered_braces {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CORN_BRACE";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp RBRC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-         };
-         LRPAR: paranthesis {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PARANTHESIS";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp RPAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-         };
-         LG_T: grater_then_and_less_then {
-            compatible = "zmk,behavior-mod-morph";
-            label = "G_L_THEN";
-            #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp LT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-         };
-      };
-      keymap {
+       keymap {
          compatible = "zmk,keymap";
          bindings = <
 //╭────────┬────────┬─────────┬────────┬───────╮╭─────────┬─────────┬────────┬─────────┬────────╮
    &kp RBKT &kp RBRC &kp RPAR  &kp GT   &none    &kp BSLH  &kp EXCL  &none    &kp GRAVE &none
 //├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
-   &LRBKT   &LRBRC   &LRPAR    &LG_T    &kp INS  &kp QMARK &none     &kp AMPS &kp AT    &kp HASH
+   &mm_square_brackets   &mm_cornered_braces   &mm_paranthesis    &mm_LG_T    &kp INS  &kp QMARK &none     &kp AMPS &kp AT    &kp HASH
 //├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
    &none     &none   &kp TILDE &kp DLLR &kp DEL  &trans    &kp EQUAL &none    &none     &none
 //╰────────┴────────┴─╮                        ││                   ╭────────┴─────────┴────────╯
@@ -86,3 +56,7 @@
       };
    };
 };
+   MOD_MORPH(square_brackets, &kp LBKT, &kp RBKT, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(cornered_braces, &kp LBRC, &kp RBRC, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(paranthesis, &kp LPAR, &kp RPAR, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(LG_T, &kp GT, &kp LT, MOD_LSFT|MOD_RSFT)
