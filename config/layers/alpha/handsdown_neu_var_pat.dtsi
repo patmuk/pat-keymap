@@ -94,7 +94,6 @@
            ╰─────╯ ╰─────╯         
 */
 / {
-   hands_down_neu {
 /*     34 Keys - Hands Down neu - variante Pat
  ╭────────────────╮ ╭───────────────╮
  │ w  f  m  p  v  │ │ /  .  j  '  z │
@@ -189,7 +188,8 @@
       };
       keymap {
          compatible = "zmk,keymap";
-         bindings = <
+         hands_down_neu {
+            bindings = <
 //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
    &kp W &kp F &kp M &kp P &kp V       &slh_pipe    &dot_colon &kp J &kp SQT &kp Z
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
@@ -197,10 +197,11 @@
 //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
    &kp X &kp C &kp L &kp D &kp G       &minus_under &kp U      &kp O &kp Y   &kp K
 //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
-                 &kp LSHFT &rep_capsw  &spc_bspc    &l0_l1
+                 &kp LSHFT &mt &mo SYM &rep_capsw   &spc_bspc    &l0_l1
 //              ╰─────────┴──────────╯╰────────────┴──────╯
-         >;
+            >;
+         };
       };
    };
-};
+
 

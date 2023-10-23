@@ -1,9 +1,10 @@
 #define CHORDCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <80>; \
-    bindings = <LTO BINDINGS>; \
+    bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
+//    layers = <LCK>; \// chording only with a specific key pressed
+    layers = <6>; \// chording only with a specific key pressed
   };
 
 #include "./macros.dtsi"
