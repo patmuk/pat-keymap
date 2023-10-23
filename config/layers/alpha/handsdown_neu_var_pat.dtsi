@@ -175,7 +175,8 @@
       };
       macros { \
          MACRO(m_QU, &kp Q &kp U)
-         MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
+         // MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
+         MACRO(m_AE, &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
       };
       combos {
          compatible = "zmk,combos";
