@@ -21,7 +21,7 @@
 #define FUN 4 // Function Keys
 #define DAN 5 // DANGER!
 #define LCK 6 // Lock KB
-#define SEN 7 // Sentence layer for chording
+// #define CHORD 8 // layer for chording
 
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
@@ -34,7 +34,7 @@
 //NUM 2
 //FUN
 
-#include "chording/combos.dtsi"
+// #include "chording/combos.dtsi"
 
 &led_strip {
     chain-length = <23>;
@@ -56,25 +56,41 @@
 
     keymap {
         compatible = "zmk,keymap";
-                symbol_layer {
+
+
+// hands_down_neu {
+//          bindings = <
+// //╭─────┬─────┬─────┬─────┬──────────╮╭────────────┬──────────┬─────┬───────┬─────╮
+//    &kp W &kp F &kp M &kp P &kp V       &kp Q    &kp Q  &kp J &kp SQT &kp Z
+// //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
+//    &kp R &kp S &kp N &kp T &kp B       &kp Q  &kp A      &kp E &kp I   &kp H
+// //├─────┼─────┼─────┼─────┼──────────┤├────────────┼──────────┼─────┼───────┼─────┤
+//    &kp X &kp C &kp L &kp D &kp G       &kp Q &kp U      &kp O &kp Y   &kp K
+// //╰─────┴─────┴─╮                    ││                   ╭───┴─────┴───────┴─────╯
+//                  &kp LSHFT &key_repeat  &kp Q    &kp Q
+// //              ╰─────────┴──────────╯╰────────────┴──────╯
+//          >;
+//       };
+
+//                symbol_layer {
 // -----------------------------------------------------------------
 // |     |  \  |  %  |  $  |     | |     |  ^  |  {  |  }  |     |
 // |  *  |  (  |  )  |  :  |     | |     |  "  |  [  |  ]  |  ;  |
 // |     |  `  |  @  |  &  |     | |     |  #  |  <  |  >  |-FUN-|
 //                   |_SYM_| SPC | | RET | ESC |
-                        bindings = <
+//                        bindings = <
 //┌──────────┬──────────┬───────────┬──────────┬─────────┐ ┌───────┬───────────┬──────────┬──────────┬─────────┐
-    &none      &kp BSLH   &kp PRCNT   &kp DLLR   &none      &none    &kp CARET   &kp LBRC   &kp RBRC   &none
+//    &none      &kp BSLH   &kp PRCNT   &kp DLLR   &none      &none    &kp CARET   &kp LBRC   &kp RBRC   &none
 //├──────────┼──────────┼───────────┼──────────┼─────────┤ ├───────┼───────────┼──────────┼──────────┼─────────┤
-    &kp STAR   &kp LPAR   &kp RPAR   &kp COLON   &none      &none    &kp DQT     &kp LBKT   &kp RBKT   &kp SEMI
+//    &kp STAR   &kp LPAR   &kp RPAR   &kp COLON   &none      &none    &kp DQT     &kp LBKT   &kp RBKT   &kp SEMI
 //├──────────┼──────────┼───────────┼──────────┼─────────┤ ├───────┼───────────┼──────────┼──────────┼─────────┤
-    &mo FUN    &kp GRAVE  &kp AT     &kp AMPS    &none      &none    &kp HASH    &kp LT     &kp GT     &kp DEL
+//    &mo FUN    &kp GRAVE  &kp AT     &kp AMPS    &none      &none    &kp HASH    &kp LT     &kp GT     &kp DEL
 //└──────────┴──────────┴───────────┴──────────┴─────────┘ └───────┴───────────┴──────────┴──────────┴─────────┘
-                                      &trans    &kp SPACE   &kp RET  &kp ESC
+//                                      &trans    &kp SPACE   &kp RET  &kp ESC
 //                                  └──────────┴─────────┘ └───────┴───────────┘                        
-                        >;
-                };
-                number_layer {
+                //         >;
+                // };
+                number_layer { // 2
 // -----------------------------------------------------------------
 // |     |  4  |  5  |  6  |     | |     |  |  |  -  |  /  |     |
 // |  .  |  1  |  2  |  3  |     | |     |  '  |  _  |  =  |-NAV-|
@@ -92,7 +108,7 @@
 //                             └────────┴──────────┘ └────────┴───────┘                        
                         >;
                 };
-                nav_layer {
+                nav_layer { // 3
 // -----------------------------------------------------------------
 // |     |     |     |     |     | |     |     |     |     |     |
 // |     |     |     |     |     | | LFT | DWN | U P |RIGHT|_NAV_|
@@ -110,7 +126,7 @@
 //                        └───────┴───────┘ └──────────┴───────────┘                        
                         >;
                 };
-                fun_layer {
+                fun_layer { // 4
 // -----------------------------------------------------------------
 // |     | F 6 | F 5 | F 4 | F10 | | <!> | <!> | <!> | <!> |     |
 // |CAPSL| F 3 | F 2 | F 1 | F11 | | BT2 |VMUTE|VOLDN|VOLUP| <!> |
@@ -128,7 +144,7 @@
 //                             └────────┴─────────┘ └──────────────┴──────────────┘                        
                         >;
                 };
-                danger_layer {
+                danger_layer { // 5
 // -----------------------------------------------------------------
 // |     |     |     |     |     | |BTCLR| BLE | USB |RESET|     |
 // |     |     |     |     |     | |     |     |     |     |BOOTL|
@@ -148,7 +164,7 @@
 //                        └───────┴───────┘ └────────────┴──────────────┘                        
                     >;
                 };
-                lock_layer {
+                lock_layer { // 6
                     // only way out is the lock combo
                     // other combos are disabled too
                     bindings = <
