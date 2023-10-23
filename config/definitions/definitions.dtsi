@@ -71,13 +71,13 @@ behaviors {
   };
 
 #define CHORD(NAME, BINDINGS, KEYPOS) \
-  // macros { \
+  macros { \
     MACRO(m_##NAME, BINDINGS) \
-  // }; \
-  // combos { \
-    // compatible = "zmk,combos"; \
+  }; \
+  combos { \
+    compatible = "zmk,combos"; \
     COMBO(##NAME, &macro_m_##NAME, KEYPOS) \
-  // };
+  };
 
 
 //#define CHORD_LAYER(NAME, BINDINGS, KEYPOS)
