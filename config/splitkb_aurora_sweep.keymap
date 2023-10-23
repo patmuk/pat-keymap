@@ -21,7 +21,7 @@
 #define FUN 4 // Function Keys
 #define DAN 5 // DANGER!
 #define LCK 6 // Lock KB
-// #define CHORD 8 // layer for chording
+#define CHORD 8 // layer for chording
 
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
@@ -34,7 +34,6 @@
 //NUM 2
 //FUN
 
-#include "chording/combos.dtsi"
 
 &led_strip {
     chain-length = <23>;
@@ -179,5 +178,7 @@
 //                        └───────┴───────┘ └───────┴───────┘                        
                     >;
                 };
+                #include "chording/combos.dtsi"
+
         };
 };
