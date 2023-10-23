@@ -73,7 +73,9 @@ behaviors {
 
 #define CHORD(NAME, BINDINGS, KEYPOS) \
 / { \
-    MACRO(m_##NAME, BINDINGS) \
+    macros { \
+      MACRO(m_##NAME, BINDINGS) \
+    }; \
   }; \
 / { \
     combos { \
