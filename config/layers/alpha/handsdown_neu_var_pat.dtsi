@@ -173,7 +173,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
       };
-      CHORD(QU, &kp Q &kp U, LTP LTR)
       macros { \
          // MACRO(m_QU, &kp Q &kp U)
          MACRO(m_AE, &kp LA(U) &kp A)
@@ -224,5 +223,5 @@
          };
       };
    };
-
+   CHORD(QU, &kp Q &kp U, LTP LTR)
 
