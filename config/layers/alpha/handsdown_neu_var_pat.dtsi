@@ -165,7 +165,7 @@
    // CHORD(ae, &kp LA(U) &kp A, P_A P_E)
    MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
    MACRO(m_ae, &kp LA(U) &kp A)
-   MOD_MORPH(ae, &macro_m_ae, &macro_m_ae, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(ae, &macro_m_ae, &macro_m_shift_ae, MOD_LSFT|MOD_RSFT)
    COMBO(ae, &mm_ae, P_A P_E)
    // MOD_MORPH(AE, &combo_ae, &combo_shift_ae, MOD_LSFT|MOD_RSFT)
 
