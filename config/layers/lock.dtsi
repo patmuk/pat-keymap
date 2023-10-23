@@ -12,6 +12,6 @@
         compatible = "zmk,combos";
 
         // un-/lock keyboard
-        LAYER_COMBO(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
+        COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
     };
 };

@@ -52,7 +52,7 @@ behaviors {
     timeout-ms = <LONG_TIMEOUT_MS>; \
   };
 
-#define LAYER_COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
@@ -69,4 +69,18 @@ behaviors {
       tap-ms = <10>; \
       bindings = <BINDINGS>; \
   };
+
+#define CHORD(NAME, BINDINGS, KEYPOS) \
+  macros { \
+    MACRO(m_##NAME, BINDINGS)
+  };
+  combos {
+    compatible = "zmk,combos";
+    COMBO(##NAME, &macro_m_##NAME, KEYPOS)
+  };
+
+
+//#define CHORD_LAYER(NAME, BINDINGS, KEYPOS)
 };
+
+  

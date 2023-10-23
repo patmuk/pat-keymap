@@ -173,8 +173,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
       };
+      CHORD(QU, &kp Q &kp U, LTP LTR)
       macros { \
-         MACRO(m_QU, &kp Q &kp U)
+         // MACRO(m_QU, &kp Q &kp U)
          MACRO(m_AE, &kp LA(U) &kp A)
          // MACRO(m_AE, &kp KP_NUMLOCK &kt LALT &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N1 &kp KP_N0 &kp KP_N3 &kp KP_N0 &kp KP_N08 &kt LALT)
          macro_m_pound: macro_m_pound {
@@ -199,7 +200,8 @@
          // COMBO(backspace, &kp BSPC, BRM BRR)
          // COMBO(cmd, &sk LCMD, LTI LTO)
          // COMBO(opt, &sk LALT, RTO RTI)
-         COMBO(qu, &macro_m_QU, LTP LTR)
+
+         // COMBO(qu, &macro_m_QU, LTP LTR)
          COMBO(ae, &macro_m_AE, RMII RMM)
          COMBO(pound, &macro_m_pound, RMM RMR)
          //COMBO(z, &kp Z, MLP MLM)
