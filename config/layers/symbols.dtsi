@@ -46,7 +46,7 @@
 //╭────────┬────────┬─────────┬────────┬───────╮╭─────────┬─────────┬────────┬─────────┬────────╮
    &kp RBKT &kp RBRC &kp RPAR  &kp GT   &none    &kp BSLH  &kp EXCL  &none    &kp GRAVE &none
 //├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
-   &mm_"()"   &mm_cornered_braces   &mm_paranthesis    &mm_LG_T    &kp INS  &kp QMARK &none     &kp AMPS &kp AT    &kp HASH
+   &"mm_()"   &mm_cornered_braces   &mm_paranthesis    &mm_LG_T    &kp INS  &kp QMARK &none     &kp AMPS &kp AT    &kp HASH
 //├────────┼────────┼─────────┼────────┼───────┤├─────────┼─────────┼────────┼─────────┼────────┤
    &none     &none   &kp TILDE &kp DLLR &kp DEL  &trans    &kp EQUAL &none    &none     &none
 //╰────────┴────────┴─╮                        ││                   ╭────────┴─────────┴────────╯
