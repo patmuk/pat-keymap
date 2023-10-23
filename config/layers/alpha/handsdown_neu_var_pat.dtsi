@@ -46,7 +46,7 @@
 #define P_G LBIO
 // THUMB
 #define P_SHIFT LTI
-#define P_CapsW LTO
+#define P_REP LTO
 
 // RIGHT SIDE
 // TOP 
@@ -176,5 +176,7 @@
    MACRO(m_ue, &kp LA(U) &kp U)
    MOD_MORPH(ue, &macro_m_ue, &macro_m_shift_ue, MOD_LSFT|MOD_RSFT)
    COMBO(ue, &mm_ue, P_U P_E)
-
+   //ß
+   CHORD(ss, &kp LA(S), P_S P_REP)
+   
 
