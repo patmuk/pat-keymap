@@ -24,7 +24,7 @@
 // #define CHORD 8 // layer for chording
 
 //ALP 0
-#include "layers/alpha/handsdown_neu_var_pat.dtsi"
+ #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 //CMD combos
 #include "layers/command.dtsi"
 //LCK combo
