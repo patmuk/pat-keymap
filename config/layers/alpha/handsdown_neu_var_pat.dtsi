@@ -155,7 +155,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "FWSLASH_PIPE";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp PIPE>;
+            // bindings = <&kp FSLH>, <&kp PIPE>;
+            bindings = <&kp A>, <&kp B>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
          };
          dot_colon: dot_colon {
