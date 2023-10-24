@@ -156,6 +156,7 @@
    MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(rep_capsw, &key_repeat, &caps_word, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(spc_bspc, &kp SPACE, &kp BACKSPACE, MOD_LSFT|MOD_RSFT)
+   CHORD(del_word, &kp LA(BACKSPACE), P_REP P_BACKSPACE)
    MOD_MORPH(l0_l1, &to 0, &to 1, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(minus_under, &kp MINUS, &kp UNDERSCORE, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(slh_pipe, &kp SLASH, &kp PIPE, MOD_LSFT|MOD_RSFT)
