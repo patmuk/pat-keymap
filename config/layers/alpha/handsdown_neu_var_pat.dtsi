@@ -68,8 +68,8 @@
 #define P_Y RBR
 #define P_K RBP
 // THUMB
-#define P_BACKSPACE RTI
-#define P_LAYER1 RTO
+#define P_BACKSPACE RTO
+#define P_LAYER1 RTI
 
 &caps_word {
    continue-list = <UNDERSCORE MINUS BACKSPACE>;
