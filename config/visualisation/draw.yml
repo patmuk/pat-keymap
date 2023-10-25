@@ -1,12 +1,12 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   hands_down_neu:
-  - [ W, F, M, P, V, {t: /, s: '|'}, {t: ., s: ':'}, J, '''', Z]
+  - [ W, F, M, P, V, {t: /, s: '|'}, {t: ., s: ':'}, J, {t: '''', s: '"'}, Z]
   - [ R, S, N, T, B, {t: ',', s: ;}, A, E, I, H]
   - [ X, C, L, D, G, {t: '-', s: _}, U, O, Y, K]
   - - LSHFT
-    - {t: '&key_repeat', s: '&caps_word'}
-    - {t: SPACE, s: BACKSPACE}
+    - {t: $$tabler:repeat$$, s: 'CapsWord'}
+    - {t: ⌴, s: $$tabler:backspace$$}
     - {t: hands_down_neu, s: number}
   number:
   - [BSPC, '4', '5', '6', '', '', '|', '-', /, '']
@@ -97,21 +97,23 @@ layers:
     - ''
   - ['', '', '', '']
 combos:
-- p: [0, 1]
-  k: '&macro_m_QU'
-  l: [hands_down_neu, number]
-- p: [31, 32]
-  k: '&macro_m_del_word'
-  l: [hands_down_neu, number]
-- p: [16, 17]
-  k: {t: '&macro_m_ae', s: '&macro_m_shift_ae'}
-  l: [hands_down_neu, number]
-- p: [27, 17]
-  k: {t: '&macro_m_oe', s: '&macro_m_shift_oe'}
-  l: [hands_down_neu, number]
-- p: [26, 17]
-  k: {t: '&macro_m_ue', s: '&macro_m_shift_ue'}
-  l: [hands_down_neu, number]
-- p: [11, 31]
-  k: '&macro_m_ss'
-  l: [hands_down_neu, number]
+  - {p: [31, 32], k: '⌫ Word', l: [hands_down_neu, number]}
+# Special Alphas
+  - {p: [0, 1], k: 'Qu', l: [hands_down_neu]}
+  - {p: [16, 17], k: {t: 'ä', s: 'Ä'}, l: [hands_down_neu]}
+  - {p: [27, 17], k: {t: 'ö', s: 'Ü'}, l: [hands_down_neu]}
+  - {p: [26, 17], k: {t: 'ü', s: 'Ü'}, l: [hands_down_neu]}
+  - {p: [11, 31], k: 'ß', l: [hands_down_neu]}
+  # Layer switching
+#    L0: normal -> thumb right outside
+#    L1: Shift hold -> thumb left outside & thumb right outside
+#    Commands: REP hold with combos -> thumb left inside
+#    L2: SYM one-shot -> both left thumbs
+#    L3: Num & Navi hold -> both right thumbs
+#    L4: Func one-shot -> both right thumbs & thumb left inner
+#    L5: Settings -> both right thumbs & thumb left outer
+#    
+#    L?: ? -> both inner thumbs OR del word!
+
+# home row mods are sticky keys with combo of one key and REP key
+  - {p: [31, 32], k: '⌫ Word', l: [hands_down_neu, number]}
