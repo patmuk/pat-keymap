@@ -26,9 +26,13 @@ config/info.json:       layout for visual editors
 cradio_visualEditor:    variant of cardio, adapted to work with the visual editor
 
 ## editors
-CLI https://github.com/caksoylar/keymap-drawer
-webapp https://caksoylar-keymap-drawer-streamlitapp-2a0rau.streamlit.app
-
+Best, plantUML like:
+   webapp https://caksoylar-keymap-drawer-streamlitapp-2a0rau.streamlit.app
+   CLI https://github.com/caksoylar/keymap-drawer
+   install with:
+      brew install pipx
+      pipx install keymap-drawer
+      pipx ensurepath
 
 
 (all work online only)

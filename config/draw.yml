@@ -1,0 +1,117 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  hands_down_neu:
+  - [ W, F, M, P, V, {t: /, s: '|'}, {t: ., s: ':'}, J, '''', Z]
+  - [ R, S, N, T, B, {t: ',', s: ;}, A, E, I, H]
+  - [ X, C, L, D, G, {t: '-', s: _}, U, O, Y, K]
+  - - LSHFT
+    - {t: '&key_repeat', s: '&caps_word'}
+    - {t: SPACE, s: BACKSPACE}
+    - {t: hands_down_neu, s: number}
+  number:
+  - [BSPC, '4', '5', '6', '', '', '|', '-', /, '']
+  - [., '1', '2', '3', '', '', '''', _, '=', fun]
+  - ['~', '7', '8', '9', '', '', +, '?', '!', '']
+  - - '0'
+    - SPACE
+    - RET
+    - {t: ▽, type: trans}
+  nav:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - {t: ▽, type: trans}
+  - ['', '', '', '', '', HOME, PG DN, PG UP, END, '']
+  - - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  fun:
+  - ['', F6, F5, F4, F10, '', '', '', '', '']
+  - - CAPS
+    - F3
+    - F2
+    - F1
+    - F11
+    - {t: BT, h: '2'}
+    - MUTE
+    - VOL DN
+    - VOL UP
+    - {type: held}
+  - - lock
+    - F9
+    - F8
+    - F7
+    - F12
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - BRI DN
+    - BRI UP
+    - {t: ▽, type: trans}
+  - - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
+  danger:
+  - ['', '', '', '', '', BT CLR, OUT BLE, OUT USB, '&sys_reset', '']
+  - ['', '', '', '', '', '', '', '', '', '&bootloader']
+  - - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+  - ['', '', '', '']
+  lock:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held}
+  - - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', '', '', '']
+combos:
+- p: [0, 1]
+  k: '&macro_m_QU'
+  l: [hands_down_neu, number]
+- p: [31, 32]
+  k: '&macro_m_del_word'
+  l: [hands_down_neu, number]
+- p: [16, 17]
+  k: {t: '&macro_m_ae', s: '&macro_m_shift_ae'}
+  l: [hands_down_neu, number]
+- p: [27, 17]
+  k: {t: '&macro_m_oe', s: '&macro_m_shift_oe'}
+  l: [hands_down_neu, number]
+- p: [26, 17]
+  k: {t: '&macro_m_ue', s: '&macro_m_shift_ue'}
+  l: [hands_down_neu, number]
+- p: [11, 31]
+  k: '&macro_m_ss'
+  l: [hands_down_neu, number]
