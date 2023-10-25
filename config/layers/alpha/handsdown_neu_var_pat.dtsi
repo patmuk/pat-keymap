@@ -138,13 +138,13 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭─────┬─────┬─────┬─────┬──────────────╮╭───────────────┬──────────────┬──────┬────────┬──────╮
-   &kp W &kp F &kp M &kp P &kp V           &mm_slh_pipe     &mm_dot_colon  &kp J  &kp SQT  &kp Z
-//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼────────┼──────┤
-   &kp R &kp S &kp N &kp T &kp B           &mm_comma_semi   &kp A          &kp E  &kp I    &kp H
-//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼────────┼──────┤
-   &kp X &kp C &kp L &kp D &kp G           &mm_minus_under  &kp U          &kp O  &kp Y    &kp K
-//╰─────┴─────┴─╮                        ││                          ╭───┴──────┴────────┴──────╯
+//╭─────┬─────┬─────┬─────┬──────────────╮╭───────────────┬──────────────┬──────┬───────────┬──────╮
+   &kp W &kp F &kp M &kp P &kp V           &mm_slh_pipe     &mm_dot_colon  &kp J  &mm_quotes  &kp Z
+//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &kp R &kp S &kp N &kp T &kp B           &mm_comma_semi   &kp A          &kp E  &kp I       &kp H
+//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &kp X &kp C &kp L &kp D &kp G           &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
+//╰─────┴─────┴─╮                        ││                          ╭───┴──────┴───────────┴──────╯
                  &kp LSHFT  &mm_rep_capsw  &mm_spc_bspc     &mm_l0_l1
 //              ╰─────────┴──────────────╯╰───────────────┴──────────╯
             >;
@@ -161,6 +161,7 @@
    MOD_MORPH(minus_under, &kp MINUS, &kp UNDERSCORE, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(slh_pipe, &kp SLASH, &kp PIPE, MOD_LSFT|MOD_RSFT)
    MOD_MORPH(dot_colon, &kp DOT, &kp COLON, MOD_LSFT|MOD_RSFT)
+   MOD_MORPH(quotes, &kp SQT, &kp DQT, MOD_LSFT|MOD_RSFT)
 
    //Umlaute
    MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
