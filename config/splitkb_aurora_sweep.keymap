@@ -25,16 +25,16 @@
 
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
-//CMD combos
+//CMD & combos 1
 #include "layers/command.dtsi"
-//LCK combo
-#include "layers/lock.dtsi"
-//SYM 1
+//SYM 2
 #include "layers/symbols.dtsi"
-//NUM 2
+//NUM 3
+//LCK combo
+//#include "layers/lock.dtsi"
 //FUN
 
-// #include "chording/combos.dtsi"
+// #include "chording/chords.dtsi"
 
 &led_strip {
     chain-length = <23>;

@@ -4,12 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-&caps_word {
-   continue-list = <UNDERSCORE MINUS BACKSPACE>;
-};
-&key_repeat {
-    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
-};
 /*           34 Keys
  ╭──────────────╮ ╭──────────────╮
  │ 0  1  2  3  4│ │ 5  6  7  8  9│
@@ -25,34 +19,53 @@
  ╰────────────────────────────────╮  ⇧   REP │ │ ␣   -L2- ╭────────────────╯
                                   ╰──────────╯ ╰──────────╯         
 */
-COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
-COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), LTO LTP)
-COMBO_LONG(find_prv, &kp LS(KP_ENTER), LTO LMP)
-COMBO_LONG_MAC(select_all_mac, &kp LG(A), LTO LBP)
-COMBO_LONG_WIN(select_all_win, &kp LC(A), LTO LBP)
-COMBO_LONG_MAC(find_mac, &kp LG(F), LTO LTR)
-COMBO_LONG_WIN(find_win, &kp LC(F), LTO LTR)
-COMBO_LONG_MAC(cut_mac, &kp LG(X), LTO LBR)
-COMBO_LONG_WIN(cut_win, &kp LC(X), LTO LBR)
-COMBO_LONG_MAC(copy_mac, &kp LG(C), LTO LBM)
-COMBO_LONG_WIN(copy_win, &kp LC(C), LTO LBM)
-COMBO_LONG_MAC(paste_mac, &kp LG(V), LTO LBII)
-COMBO_LONG_WIN(paste_win, &kp LC(V), LTO LBII)
-COMBO_LONG_MAC(switch_window_mac, &kp LG(GRAVE), LTO LBIO)
-COMBO_LONG_MAC(redo_mac, &kp LG(LS(Z)), LTO LTM)
-COMBO_LONG_WIN(redo_win, &kp LC(LS(Z)), LTO LTM)
-COMBO_LONG_MAC(undo_mac, &kp LG(Z), LTO LTII)
-COMBO_LONG_WIN(undo_win, &kp LC(Z), LTO LTII)
-COMBO_LONG_MAC(switch_app_mac, &kp LG(TAB), LTO LTIO)
-COMBO_LONG_WIN(switch_app_win, &kp LA(TAB), LTO LTIO)
-COMBO_LONG(Tab, &kp TAB, LTO LMIO)
-COMBO_LONG(ESC, &kp ESC, LTO RMIO)
-   
-COMBO_LONG(LCTR, &sk LCTRL, LTO LMR)
-COMBO_LONG(LALT, &sk LALT, LTO LMM)
-COMBO_LONG(LCMD, &sk LCMD, LTO LMII)
-COMBO_LONG(RCMD, &sk RCMD, LTO RMII)
-COMBO_LONG(RALT, &sk RALT, LTO RMM)
-COMBO_LONG(RCTR, &sk RCTRL, LTO RMR)
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        hands_down_neu {
+            bindings = <
+//╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
+   &kp LG(LS(A))     &kp LG(F)  LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
+//├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
+   &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT   &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
+//├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
+   &kp LG(A)         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
+//╰────────────────┴──────────┴──────────╮                         ││                     ╭─────────┴───────────┴──────╯
+                                           &trans     &trans          &trans     &trans
+//                                       ╰──────────┴──────────────╯╰──────────┴──────────╯
+            >;
+        };
+    };
+};
 
-COMBO_LONG(L2, &to 2, LTO RTI)
+// COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
+// COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), LTO LTP)
+// COMBO_LONG(find_prv, &kp LS(KP_ENTER), LTO LMP)
+// COMBO_LONG_MAC(select_all_mac, &kp LG(A), LTO LBP)
+// COMBO_LONG_WIN(select_all_win, &kp LC(A), LTO LBP)
+// COMBO_LONG_MAC(find_mac, &kp LG(F), LTO LTR)
+// COMBO_LONG_WIN(find_win, &kp LC(F), LTO LTR)
+// COMBO_LONG_MAC(cut_mac, &kp LG(X), LTO LBR)
+// COMBO_LONG_WIN(cut_win, &kp LC(X), LTO LBR)
+// COMBO_LONG_MAC(copy_mac, &kp LG(C), LTO LBM)
+// COMBO_LONG_WIN(copy_win, &kp LC(C), LTO LBM)
+// COMBO_LONG_MAC(paste_mac, &kp LG(V), LTO LBII)
+// COMBO_LONG_WIN(paste_win, &kp LC(V), LTO LBII)
+// COMBO_LONG_MAC(switch_window_mac, &kp LG(GRAVE), LTO LBIO)
+// COMBO_LONG_MAC(redo_mac, &kp LG(LS(Z)), LTO LTM)
+// COMBO_LONG_WIN(redo_win, &kp LC(LS(Z)), LTO LTM)
+// COMBO_LONG_MAC(undo_mac, &kp LG(Z), LTO LTII)
+// COMBO_LONG_WIN(undo_win, &kp LC(Z), LTO LTII)
+// COMBO_LONG_MAC(switch_app_mac, &kp LG(TAB), LTO LTIO)
+// COMBO_LONG_WIN(switch_app_win, &kp LA(TAB), LTO LTIO)
+// COMBO_LONG(Tab, &kp TAB, LTO LMIO)
+// COMBO_LONG(ESC, &kp ESC, LTO RMIO)
+//    
+// COMBO_LONG(LCTR, &sk LCTRL, LTO LMR)
+// COMBO_LONG(LALT, &sk LALT, LTO LMM)
+// COMBO_LONG(LCMD, &sk LCMD, LTO LMII)
+// COMBO_LONG(RCMD, &sk RCMD, LTO RMII)
+// COMBO_LONG(RALT, &sk RALT, LTO RMM)
+// COMBO_LONG(RCTR, &sk RCTRL, LTO RMR)
+// 
+// COMBO_LONG(L2, &to 2, LTO RTI)
