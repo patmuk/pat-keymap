@@ -97,7 +97,7 @@
 /*     34 Keys - Hands Down neu - variante Pat
  ╭────────────────╮ ╭───────────────╮
  │ w  f  m  p  v  │ │ /  .  j  '  z │
- │ r  s  n  t  b  │ │ ,  e  a  i  h │
+ │ r  s  n  t  b  │ │ ,  a  e  i  h │
  │ x  c  l  d  g  │ │ -  u  o  y  k │
  ╰────────╮ ⇧ REP │ │ ␣ -L0- ╭──────╯
           ╰───────╯ ╰────────╯         
@@ -105,9 +105,9 @@
 /* = ⇧ =   34 Keys - Hands Down neu - variante Pat
     ╭──────────────────╮ ╭───────────────╮
     │ W  F  M  P  V    │ │ │  :  J  "  Z │
-    │ R  S  N  T  B    │ │ ;  E  A  I  H │
+    │ R  S  N  T  B    │ │ ;  A  E  I  H │
     │ X  C  L  D  G    │ │ _  U  O  Y  K │
-    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
+    ╰────────╮ ⇧ CapsW │ │ ⌫ -L1- ╭──────╯
              ╰─────────╯ ╰────────╯         */
 /*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
     ╭──────────────╮ ╭─────────────────╮
