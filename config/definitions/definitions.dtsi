@@ -135,4 +135,4 @@
 };
 
 #define TAP_DANCE_SHIFT(KEY) \
-  TAP_DANCE(s_##KEY, {<&kp KEY>, <&kp LS(KEY)>}) \
+  TAP_DANCE(s_##KEY, [<&kp KEY>, <&kp LS(KEY)>]) \
