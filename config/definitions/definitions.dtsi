@@ -123,15 +123,15 @@
 
 #define TAP_DANCE(NAME, ...) \
 / {
-  behaviors {
-    td_##NAME: tap_dance_##NAME {: {
-      compatible = "zmk,behavior-tap-dance";
-      label = str(tap_dance_##NAME);;
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = __VA_ARGS__;
-     };
-  };
+  behaviors {\
+    td_##NAME: tap_dance_##NAME {: {\
+      compatible = "zmk,behavior-tap-dance";\
+      label = str(tap_dance_##NAME);\
+      #binding-cells = <0>;\
+      tapping-term-ms = <200>;\
+      bindings = __VA_ARGS__;\
+     };\
+  };\
 };
 
 #define TAP_DANCE_SHIFT(KEY) \
