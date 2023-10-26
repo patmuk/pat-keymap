@@ -26,7 +26,7 @@
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 //CMD & combos 1
-#include "layers/command.dtsi"
+//#include "layers/command.dtsi"
 //SYM 2
 #include "layers/symbols.dtsi"
 //NUM 3
