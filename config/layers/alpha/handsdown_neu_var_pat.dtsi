@@ -145,7 +145,7 @@
 //├─────┼─────┼─────┼─────┼──────────────────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
    &kp X &kp C &kp L &kp D &kp G                   &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
 //╰─────┴─────┴─╮                                ││                          ╭───┴──────┴───────────┴──────╯
-                 &kp LSHFT  &rep_capsw_l CMD 0     &mm_spc_bspc     &mm_l0_l1
+                 &kp LSHFT  &rep_capsw_l CMD       &mm_spc_bspc     &mm_l0_l1
 //              ╰─────────┴──────────────────────╯╰───────────────┴──────────╯
             >;
          };
@@ -162,7 +162,7 @@
         rep_capsw_l: rep_capsw_l {
             compatible = "zmk,behavior-hold-tap";
             label = "rep_capsw_l";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
             quick-tap-ms = <50>;
             flavor = "tap-preferred";
