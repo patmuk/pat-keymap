@@ -198,22 +198,6 @@
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
    
-#define TAP_DANCE(NAME, ...) \
-/ {\
-  behaviors {\
-    td_##NAME: tap_dance_##NAME {\
-      compatible = "zmk,behavior-tap-dance";\
-      label = str(tap_dance_##NAME);\
-      #binding-cells = <0>;\
-      tapping-term-ms = <200>;\
-      bindings = __VA_ARGS__;\
-     };\
-  };\
-};
-
-#define TAP_DANCE_SHIFT(KEY) \
-  TAP_DANCE(s_##KEY, <&kp KEY>, <&kp LS(KEY)>)
-
    //tap dance auto shift
    TAP_DANCE_SHIFT(B)
 //   TAP_DANCE(s_B, <&kp B>, <&kp LS(B)>)
