@@ -198,11 +198,6 @@
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
    
-   //tap dance auto shift
-   TAP_DANCE_SHIFT(B)
-//  TAP_DANCE(D_B, <&kp B>, <&kp LS(B)>)
-
-
 #define TAP_DANCE(NAME, ...) \
 / {\
   behaviors {\
@@ -218,3 +213,8 @@
 
 #define TAP_DANCE_SHIFT(KEY) \
   TAP_DANCE(s_##KEY, <&kp KEY>, <&kp LS(KEY)>)
+   //tap dance auto shift
+   // TAP_DANCE_SHIFT(B)
+  TAP_DANCE(D_B, <&kp B>, <&kp LS(B)>)
+
+
