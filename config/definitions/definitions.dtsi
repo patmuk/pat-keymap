@@ -122,7 +122,7 @@
   };
 
 #define TAP_DANCE(NAME, ...) \
-/ {
+/ {\
   behaviors {\
     td_##NAME: tap_dance_##NAME {: {\
       compatible = "zmk,behavior-tap-dance";\
@@ -135,4 +135,4 @@
 };
 
 #define TAP_DANCE_SHIFT(KEY) \
-  TAP_DANCE(s_##KEY, <&kp KEY>, <&kp LS(KEY)>) \
+  TAP_DANCE(s_##KEY, <&kp KEY>, <&kp LS(KEY)>)
