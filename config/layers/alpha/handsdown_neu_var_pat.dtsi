@@ -200,4 +200,4 @@
    
    //tap dance auto shift
 //   TAP_DANCE_SHIFT(B)
-  TAP_DANCE(B, <&kp B>, <&kp LS(B)>)
+//  TAP_DANCE(B, <&kp B>, <&kp LS(B)>)
