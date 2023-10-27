@@ -27,8 +27,8 @@
 //╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
 //    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
 //    &kp LG(LS(A))     &none   &none   &none   &none    &none      &none      &none     &none       &none
-   &none   &&kp LG(F) &none   &none   &none        &none      &none      &none     &none       &none
-    // &none   &none     LG(LS(Z)) &none   &none        &none      &none      &none     &none       &none
+//    &none   &&kp LG(F) &none   &none   &none        &none      &none      &none     &none       &none
+    &none   &none     LG(LS(Z)) &none   &none        &none      &none      &none     &none       &none
 //    &none   &none   &none   &none     &kp LG(TAB)     &none      &none      &none     &none       &none
 //├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
   &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT   &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
