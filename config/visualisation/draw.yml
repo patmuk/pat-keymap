@@ -38,11 +38,11 @@ layers:
     - {t: ▽, type: trans}
   fun:
   - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
-  - ['', F6, F5, F4, F10, '', '', '', '', '']
+  - ['', F4, F5, F6, F10, '', '', '', '', '']
   - - CAPS
-    - F3
-    - F2
     - F1
+    - F2
+    - F3
     - F11
     - {t: BT, h: '2'}
     - MUTE
@@ -50,9 +50,9 @@ layers:
     - VOL UP
     - {type: held}
   - - lock
-    - F9
-    - F8
     - F7
+    - F8
+    - F9
     - F12
     - {t: BT, h: '0'}
     - {t: BT, h: '1'}
