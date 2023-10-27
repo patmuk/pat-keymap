@@ -26,16 +26,16 @@ config/info.json:       layout for visual editors
 config/visualisation/:  files to visualize the layout
 
 ## editors
-Best, plantUML like:
-   webapp https://caksoylar.github.io/keymap-drawer
-   CLI https://github.com/caksoylar/keymap-drawer
-   install with:
-      brew install pipx
-      pipx install keymap-drawer
-      pipx ensurepath
+Best, plantUML like:  
+- webapp https://caksoylar.github.io/keymap-drawer
+- CLI https://github.com/caksoylar/keymap-drawer
+### install with:
+1. brew install pipx
+2. pipx install keymap-drawer
+3. pipx ensurepath
 
 
-(all work online only)
+### online only
 
 https://nickcoutsos.github.io/keymap-editor/ - an editor, which works with .keymap files. However, it doesn't show all layers at once.
 

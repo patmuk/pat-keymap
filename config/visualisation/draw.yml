@@ -1,14 +1,16 @@
-layout: {qmk_keyboard: ferris/sweep}
+layout: {qmk_info_json: info.json}
 layers:
   hands_down_neu:
-  - [ {t: W, h: "find all"}, {t: F, h: "find"}, {t: M, h: "redo"}, {t: P, h: "undo"}, {t: V, h: "switch app"}, {t: /, s: '|'}, {t: ., s: ':'}, J, {t: '''', s: '"'}, Z]
-  - [ {t: R, h: "find prev"}, {t: S, h: $$mdi:apple-keyboard-control$$}, {t: N, h: $$mdi:apple-keyboard-option$$}, {t: T, h: $$mdi:apple-keyboard-command$$}, {t: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: A, h: $$mdi:apple-keyboard-command$$}, {t: E, h: $$mdi:apple-keyboard-option$$}, {t: S, h: $$mdi:apple-keyboard-control$$}, H]
-  - [ {t: X, h: "select all"}, {t: C, h: $$mdi:content-cut$$}, {t: L, h: $$mdi:content-copy$$}, {t: D, h: $$mdi:content-paste$$}, {t: V, h: "switch win"}, {t: '-', s: _}, U, O, Y, K]
+  - [ {s: "2x tap", t: "tap", h: "with <REP> held"} ]
+  - [ {s: W, t: "w", h: "find all"}, {t: "f", s: F, h: "find"}, {t: "m", s: M, h: "redo"}, {t: p", s: P, h: "undo"}, {t: "v", s: V, h: "switch app"}, {t: /, s: '|'}, {t: ., s: ':'}, {t: "j", s: J}, {t: '''', s: '"'}, {t: "z", s: Z}]
+  - [ {t: "r", s: R, h: "find prev"}, {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: A, h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$}, {t: "i", s: I, h: $$mdi:apple-keyboard-control$$}, {t: "h", s: H}]
+  - [ {t: "x", s: X, h: "select all"}, {t: "c", s: C, h: $$mdi:content-cut$$}, {t: "l", s: L, h: $$mdi:content-copy$$}, {t: "d", s: D, h: $$mdi:content-paste$$}, {t: "v", s: V, h: "switch win"}, {t: '-', s: _}, {t: "u", s: U}, {t: "o", s: O}, {t: "y", s: Y}, {t: "k", s: K}]
   - - LSHFT
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
     - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
     - {t: ▽ALP, s: number}
   number:
+  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - [BSPC, '4', '5', '6', '', '', '|', '-', /, '']
   - [., '1', '2', '3', '', '', '''', _, '=', fun]
   - ['~', '7', '8', '9', '', '', +, '?', '!', '']
@@ -17,6 +19,7 @@ layers:
     - RET
     - {t: ▽, type: trans}
   nav:
+  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', '', '', '', '', '', '', '', '', '']
   - - ''
     - ''
@@ -34,6 +37,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   fun:
+  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', F6, F5, F4, F10, '', '', '', '', '']
   - - CAPS
     - F3
@@ -60,6 +64,7 @@ layers:
     - {t: ▽, type: trans}
     - ''
   danger:
+  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', '', '', '', '', BT CLR, OUT BLE, OUT USB, '&sys_reset', '']
   - ['', '', '', '', '', '', '', '', '', '&bootloader']
   - - {t: ▽, type: trans}
@@ -74,6 +79,7 @@ layers:
     - {t: ▽, type: trans}
   - ['', '', '', '']
   lock:
+  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', '', '', '', '', '', '', '', '', '']
   - - ''
     - ''
