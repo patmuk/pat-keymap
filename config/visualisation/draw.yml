@@ -104,19 +104,19 @@ layers:
   - ['', '', '', '']
 combos:
 # Special Alphas
-  - {p: [0, 1], k: 'Qu', l: [hands_down_neu]}
-  - {p: [16, 17], k: {t: 'ä', s: 'Ä'}, l: [hands_down_neu]}
-  - {p: [27, 17], k: {t: 'ö', s: 'Ü'}, l: [hands_down_neu]}
-  - {p: [26, 17], k: {t: 'ü', s: 'Ü'}, l: [hands_down_neu]}
-  - {p: [11, 31], k: 'ß', l: [hands_down_neu]}
+  - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
+  - {p: [17, 18], k: {t: 'ä', s: 'Ä'}, l: [hands_down_neu], slide: -0.3}
+  - {p: [28, 18], k: {t: 'ö', s: 'Ü'}, l: [hands_down_neu], slide: 0.75, a: right, offset: -0.15}
+  - {p: [27, 18], k: {t: 'ü', s: 'Ü'}, l: [hands_down_neu], slide: -0.75, a: right, offset: -1.1}
+  - {p: [12, 32], k: 'ß', l: [hands_down_neu], slide: -0.8}
   # Layer switching
 #    L0: normal -> thumb right outside
 #    CapsWord -> thumb left outside & thumb right outside
 #    L1: Commands: REP hold with combos -> thumb left inside
 #    L2: SYM one-shot -> both left thumbs
-  - {p: [30, 31], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #    L3: Num hold -> both right thumbs
-  - {p: [32, 33], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #    L4: Func one-shot -> both right thumbs & thumb left inner
 #    L5: Settings -> both right thumbs & thumb left outer
 #    
