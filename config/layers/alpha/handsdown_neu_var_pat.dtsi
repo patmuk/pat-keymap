@@ -201,7 +201,7 @@
    TAP_DANCE(l0_l1, <&to 0>, <&to 1>)
    TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
    TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
-   TAP_DANCE(dot_colon, <&kp DOT>, <&kp COLON>, <&macro_dot>)
+   TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
    TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
 
    TAP_DANCE_SHIFT(A)
