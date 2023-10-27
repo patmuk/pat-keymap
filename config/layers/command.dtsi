@@ -26,8 +26,8 @@
             bindings = <
 //╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
 //    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
-   &kp LG(LS(A))     &none   &none   &none   &none    &none      &none      &none     &none       &none
-//    &none   &&kp LG(F) &none   &none   &none        &none      &none      &none     &none       &none
+//    &kp LG(LS(A))     &none   &none   &none   &none    &none      &none      &none     &none       &none
+   &none   &&kp LG(F) &none   &none   &none        &none      &none      &none     &none       &none
     // &none   &none     LG(LS(Z)) &none   &none        &none      &none      &none     &none       &none
 //    &none   &none   &none   &none     &kp LG(TAB)     &none      &none      &none     &none       &none
 //├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
