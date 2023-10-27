@@ -206,7 +206,7 @@
 
    MACRO(shift_ae, &kp LA(U) &kp LS(A))
    MACRO(ae, &kp LA(U) &kp A)
-   TAP_DANCE(A, <&kp A>, <&kp LS(A)>, <&macro_ae>m &macro_shift_ae)
+   TAP_DANCE(A, <&kp A>, <&kp LS(A)>, <&macro_ae>, <&macro_shift_ae>)
    // TAP_DANCE_SHIFT(A)
    TAP_DANCE_SHIFT(B)
    TAP_DANCE_SHIFT(C)
