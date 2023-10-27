@@ -21,7 +21,51 @@
 │20 21 22 23 24│ │25 26 27 28 29│
 ╰────────╮30 31│ │32 33╭────────╯
          ╰─────╯ ╰─────╯         */
+// LEFT SIDE
+// TOP 
+#define P_Q LTP
+#define P_W LTR
+#define P_F LTM
+#define P_P LTII
+#define P_B LTIO
+// MIDDLE
+#define P_A LMP
+#define P_R LMR
+#define P_S LMM
+#define P_T LMII
+#define P_G LMIO
+// BOTTOM
+#define P_Z LBP
+#define P_X LBR
+#define P_C LBM
+#define P_D LBII
+#define P_V LBIO
+// THUMB
+#define P_SYM LTI
+#define P_SPACE LTO
 
+// RIGHT SIDE
+// TOP 
+#define P_J RTIO
+#define P_L RTII
+#define P_U RTM
+#define P_Y RTR
+#define P_NONE RTP
+// MIDDLE
+#define P_M RMIO
+#define P_N RMII
+#define P_E RMM
+#define P_I RMR
+#define P_O RMP
+// BOTTOM
+#define P_K RBIO
+#define P_H RBII
+#define P_COMMA RBM
+#define P_DOT RBR
+#define P_FUN RBP
+// THUMB
+#define P_RETURN RTO
+#define P_NUM RTI
 / {
     keymap {
         compatible = "zmk,keymap";

@@ -174,10 +174,10 @@
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
    //Umlaute
-   MACRO(shift_ae, &kp LA(U) &kp LS(A))
-   MACRO(ae, &kp LA(U) &kp A)
-   MOD_MORPH(ae, &macro_ae, &macro_shift_ae, MOD_LSFT|MOD_RSFT)
-   COMBO(ae, &mm_ae, P_A P_E)
+   // MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   // MACRO(ae, &kp LA(U) &kp A)
+   // MOD_MORPH(ae, &macro_ae, &macro_shift_ae, MOD_LSFT|MOD_RSFT)
+   // COMBO(ae, &mm_ae, P_A P_E)
 
    MACRO(shift_oe, &kp LA(U) &kp LS(O))
    MACRO(oe, &kp LA(U) &kp O)
@@ -204,7 +204,10 @@
    TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
    TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
 
-   TAP_DANCE_SHIFT(A)
+   MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   MACRO(ae, &kp LA(U) &kp A)
+   TAP_DANCE(A, <&kp A>, <&kp LS(A)>, <&macro_ae>m &macro_shift_ae)
+   // TAP_DANCE_SHIFT(A)
    TAP_DANCE_SHIFT(B)
    TAP_DANCE_SHIFT(C)
    TAP_DANCE_SHIFT(D)
