@@ -25,13 +25,17 @@
         command {
             bindings = <
 //╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
-  &kp LG(LS(A))     &kp LG(F)  LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
+//    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
+   &kp LG(LS(A))     &kp LG(F)  LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
 //├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-  &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT   &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
+    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
+//   &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT   &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
 //├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-  &kp LG(A)         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
+    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
+//   &kp LG(A)         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
 //╰────────────────┴──────────┴──────────╮                         ││                     ╭─────────┴───────────┴──────╯
-                                          &trans     &trans          &kp LA(BACKSPACE)     &trans
+    &none   &none   &none   &none
+//                                           &trans     &trans          &kp LA(BACKSPACE)     &trans
 //                                       ╰──────────┴──────────────╯╰─────────────────────┴─────────╯
             >;
         };
