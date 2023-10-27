@@ -173,20 +173,24 @@
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
+   // Sentence ending auto capitalize
+   MACRO(dot, &kp DOT, &kp SPACE, &kp LSHIFT)
+   TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
+
    //Umlaute
-   MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
-   MACRO(m_ae, &kp LA(U) &kp A)
-   MOD_MORPH(ae, &macro_m_ae, &macro_m_shift_ae, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   MACRO(ae, &kp LA(U) &kp A)
+   MOD_MORPH(ae, &macro_ae, &macro_shift_ae, MOD_LSFT|MOD_RSFT)
    COMBO(ae, &mm_ae, P_A P_E)
 
-   MACRO(m_shift_oe, &kp LA(U) &kp LS(O))
-   MACRO(m_oe, &kp LA(U) &kp O)
-   MOD_MORPH(oe, &macro_m_oe, &macro_m_shift_oe, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_oe, &kp LA(U) &kp LS(O))
+   MACRO(oe, &kp LA(U) &kp O)
+   MOD_MORPH(oe, &macro_oe, &macro_shift_oe, MOD_LSFT|MOD_RSFT)
    COMBO(oe, &mm_oe, P_O P_E)
 
-   MACRO(m_shift_ue, &kp LA(U) &kp LS(U))
-   MACRO(m_ue, &kp LA(U) &kp U)
-   MOD_MORPH(ue, &macro_m_ue, &macro_m_shift_ue, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_ue, &kp LA(U) &kp LS(U))
+   MACRO(ue, &kp LA(U) &kp U)
+   MOD_MORPH(ue, &macro_ue, &macro_shift_ue, MOD_LSFT|MOD_RSFT)
    COMBO(ue, &mm_ue, P_U P_E)
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
@@ -197,7 +201,7 @@
    TAP_DANCE(l0_l1, <&to 0>, <&to 1>)
    TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
    TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
-   TAP_DANCE(dot_colon, <&kp DOT>, <&kp COLON>)
+   TAP_DANCE(dot_colon, <&kp DOT>, <&kp COLON>, <&macro_dot>)
    TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
 
    TAP_DANCE_SHIFT(A)
