@@ -138,15 +138,15 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭─────┬─────┬─────┬─────┬──────────────────────╮╭───────────────┬──────────────┬──────┬───────────┬──────╮
-   &kp W &kp F &kp M &kp P  &kp V                  &mm_slh_pipe     &mm_dot_colon  &kp J  &mm_quotes  &kp Z
-//├─────┼─────┼─────┼─────┼──────────────────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
-   &kp R &kp S &kp N &kp T  &td_s_B                &mm_comma_semi   &kp A          &kp E  &kp I       &kp H
-//├─────┼─────┼─────┼─────┼──────────────────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
-   &kp X &kp C &kp L &kp D  &kp G                  &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
-//╰─────┴─────┴─╮                                ││                          ╭───┴──────┴───────────┴──────╯
-                 &kp LSHFT  &rep_capsw_l CMD 0     &mm_spc_bspc     &mm_l0_l1
-//              ╰─────────┴──────────────────────╯╰───────────────┴──────────╯
+//╭────────┬───────┬──────────┬────────┬───────────╮╭───────────────┬──────────────┬──────┬───────────┬──────╮
+   &td_s_W  &td_s_F  &td_s_M    &td_s_P  &td_s_V      &td_slh_pipe     &td_dot_colon  &td_s_J  &td_quotes  &td_s_Z
+//├────────┼───────┼──────────┼────────┼───────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &td_s_R  &td_s_S  &td_s_N    &td_s_T  &td_s_B      &td_comma_semi   &td_s_A          &td_s_E  &td_s_I       &td_s_H
+//├────────┼───────┼──────────┼────────┼───────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G      &td_minus_under  &td_s_U          &td_s_O  &td_s_Y       &td_s_K
+//╰────────┴───────┴╮                              ││                          ╭───┴──────┴───────────┴──────╯
+                     &kp LSHFT  &rep_capsw_l CMD 0    &td_spc_bspc     &td_l0_l1
+//                  ╰─────────┴────────────────────╯╰───────────────┴──────────╯
             >;
          };
       };
@@ -172,13 +172,6 @@
 };
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
-   MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(spc_bspc, &kp SPACE, &kp BACKSPACE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(l0_l1, &to 0, &to 1, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(minus_under, &kp MINUS, &kp UNDERSCORE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(slh_pipe, &kp SLASH, &kp PIPE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(dot_colon, &kp DOT, &kp COLON, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(quotes, &kp SQT, &kp DQT, MOD_LSFT|MOD_RSFT)
 
    //Umlaute
    MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
@@ -199,7 +192,39 @@
    CHORD(ss, &kp LA(S), P_S P_REP)
    
    //tap dance auto shift
+   TAP_DANCE(comma_semi, &kp COMMA, &kp SEMICOLON)
+   TAP_DANCE(spc_bspc, &kp SPACE, &kp BACKSPACE)
+   TAP_DANCE(l0_l1, &to 0, &to 1)
+   TAP_DANCE(minus_under, &kp MINUS, &kp UNDERSCORE)
+   TAP_DANCE(slh_pipe, &kp SLASH, &kp PIPE)
+   TAP_DANCE(dot_colon, &kp DOT, &kp COLON)
+   TAP_DANCE(quotes, &kp SQT, &kp DQT)
+
+   TAP_DANCE_SHIFT(A)
    TAP_DANCE_SHIFT(B)
-//   TAP_DANCE(s_B, <&kp B>, <&kp LS(B)>)
+   TAP_DANCE_SHIFT(C)
+   TAP_DANCE_SHIFT(D)
+   TAP_DANCE_SHIFT(E)
+   TAP_DANCE_SHIFT(F)
+   TAP_DANCE_SHIFT(G)
+   TAP_DANCE_SHIFT(H)
+   TAP_DANCE_SHIFT(I)
+   TAP_DANCE_SHIFT(J)
+   TAP_DANCE_SHIFT(K)
+   TAP_DANCE_SHIFT(L)
+   TAP_DANCE_SHIFT(M)
+   TAP_DANCE_SHIFT(N)
+   TAP_DANCE_SHIFT(O)
+   TAP_DANCE_SHIFT(P)
+   TAP_DANCE_SHIFT(Q)
+   TAP_DANCE_SHIFT(R)
+   TAP_DANCE_SHIFT(S)
+   TAP_DANCE_SHIFT(T)
+   TAP_DANCE_SHIFT(U)
+   TAP_DANCE_SHIFT(V)
+   TAP_DANCE_SHIFT(W)
+   TAP_DANCE_SHIFT(X)
+   TAP_DANCE_SHIFT(Y)
+   TAP_DANCE_SHIFT(Z)
 
 
