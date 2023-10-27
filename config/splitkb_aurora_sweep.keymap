@@ -32,7 +32,7 @@
 #define LCK 7 // Lock KB
 
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
-// #include "layers/command.dtsi"
+#include "layers/command.dtsi"
 #include "layers/symbols.dtsi"
 #include "layers/numbers.dtsi"
 #include "layers/navigation.dtsi"
