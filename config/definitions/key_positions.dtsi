@@ -49,5 +49,5 @@
 #define RBR 28
 #define RBP 29
 // THUMB
-#define RTI 33
 #define RTO 32
+#define RTI 33

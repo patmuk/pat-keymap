@@ -1,3 +1,12 @@
+# zmk-config
+
+For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of the [ferris sweep](https://github.com/davidphilipbarr/Sweep), which is based on the [ferris](https://github.com/pierrechevalier83/ferris). Utilizing the cradio firmware of ZMK or QMK.
+
+![Aurora sweep](https://cdn.shopify.com/s/files/1/0227/9171/6941/products/AUR-SWP-build-left_1620x1080.jpg?v=1665581860)
+## Layout
+![Alt text](Keyboard Layout)
+<img src="./config/visualisation/drawn.svg">
+
 ## build
 ### remote (prefered)
 in github -> actions -> run workflows -> build
@@ -11,24 +20,19 @@ west build -b nice_nano_v2 -- -DSHIELD=pats_left -DZMK_CONFIG="./config"
    1. cp firmware-pat/splitkb_aurora_sweep_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/CURRENT.UF2
 3. wait until the drive unmounts itself
 
-# zmk-config
-Initially taken from [Pnohty 1.2](https://github.com/rayduck/pnohty/)
-
-![pnohty-1 2](https://user-images.githubusercontent.com/16619392/151906296-122d40a5-5672-436d-ae34-5348a25c61fd.png)
-
-For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of the [ferris sweep](https://github.com/davidphilipbarr/Sweep), which is based on the [ferris](https://github.com/pierrechevalier83/ferris). Utilizing the cradio firmware of ZMK or QMK.
-
-![Aurora sweep](https://cdn.shopify.com/s/files/1/0227/9171/6941/products/AUR-SWP-build-left_1620x1080.jpg?v=1665581860)
-
 ## files
 
 config/info.json:       layout for visual editors
-cradio_visualEditor:    variant of cardio, adapted to work with the visual editor
+config/visualisation/:  files to visualize the layout
 
 ## editors
-CLI https://github.com/caksoylar/keymap-drawer
-webapp https://caksoylar-keymap-drawer-streamlitapp-2a0rau.streamlit.app
-
+Best, plantUML like:
+   webapp https://caksoylar.github.io/keymap-drawer
+   CLI https://github.com/caksoylar/keymap-drawer
+   install with:
+      brew install pipx
+      pipx install keymap-drawer
+      pipx ensurepath
 
 
 (all work online only)
