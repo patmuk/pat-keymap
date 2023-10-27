@@ -15,26 +15,26 @@
 #include "definitions/definitions.dtsi"
 
 #define ALP 0 // Alphabeth characters
-#define SYM 1 // Symboles
-#define NUM 2 // Numbers
-#define NAV 3 // Navigation
-#define FUN 4 // Function Keys
-#define DAN 5 // DANGER!
-#define LCK 6 // Lock KB
-// #define CHORD 8 // layer for chording
+#define CMD 1 // layer for chording
+#define SYM 2 // Symboles
+#define NUM 3 // Numbers
+#define NAV 4 // Navigation
+#define FUN 5 // Function Keys
+#define DAN 6 // DANGER!
+#define LCK 7 // Lock KB
 
 //ALP 0
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
-//CMD combos
-#include "layers/command.dtsi"
-//LCK combo
-#include "layers/lock.dtsi"
-//SYM 1
+//CMD & combos 1
+//#include "layers/command.dtsi"
+//SYM 2
 #include "layers/symbols.dtsi"
-//NUM 2
+//NUM 3
+//LCK combo
+//#include "layers/lock.dtsi"
 //FUN
 
-// #include "chording/combos.dtsi"
+// #include "chording/chords.dtsi"
 
 &led_strip {
     chain-length = <23>;

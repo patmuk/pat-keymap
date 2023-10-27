@@ -68,8 +68,8 @@
 #define P_Y RBR
 #define P_K RBP
 // THUMB
-#define P_BACKSPACE RTI
-#define P_LAYER1 RTO
+#define P_BACKSPACE RTO
+#define P_LAYER1 RTI
 
 &caps_word {
    continue-list = <UNDERSCORE MINUS BACKSPACE>;
@@ -97,7 +97,7 @@
 /*     34 Keys - Hands Down neu - variante Pat
  ╭────────────────╮ ╭───────────────╮
  │ w  f  m  p  v  │ │ /  .  j  '  z │
- │ r  s  n  t  b  │ │ ,  e  a  i  h │
+ │ r  s  n  t  b  │ │ ,  a  e  i  h │
  │ x  c  l  d  g  │ │ -  u  o  y  k │
  ╰────────╮ ⇧ REP │ │ ␣ -L0- ╭──────╯
           ╰───────╯ ╰────────╯         
@@ -105,9 +105,9 @@
 /* = ⇧ =   34 Keys - Hands Down neu - variante Pat
     ╭──────────────────╮ ╭───────────────╮
     │ W  F  M  P  V    │ │ │  :  J  "  Z │
-    │ R  S  N  T  B    │ │ ;  E  A  I  H │
+    │ R  S  N  T  B    │ │ ;  A  E  I  H │
     │ X  C  L  D  G    │ │ _  U  O  Y  K │
-    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
+    ╰────────╮ ⇧ CapsW │ │ ⌫ -L1- ╭──────╯
              ╰─────────╯ ╰────────╯         */
 /*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
     ╭──────────────╮ ╭─────────────────╮
@@ -138,45 +138,97 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭─────┬─────┬─────┬─────┬──────────────╮╭───────────────┬──────────────┬──────┬────────┬──────╮
-   &kp W &kp F &kp M &kp P &kp V           &mm_slh_pipe     &mm_dot_colon  &kp J  &kp SQT  &kp Z
-//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼────────┼──────┤
-   &kp R &kp S &kp N &kp T &kp B           &mm_comma_semi   &kp A          &kp E  &kp I    &kp H
-//├─────┼─────┼─────┼─────┼──────────────┤├───────────────┼──────────────┼──────┼────────┼──────┤
-   &kp X &kp C &kp L &kp D &kp G           &mm_minus_under  &kp U          &kp O  &kp Y    &kp K
-//╰─────┴─────┴─╮                        ││                          ╭───┴──────┴────────┴──────╯
-                 &kp LSHFT  &mm_rep_capsw  &mm_spc_bspc     &mm_l0_l1
-//              ╰─────────┴──────────────╯╰───────────────┴──────────╯
+//╭────────┬───────┬──────────┬────────┬───────────╮╭───────────────┬──────────────┬──────┬───────────┬──────╮
+   &td_s_W  &td_s_F  &td_s_M    &td_s_P  &td_s_V      &td_slh_pipe     &td_dot_colon  &td_s_J  &td_quotes  &td_s_Z
+//├────────┼───────┼──────────┼────────┼───────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &td_s_R  &td_s_S  &td_s_N    &td_s_T  &td_s_B      &td_comma_semi   &td_s_A          &td_s_E  &td_s_I       &td_s_H
+//├────────┼───────┼──────────┼────────┼───────────┤├───────────────┼──────────────┼──────┼───────────┼──────┤
+   &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G      &td_minus_under  &td_s_U          &td_s_O  &td_s_Y       &td_s_K
+//╰────────┴───────┴╮                              ││                          ╭───┴──────┴───────────┴──────╯
+                     &kp LSHFT  &rep_capsw_l CMD 0    &td_spc_bspc     &td_l0_l1
+//                  ╰─────────┴────────────────────╯╰───────────────┴──────────╯
             >;
          };
       };
    };
 
-   CHORD(QU, &kp Q &kp U, LTP LTR)
-   MOD_MORPH(comma_semi, &kp COMMA, &kp SEMICOLON, MOD_LSFT|MOD_RSFT)
+// Defines the LTO key, which is
+// REPEAT on tap
+// Caps Word on Shift-tap
+// and momentary layer (&mo) on hold
    MOD_MORPH(rep_capsw, &key_repeat, &caps_word, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(spc_bspc, &kp SPACE, &kp BACKSPACE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(l0_l1, &to 0, &to 1, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(minus_under, &kp MINUS, &kp UNDERSCORE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(slh_pipe, &kp SLASH, &kp PIPE, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(dot_colon, &kp DOT, &kp COLON, MOD_LSFT|MOD_RSFT)
+ / {
+   behaviors {
+        rep_capsw_l: rep_capsw_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "rep_capsw_l";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <50>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&mm_rep_capsw>;
+        };
+    };
+};
+
+   CHORD(QU, &kp Q &kp U, LTP LTR)
 
    //Umlaute
-   MACRO(m_shift_ae, &kp LA(U) &kp LS(A))
-   MACRO(m_ae, &kp LA(U) &kp A)
-   MOD_MORPH(ae, &macro_m_ae, &macro_m_shift_ae, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   MACRO(ae, &kp LA(U) &kp A)
+   MOD_MORPH(ae, &macro_ae, &macro_shift_ae, MOD_LSFT|MOD_RSFT)
    COMBO(ae, &mm_ae, P_A P_E)
 
-   MACRO(m_shift_oe, &kp LA(U) &kp LS(O))
-   MACRO(m_oe, &kp LA(U) &kp O)
-   MOD_MORPH(oe, &macro_m_oe, &macro_m_shift_oe, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_oe, &kp LA(U) &kp LS(O))
+   MACRO(oe, &kp LA(U) &kp O)
+   MOD_MORPH(oe, &macro_oe, &macro_shift_oe, MOD_LSFT|MOD_RSFT)
    COMBO(oe, &mm_oe, P_O P_E)
 
-   MACRO(m_shift_ue, &kp LA(U) &kp LS(U))
-   MACRO(m_ue, &kp LA(U) &kp U)
-   MOD_MORPH(ue, &macro_m_ue, &macro_m_shift_ue, MOD_LSFT|MOD_RSFT)
+   MACRO(shift_ue, &kp LA(U) &kp LS(U))
+   MACRO(ue, &kp LA(U) &kp U)
+   MOD_MORPH(ue, &macro_ue, &macro_shift_ue, MOD_LSFT|MOD_RSFT)
    COMBO(ue, &mm_ue, P_U P_E)
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
-   
+
+      // Sentence ending auto capitalize
+   MACRO(dot, &kp DOT &kp SPACE &kp LSHIFT)
+   TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
+
+   //tap dance auto shift
+   TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
+   TAP_DANCE(spc_bspc, <&kp SPACE>, <&kp BACKSPACE>)
+   TAP_DANCE(l0_l1, <&to 0>, <&to 1>)
+   TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
+   TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
+   TAP_DANCE(dot_colon, <&kp DOT>, <&kp COLON>, <&macro_dot>)
+   TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
+
+   TAP_DANCE_SHIFT(A)
+   TAP_DANCE_SHIFT(B)
+   TAP_DANCE_SHIFT(C)
+   TAP_DANCE_SHIFT(D)
+   TAP_DANCE_SHIFT(E)
+   TAP_DANCE_SHIFT(F)
+   TAP_DANCE_SHIFT(G)
+   TAP_DANCE_SHIFT(H)
+   TAP_DANCE_SHIFT(I)
+   TAP_DANCE_SHIFT(J)
+   TAP_DANCE_SHIFT(K)
+   TAP_DANCE_SHIFT(L)
+   TAP_DANCE_SHIFT(M)
+   TAP_DANCE_SHIFT(N)
+   TAP_DANCE_SHIFT(O)
+   TAP_DANCE_SHIFT(P)
+   TAP_DANCE_SHIFT(Q)
+   TAP_DANCE_SHIFT(R)
+   TAP_DANCE_SHIFT(S)
+   TAP_DANCE_SHIFT(T)
+   TAP_DANCE_SHIFT(U)
+   TAP_DANCE_SHIFT(V)
+   TAP_DANCE_SHIFT(W)
+   TAP_DANCE_SHIFT(X)
+   TAP_DANCE_SHIFT(Y)
+   TAP_DANCE_SHIFT(Z)
+
 
