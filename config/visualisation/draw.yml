@@ -15,7 +15,7 @@ layers:
   - [ {s: "]", t: "[", h: ""}, {s: "}", t: "{", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""},  {s: "", t: "?", h: ""},  {s: "", t: "_", h: ""}, {s: "", t: "&", h: ""}, {s: "", t: "@", h: ""}, {s: "", t: "#", h: ""}]
   - [ {s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},  {s: "", t: "-", h: ""},  {s: "", t: "=", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - LSHFT
-    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
+    - {t: $$tabler:repeat$$, s: 'CapsWord', h: ""}
     - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
     - {t: ▽ALP, s: number}
   numbers:
