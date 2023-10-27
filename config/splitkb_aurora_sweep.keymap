@@ -25,19 +25,19 @@
 #define ALP 0 // Alphabeth characters
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 #define CMD 1 // layer for chording
-#include "layers/command.dtsi"
+//#include "layers/command.dtsi"
 #define SYM 2 // Symboles
-#include "layers/symbols.dtsi"
+//#include "layers/symbols.dtsi"
 #define NUM 3 // Numbers
-#include "layers/numbers.dtsi"
+//#include "layers/numbers.dtsi"
 #define NAV 4 // Navigation
-#include "layers/navigation.dtsi"
+// #include "layers/navigation.dtsi"
 #define FUN 5 // Function Keys
-#include "layers/function.dtsi"
+// #include "layers/function.dtsi"
 #define DAN 6 // DANGER!
-#include "layers/danger.dtsi"
+// #include "layers/danger.dtsi"
 #define LCK 7 // Lock KB
-#include "layers/lock.dtsi"
+// #include "layers/lock.dtsi"
 
 // #include "chording/chords.dtsi"
 
