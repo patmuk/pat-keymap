@@ -24,20 +24,15 @@
         compatible = "zmk,keymap";
         command {
             bindings = <
-//╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
-//    &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
-//    &kp LG(LS(A))     &none   &none   &none   &none    &none      &none      &none     &none       &none
-//    &none   &kp LG(F) &none   &none   &none        &none      &none      &none     &none       &none
-    // &none   &none     &kp LG(LS(Z)) &none   &none        &none      &none      &none     &none       &none
-//    &none   &none   &none   &none     &kp LG(TAB)     &none      &none      &none     &none       &none
-&kp LG(LS(A))     &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
-//├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-  &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT   &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
-//├────────────────┼──────────┼──────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-  &kp LG(A)         &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
-//╰────────────────┴──────────┴──────────╮                         ││                     ╭─────────┴───────────┴──────╯
-                                          &trans     &trans          &kp LA(BACKSPACE)     &trans
-//                                       ╰──────────┴──────────────╯╰─────────────────────┴─────────╯
+//╭────────────────┬──────────┬──────────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
+   &kp LG(LS(A))     &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
+//├────────────────┼──────────┼──────────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
+   &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT       &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
+//├────────────────┼──────────┼──────────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
+   &kp LG(A)         &kp LG(X)  &kp LG(C)      &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
+//╰────────────────┴──────────┴──────────────╮                         ││                            ╭──┴───────────┴──────╯
+                                               &trans     &trans          &kp LA(BACKSPACE)  &trans
+//                                           ╰──────────┴──────────────╯╰──────────────────┴─────────╯
             >;
         };
     };
