@@ -1,0 +1,117 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  hands_down_neu:
+  - [ {t: W, h: "find all"}, {t: F, h: "find"}, {t: M, h: "redo"}, {t: P, h: "undo"}, {t: V, h: "switch app"}, {t: /, s: '|'}, {t: ., s: ':'}, J, {t: '''', s: '"'}, Z]
+  - [ {t: R, h: "find prev"}, {t: S, h: $$mdi:apple-keyboard-control$$}, {t: N, h: $$mdi:apple-keyboard-option$$}, {t: T, h: $$mdi:apple-keyboard-command$$}, {t: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: A, h: $$mdi:apple-keyboard-command$$}, {t: E, h: $$mdi:apple-keyboard-option$$}, {t: S, h: $$mdi:apple-keyboard-control$$}, H]
+  - [ {t: X, h: "select all"}, {t: C, h: $$mdi:content-cut$$}, {t: L, h: $$mdi:content-copy$$}, {t: D, h: $$mdi:content-paste$$}, {t: V, h: "switch win"}, {t: '-', s: _}, U, O, Y, K]
+  - - LSHFT
+    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
+    - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
+    - {t: ▽ALP, s: number}
+  number:
+  - [BSPC, '4', '5', '6', '', '', '|', '-', /, '']
+  - [., '1', '2', '3', '', '', '''', _, '=', fun]
+  - ['~', '7', '8', '9', '', '', +, '?', '!', '']
+  - - '0'
+    - SPACE
+    - RET
+    - {t: ▽, type: trans}
+  nav:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - {t: ▽, type: trans}
+  - ['', '', '', '', '', HOME, PG DN, PG UP, END, '']
+  - - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  fun:
+  - ['', F6, F5, F4, F10, '', '', '', '', '']
+  - - CAPS
+    - F3
+    - F2
+    - F1
+    - F11
+    - {t: BT, h: '2'}
+    - MUTE
+    - VOL DN
+    - VOL UP
+    - {type: held}
+  - - lock
+    - F9
+    - F8
+    - F7
+    - F12
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - BRI DN
+    - BRI UP
+    - {t: ▽, type: trans}
+  - - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
+  danger:
+  - ['', '', '', '', '', BT CLR, OUT BLE, OUT USB, '&sys_reset', '']
+  - ['', '', '', '', '', '', '', '', '', '&bootloader']
+  - - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+  - ['', '', '', '']
+  lock:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held}
+  - - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', '', '', '']
+combos:
+# Special Alphas
+  - {p: [0, 1], k: 'Qu', l: [hands_down_neu]}
+  - {p: [16, 17], k: {t: 'ä', s: 'Ä'}, l: [hands_down_neu]}
+  - {p: [27, 17], k: {t: 'ö', s: 'Ü'}, l: [hands_down_neu]}
+  - {p: [26, 17], k: {t: 'ü', s: 'Ü'}, l: [hands_down_neu]}
+  - {p: [11, 31], k: 'ß', l: [hands_down_neu]}
+  # Layer switching
+#    L0: normal -> thumb right outside
+#    CapsWord -> thumb left outside & thumb right outside
+#    L1: Commands: REP hold with combos -> thumb left inside
+#    L2: SYM one-shot -> both left thumbs
+  - {p: [30, 31], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+#    L3: Num hold -> both right thumbs
+  - {p: [32, 33], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+#    L4: Func one-shot -> both right thumbs & thumb left inner
+#    L5: Settings -> both right thumbs & thumb left outer
+#    
+#    L?: ? -> both inner thumbs OR del word!
