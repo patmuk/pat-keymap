@@ -2,14 +2,23 @@ layout: {qmk_info_json: info.json}
 layers:
   hands_down_neu:
   - [ {s: "2x tap", t: "tap", h: "with <REP> held"} ]
-  - [ {s: W, t: "w", h: "find all"}, {t: "f", s: F, h: "find"}, {t: "m", s: M, h: "redo"}, {t: p", s: P, h: "undo"}, {t: "v", s: V, h: "switch app"}, {t: /, s: '|'}, {t: ., s: ':'}, {t: "j", s: J}, {t: '''', s: '"'}, {t: "z", s: Z}]
-  - [ {t: "r", s: R, h: "find prev"}, {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: A, h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$}, {t: "i", s: I, h: $$mdi:apple-keyboard-control$$}, {t: "h", s: H}]
-  - [ {t: "x", s: X, h: "select all"}, {t: "c", s: C, h: $$mdi:content-cut$$}, {t: "l", s: L, h: $$mdi:content-copy$$}, {t: "d", s: D, h: $$mdi:content-paste$$}, {t: "v", s: V, h: "switch win"}, {t: '-', s: _}, {t: "u", s: U}, {t: "o", s: O}, {t: "y", s: Y}, {t: "k", s: K}]
+  - [ {s: W, t: "w", h: "find all"},    {t: "f", s: F, h: "find"},                         {t: "m", s: M, h: "redo"},                        {t: p", s: P, h: "undo"},                          {t: "v", s: V, h: "switch app"},         {t: /, s: '|'},                          {t: ., s: ':'},                                    {t: "j", s: J},                                   {t: '''', s: '"'},                                 {t: "z", s: Z}]
+  - [ {t: "r", s: R, h: "find prev"},   {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: A, h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$}, {t: "i", s: I, h: $$mdi:apple-keyboard-control$$}, {t: "h", s: H}]
+  - [ {t: "x", s: X, h: "select all"},  {t: "c", s: C, h: $$mdi:content-cut$$},            {t: "l", s: L, h: $$mdi:content-copy$$},          {t: "d", s: D, h: $$mdi:content-paste$$},          {t: "v", s: V, h: "switch win"},         {t: '-', s: _},                          {t: "u", s: U},                                    {t: "o", s: O},                                   {t: "y", s: Y},                                    {t: "k", s: K}]
   - - LSHFT
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
     - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
     - {t: ▽ALP, s: number}
-  number:
+  symbols:
+  - [ {s: "", t: "tap", h: "with <?> held"} ]
+  - [ {s: "", t: "]", h: ""},  {s: "", t: "}", h: ""},  {s: "", t: ")", h: ""},  {s: "", t: ">", h: ""},  {s: "", t: "^", h: ""},  {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
+  - [ {s: "]", t: "[", h: ""}, {s: "}", t: "{", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""},  {s: "", t: "?", h: ""},  {s: "", t: "_", h: ""}, {s: "", t: "&", h: ""}, {s: "", t: "@", h: ""}, {s: "", t: "#", h: ""}]
+  - [ {s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},  {s: "", t: "-", h: ""},  {s: "", t: "=", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
+  - - LSHFT
+    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
+    - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
+    - {t: ▽ALP, s: number}
+  numbers:
   - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - [BSPC, '4', '5', '6', '', '', '|', '-', /, '']
   - [., '1', '2', '3', '', '', '''', _, '=', fun]
