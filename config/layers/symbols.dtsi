@@ -46,7 +46,7 @@
 //╭───────────┬──────────────┬──────────┬─────────┬───────╮╭─────────┬──────────┬─────────┬──────────┬─────────╮
    &kp RBKT     &kp RBRC       &kp RPAR   &kp GT   &none    &kp BSLH   &kp EXCL   &none     &kp GRAVE  &none
 //├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼─────────┼──────────┼─────────┤
-   &mm_braces   &mm_c_braces   &mm_pars   &mm_LG_T &kp INS  &kp QMARK  &none      &kp AMPS  &kp AT     &kp HASH
+   &td_braces   &td_c_braces   &td_pars   &td_LG_T &kp INS  &kp QMARK  &none      &kp AMPS  &kp AT     &kp HASH
 //├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼─────────┼──────────┼─────────┤
    &none        &none          &kp TILDE  &kp DLLR &kp DEL  &trans     &kp EQUAL  &none     &none      &none
 //╰───────────┴──────────────┴╮                           ││                    ╭─────────┴──────────┴─────────╯
@@ -56,7 +56,7 @@
       };
    };
 };
-   MOD_MORPH(braces, &kp LBKT, &kp RBKT, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(c_braces, &kp LBRC, &kp RBRC, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(pars, &kp LPAR, &kp RPAR, MOD_LSFT|MOD_RSFT)
-   MOD_MORPH(LG_T, &kp GT, &kp LT, MOD_LSFT|MOD_RSFT)
+   TAP_DANCE(braces, <&kp LBKT>, <&kp RBKT>)
+   TAP_DANCE(c_braces, <&kp LBRC>, <&kp RBRC>)
+   TAP_DANCE(pars, <&kp LPAR>, <&kp RPAR>)
+   TAP_DANCE(LG_T, <&kp GT>, <&kp LT>)
