@@ -33,12 +33,12 @@
 
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 // #include "layers/command.dtsi"
-// #include "layers/symbols.dtsi"
-// #include "layers/numbers.dtsi"
-// #include "layers/navigation.dtsi"
-// #include "layers/function.dtsi"
-// #include "layers/danger.dtsi"
-// #include "layers/lock.dtsi"
+#include "layers/symbols.dtsi"
+#include "layers/numbers.dtsi"
+#include "layers/navigation.dtsi"
+#include "layers/function.dtsi"
+#include "layers/danger.dtsi"
+#include "layers/lock.dtsi"
 
 // #include "chording/chords.dtsi"
 
