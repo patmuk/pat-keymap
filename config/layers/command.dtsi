@@ -22,7 +22,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        hands_down_neu {
+        command {
             bindings = <
 //╭────────────────┬──────────┬──────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
     &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
