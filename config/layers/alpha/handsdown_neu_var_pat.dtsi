@@ -192,7 +192,7 @@
    CHORD(ss, &kp LA(S), P_S P_REP)
 
       // Sentence ending auto capitalize
-   MACRO(dot, &kp DOT &kp SPACE &kp LSHIFT)
+   MACRO(dot, &kp DOT &kp SPACE &skq LSHIFT)
    TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
 
    //tap dance auto shift
