@@ -173,10 +173,6 @@
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
-   // Sentence ending auto capitalize
-   MACRO(dot, &kp DOT, &kp SPACE, &kp LSHIFT)
-   TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
-
    //Umlaute
    MACRO(shift_ae, &kp LA(U) &kp LS(A))
    MACRO(ae, &kp LA(U) &kp A)
@@ -194,7 +190,11 @@
    COMBO(ue, &mm_ue, P_U P_E)
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
-   
+
+      // Sentence ending auto capitalize
+   MACRO(dot, &kp DOT, &kp SPACE, &kp LSHIFT)
+   TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
+
    //tap dance auto shift
    TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
    TAP_DANCE(spc_bspc, <&kp SPACE>, <&kp BACKSPACE>)
