@@ -30,17 +30,17 @@ layers:
   nav:
   - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', '', '', '', '', '', '', '', '', '']
-  - - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - LEFT
+  - - LEFT
     - DOWN
     - UP
     - RIGHT
     - {t: ▽, type: trans}
-  - ['', '', '', '', '', HOME, PG DN, PG UP, END, '']
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - [HOME, PG DN, PG UP, END, '', '', '', '', '', '',]
   - - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
