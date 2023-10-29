@@ -5,10 +5,10 @@ layers:
   - [ {s: W, t: "w", h: "find all"},    {t: "f", s: F, h: "find"},                         {t: "m", s: M, h: "redo"},                        {t: p", s: P, h: "undo"},                          {t: "v", s: V, h: "switch app"},         {t: /, s: '|'},                          {t: ., s: ':'},                                          {t: "j", s: J},                                   {t: '''', s: '"'},                                 {t: "z", s: Z}]
   - [ {t: "r", s: R, h: "find prev"},   {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: "A/ä/Ä", h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$}, {t: "i", s: I, h: $$mdi:apple-keyboard-control$$}, {t: "h", s: H}]
   - [ {t: "x", s: X, h: "select all"},  {t: "c", s: C, h: $$mdi:content-cut$$},            {t: "l", s: L, h: $$mdi:content-copy$$},          {t: "d", s: D, h: $$mdi:content-paste$$},          {t: "v", s: V, h: "switch win"},         {t: '-', s: _},                          {t: "u", s: "U/ü/Ü"},                                    {t: "o", s: "O/ö/Ö"},                             {t: "y", s: Y},                                    {t: "k", s: K}]
-  - - LSHFT
+  - - {t: $$tabler:backspace$$, s: "", h: '▽ numbers'}
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
-    - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
-    - {t: ▽ALP, s: number}
+    - {t: ⌴, s: $$tabler:arrow-back$$, h: '⌫ Word'}
+    - {t: "SYM_(1_shot)", s: "", h: "▽ function"}
   symbols:
   - [ {s: "", t: "tap", h: "with <?> held"} ]
   - [ {s: "", t: "]", h: ""},  {s: "", t: "}", h: ""},  {s: "", t: ")", h: ""},  {s: "", t: ">", h: ""},  {s: "", t: "^", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
@@ -114,14 +114,17 @@ layers:
 combos:
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
+
   # Layer switching
+
+  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+
 #    L0: normal -> thumb right outside
 #    CapsWord -> thumb left outside & thumb right outside
 #    L1: Commands: REP hold with combos -> thumb left inside
 #    L2: SYM one-shot -> both left thumbs
-  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #    L3: Num hold -> both right thumbs
-  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #    L4: Func one-shot -> both right thumbs & thumb left inner
 #    L5: Settings -> both right thumbs & thumb left outer
 #    
