@@ -1,18 +1,27 @@
 layout: {qmk_info_json: info.json}
 layers:
   hands_down_neu:
-  - [ {s: "2x tap", t: "tap", h: "with <REP> held"} ]
-  - [ {s: W, t: "w", h: "find all"},    {t: "f", s: F, h: "find"},              {t: "m", s: M, h: "redo"},               {t: p", s: P, h: "undo"},                          {t: "v", s: V, h: "switch app"},{t: /, s: '|'},                          {t: ., s: ':'},                                          {t: "j", s: J},                                   {t: '''', s: '"'},                                 {t: "z", s: Z}]
-  - [ {t: "r", s: R, h: "find prev"},   {t: "s", s: S, h: ''},                  {t: "n", s: N, h: ''},                   {t: "t", s: T, h: ''},                    {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: "A/ä/Ä", h: ''}, {t: "e", s: E, h: ''}, {t: "i", s: I, h: ''}, {t: "h", s: H}]
-  - [ {t: "x", s: X, h: "select all"},  {t: "c", s: C, h: $$mdi:content-cut$$}, {t: "l", s: L, h: $$mdi:content-copy$$}, {t: "d", s: D, h: $$mdi:content-paste$$}, {t: "v", s: V, h: "switch win"},         {t: '-', s: _},                          {t: "u", s: "U/ü/Ü"},                                    {t: "o", s: "O/ö/Ö"},                             {t: "y", s: Y},                                    {t: "k", s: K}]
+  - [ {s: "2x tap", t: "tap", h: ""} ]
+  - [ {s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
+  - [ {t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
+  - [ {t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "v", s: V}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
+  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
+    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
+    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
+    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD & chords", type: held}
+  commands:
+  - [ {s: "2x tap", t: "tap", h: ""} ]
+  - [ {t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         {t: ''},                   {t: ''}, {t: ''}, {t: ''}, {t: ''}]
+  - [ {t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, {t: $$mdi:keyboard-esc$$}, {t: ''}, {t: ''}, {t: ''}, {t: ''}]
+  - [ {t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: ''},                   {t: ''}, {t: ''}, {t: ''}, {t: ''}]
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD & chords", type: held}
   symbols:
-  - [ {s: "", t: "tap", h: "with <?> held"} ]
-  - [ {s: "", t: "}", h: ""},  {s: "", t: "]", h: ""},  {s: "", t: ")", h: ""},  {s: "", t: ">", h: ""},  {s: "", t: "^", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
-  - [ {s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "&", h: ""}, {s: "", t: "€", h: ""}, {s: "", t: "@", h: ""}, {s: "", t: "#", h: ""}]
+  - [ {s: "2x tap", t: "tap", h: ""} ]
+  - [ {s: "", t: "^", h: ""},   {s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
+  - [ {s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "@", h: ""}, {s: "", t: "€", h: ""}, {s: "", t: "&", h: ""}, {s: "", t: "#", h: ""}]
   - [ {s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "=", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
@@ -27,24 +36,6 @@ layers:
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD & chords", type: held}
-  nav:
-  - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
-  - ['', '', '', '', '', '', '', '', '', '']
-  - - LEFT
-    - DOWN
-    - UP
-    - RIGHT
-    - {t: ▽, type: trans}
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-  - [HOME, PG DN, PG UP, END, '', '', '', '', '', '',]
-  - - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
   fun:
   - [ {s: "double tap", t: "normal tap", h: "with REP held"} ]
   - ['', F4, F5, F6, F10, '', '', '', '', '']
