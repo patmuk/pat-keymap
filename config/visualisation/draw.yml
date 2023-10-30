@@ -116,15 +116,15 @@ combos:
   - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
 
 # HRM
-  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: top, slide: -0.9, offset: -0.25}
-  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: top, slide: -0.9, offset: -0.25}
-  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: top, slide: -0.85, offset: -0.25}  
-  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: top, slide: -0.85, offset: -0.25}
+  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: left, slide: -1, offset: -0.05}
+  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: left, slide: -1, offset: -0.15}
+  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: left, slide: -1, offset: -0.15}  
+  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: left, slide: -1, offset: -0.15}
 
-  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: top, slide: 0.6, offset: -0.5}
-  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: top, slide: 0.75, offset: -0.25}  
-  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: top, slide: 0.8, offset: -0.25}
-  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: top, slide: 0.85, offset: -0.2}
+  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: right, slide: 1, offset: -0.05}
+  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: right, slide: 1, offset: -0.15}  
+  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: right, slide: 1, offset: -0.15}
+  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: right, slide: 1, offset: -0.1}
 
   # Layer switching
   - {p: [31, 34], k: 'to Alp', l: [], a: bottom, offset: 0.5}
