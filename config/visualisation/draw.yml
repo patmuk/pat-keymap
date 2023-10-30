@@ -1,11 +1,11 @@
 layout: {qmk_info_json: info.json}
 layers:
   hands_down_neu:
-  - [ {s: "2x tap", t: "tap", h: ""} ]
+  - [ {s: "2x tap", t: "tap", h: "hold key"} ]
   - [ {s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
   - [ {t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
   - [ {t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "v", s: V}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
-  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
+  - - {t: sl_symbols, s: "to_numbers", h: 'mo_symbols'}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD & chords", type: held}
@@ -106,7 +106,7 @@ combos:
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
 
-# HRM
+# HRM - not as chord, but mod-morph-shift, in all layers 
   - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: left, slide: -1, offset: -0.05}
   - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: left, slide: -1, offset: -0.15}
   - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: left, slide: -1, offset: -0.15}  
