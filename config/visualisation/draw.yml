@@ -2,19 +2,19 @@ layout: {qmk_info_json: info.json}
 layers:
   hands_down_neu:
   - [ {s: "2x tap", t: "tap", h: "with <REP> held"} ]
-  - [ {s: W, t: "w", h: "find all"},    {t: "f", s: F, h: "find"},                         {t: "m", s: M, h: "redo"},                        {t: p", s: P, h: "undo"},                          {t: "v", s: V, h: "switch app"},         {t: /, s: '|'},                          {t: ., s: ':'},                                          {t: "j", s: J},                                   {t: '''', s: '"'},                                 {t: "z", s: Z}]
-  - [ {t: "r", s: R, h: "find prev"},   {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: "A/ä/Ä", h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$}, {t: "i", s: I, h: $$mdi:apple-keyboard-control$$}, {t: "h", s: H}]
-  - [ {t: "x", s: X, h: "select all"},  {t: "c", s: C, h: $$mdi:content-cut$$},            {t: "l", s: L, h: $$mdi:content-copy$$},          {t: "d", s: D, h: $$mdi:content-paste$$},          {t: "v", s: V, h: "switch win"},         {t: '-', s: _},                          {t: "u", s: "U/ü/Ü"},                                    {t: "o", s: "O/ö/Ö"},                             {t: "y", s: Y},                                    {t: "k", s: K}]
-  - - {t: $$tabler:backspace$$, s: "", h: '▽ numbers'}
-    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD", type: held}
-    - {t: ⌴, s: $$tabler:arrow-back$$, h: '⌫ Word'}
-    - {t: "SYM_(1_shot)", s: "", h: "▽ function"}
+  - [ {s: W, t: "w", h: "find all"},    {t: "f", s: F, h: "find"},              {t: "m", s: M, h: "redo"},               {t: p", s: P, h: "undo"},                          {t: "v", s: V, h: "switch app"},{t: /, s: '|'},                          {t: ., s: ':'},                                          {t: "j", s: J},                                   {t: '''', s: '"'},                                 {t: "z", s: Z}]
+  - [ {t: "r", s: R, h: "find prev"},   {t: "s", s: S, h: ''},                  {t: "n", s: N, h: ''},                   {t: "t", s: T, h: ''},                    {t: "b", s: B, h: $$mdi:keyboard-tab$$}, {t: ',', s: ;, h: $$mdi:keyboard-esc$$}, {t: "a", s: "A/ä/Ä", h: ''}, {t: "e", s: E, h: ''}, {t: "i", s: I, h: ''}, {t: "h", s: H}]
+  - [ {t: "x", s: X, h: "select all"},  {t: "c", s: C, h: $$mdi:content-cut$$}, {t: "l", s: L, h: $$mdi:content-copy$$}, {t: "d", s: D, h: $$mdi:content-paste$$}, {t: "v", s: V, h: "switch win"},         {t: '-', s: _},                          {t: "u", s: "U/ü/Ü"},                                    {t: "o", s: "O/ö/Ö"},                             {t: "y", s: Y},                                    {t: "k", s: K}]
+  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
+    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
+    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
+    - {t: $$tabler:repeat$$, s: 'CapsWord', h: "▽CMD & chords", type: held}
   symbols:
   - [ {s: "", t: "tap", h: "with <?> held"} ]
-  - [ {s: "", t: "]", h: ""},  {s: "", t: "}", h: ""},  {s: "", t: ")", h: ""},  {s: "", t: ">", h: ""},  {s: "", t: "^", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
-  - [ {s: "]", t: "[", h: ""}, {s: "}", t: "{", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "&", h: ""}, {s: "", t: "€", h: ""}, {s: "", t: "@", h: ""}, {s: "", t: "#", h: ""}]
+  - [ {s: "", t: "}", h: ""},  {s: "", t: "]", h: ""},  {s: "", t: ")", h: ""},  {s: "", t: ">", h: ""},  {s: "", t: "^", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
+  - [ {s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "&", h: ""}, {s: "", t: "€", h: ""}, {s: "", t: "@", h: ""}, {s: "", t: "#", h: ""}]
   - [ {s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "=", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
-  - - LSHFT
+  - - {t: ▽_alpha, s: "▽ numbers", h: '▽ Navigation'}
     - {t: $$tabler:repeat$$, s: 'CapsWord', h: ""}
     - {t: ⌴, s: $$tabler:backspace$$, h: '⌫ Word'}
     - {t: ▽ALP, s: number}
@@ -115,10 +115,22 @@ combos:
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
 
-  # Layer switching
+# HRM
+  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: top, slide: -0.9, offset: -0.25}
+  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: top, slide: -0.9, offset: -0.25}
+  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: top, slide: -0.85, offset: -0.25}  
+  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: top, slide: -0.85, offset: -0.25}
 
-  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
-  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: top, slide: 0.6, offset: -0.5}
+  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: top, slide: 0.75, offset: -0.25}  
+  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: top, slide: 0.8, offset: -0.25}
+  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: top, slide: 0.85, offset: -0.2}
+
+  # Layer switching
+  - {p: [31, 34], k: 'to Alp', l: [], a: bottom, offset: 0.5}
+
+#  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+#  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 
 #    L0: normal -> thumb right outside
 #    CapsWord -> thumb left outside & thumb right outside
