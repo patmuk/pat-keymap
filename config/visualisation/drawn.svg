@@ -350,7 +350,6 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 88%">CapsWord</tspan></text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="29" width="28" height="26" class="combo"/>
@@ -556,7 +555,6 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 88%">CapsWord</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M170,105 l15,0" class="combo"/>
@@ -762,7 +760,6 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 88%">CapsWord</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M170,105 l15,0" class="combo"/>
@@ -967,7 +964,6 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 88%">CapsWord</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M170,105 l15,0" class="combo"/>
