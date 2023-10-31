@@ -5,26 +5,26 @@ layers:
   - [{s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
   - [{t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
   - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "v", s: V}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
-  - - {t: sl_symbols, s: "to_numbers", h: 'mo_symbols'}
-    - {t: $$tabler:backspace$$, s: '⌫ Word', h: '', type: held}
-    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
-    - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords"}
+  - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers'}
+    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
+    - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   commands:
   - [{s: "2x tap", t: "tap", h: ""}]
   - [{t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         $$mdi:volume-plus$$,  $$mdi:volume-mute$$, $$mdi:volume-plus$$, $$mdi:lightbulb-on-40$$, $$mdi:lightbulb-on-70$$]
   - [{t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},  {t: 'win left'},     {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
   - [{t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, $$mdi:keyboard-esc$$, {t: ''},             {t: ''},             {t: ''},                 {t: ''}]
-  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
-    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
-    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
+  - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols'}
+    - {t: 'undo', s: 'to_numbers', h: 'mo_numbers'}
+    - {t: 'redo', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   symbols:
   - [{s: "2x tap", t: "tap", h: ""}]
   - [{s: "", t: "^", h: ""},   {s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
   - [{s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "@", h: ""}, {s: "", t: "=", h: ""}, {s: "", t: "&", h: ""}, {s: "", t: "#", h: ""}]
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
-  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
-    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
+  - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers'}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords"}
   numbers:
@@ -32,8 +32,8 @@ layers:
   - [{s: '/', t: '*'}, '9', '8', '7', ',',    '''', '!', '', '°', '∑']
   - [{s: '-', t: '+'}, '3', '2', '1', '0',    '§', '%', '≤', '≥', '#']
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
-  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
-    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
+  - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols'}
+    - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers', type: held}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords"}
   fun:
@@ -41,8 +41,8 @@ layers:
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
-  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
-    - {t: $$tabler:backspace$$, s: '⌫ Word', h: '', type: held}
+  - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers', type: held}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords"}
   danger:
@@ -60,22 +60,25 @@ layers:
 combos:
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
+  - {p: [33, 34], k: 'CapsW', l: [alpha]}
+
+  - {p: [32, 34], k: '⌫ Word', l: [alpha, symbols, numbers], a: top, slide: -0.5}
 
 # HRM - not as chord, but mod-morph-shift, in all layers 
-  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.05}
-  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
-  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}  
-  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
-  - {p: [15, 33], k: "ctr-alt cmd", l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
+  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.05}
+  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.15}
+  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.15}  
+  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.15}
+  - {p: [15, 33], k: "ctr-alt cmd", l: [alpha, symbols], a: left, slide: -1, offset: -0.15}
 
-  - {p: [16, 33], k: "ctr-alt cmd", l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}
-  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.05}
-  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}  
-  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}
-  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.1}
+  - {p: [16, 33], k: "ctr-alt cmd", l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.15}
+  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.05}
+  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.15}  
+  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.15}
+  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.1}
 
   # Layer switching
-  - {p: [32, 33], k: 'to Alp', l: [], a: bottom, offset: 0.5}
+  - {p: [31, 34], k: 'to Alp', l: [], a: bottom, offset: 0.5}
   - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
   - {p: [29, 30], k: 'to DAN', l: [fun]}
 
