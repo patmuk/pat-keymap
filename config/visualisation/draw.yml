@@ -4,7 +4,7 @@ layers:
   - [{s: "2x tap", t: "tap", h: "hold key"}]
   - [{s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
   - [{t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
-  - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "v", s: V}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
+  - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
   - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols', type: held}
     - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers'}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
