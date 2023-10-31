@@ -172,7 +172,7 @@
 };
 
    // thumb keys
-   TAP_DANCE(sym, <&mo SYM>, <&to SYM>)
+   TAP_DANCE(SYM, <&mo SYM>, <&to SYM>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
