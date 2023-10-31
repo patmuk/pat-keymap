@@ -63,26 +63,8 @@ layers:
   lock:
   - [{s: "double tap", t: "normal tap", h: "with REP held"}]
   - ['', '', '', '', '', '', '', '', '', '']
-  - - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - {type: held}
-  - - {type: held}
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
+  - ['', '', {t: $$mdi:keyboard-off$$, type: held}, {t: $$mdi:sleep$$, type: held}, {t: $$mdi:lock$$, type: held}, {t: $$mdi:lock$$, type: held}, {t: $$mdi:sleep$$, type: held}, {t: $$mdi:keyboard-off$$, type: held}, '', '']
+  - ['', '', '', '', '', '', '', '', '', '']
   - ['', '', '', '']
 combos:
 # Special Alphas
