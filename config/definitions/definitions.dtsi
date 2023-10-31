@@ -47,7 +47,7 @@
    TAP_DANCE(ls_##LAYER, <&mo_sl LAYER LAYER>, <&to LAYER>)
 
 #define TAP_DANCE_LAYER_kp_mo_to(NAME, LAYER, TAP_KEY) \
-   TAP_DANCE(lk_##LAYER, <&mo_kp LAYER TAP_KEY>, <&to LAYER>)
+   TAP_DANCE(lk_##NAME, <&mo_kp LAYER TAP_KEY>, <&to LAYER>)
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   / {\
