@@ -38,27 +38,18 @@ layers:
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   fun:
   - [{s: "double tap", t: "normal tap", h: ""}]
-  - [F5,  F4,  F3,  F2,  F1,    '', '', '', '', '']
+  - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
-  - [F15, F14, F13, F12, F11,   '', '', '', '', '']
+  - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: '', type: held}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords"}
   danger:
-  - [{s: "double tap", t: "normal tap", h: "with REP held"}]
-  - ['', '', '', '', '', BT CLR, OUT BLE, OUT USB, '&sys_reset', '']
-  - ['', '', '', '', '', '', '', '', '', '&bootloader']
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - {t: ▽, type: trans}
+  - [{s: "double tap", t: "normal tap", h: ''}]
+  - ['', '', '', '', '', '', '', '', '', '']
+  - ['', '', '', '', '', '', '', '', '', '']
+  - ['&sys_reset', '&bootloader', '', '', '', '', '', '', '&bootloader', '&sys_reset']
   - ['', '', '', '']
   lock:
   - [{s: "double tap", t: "normal tap", h: "with REP held"}]
@@ -86,6 +77,7 @@ combos:
   # Layer switching
   - {p: [32, 33], k: 'to Alp', l: [], a: bottom, offset: 0.5}
   - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
+  - {p: [29, 30], k: 'to DAN', l: [fun]}
 
 #  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
