@@ -30,8 +30,24 @@
       require-prior-idle-ms = <125>;
       bindings = <&mo>, <&sl>;
     };
+    mo_kp: hold-mo_tab-s_layer {
+      compatible = "zmk,behavior-hold-tap";
+      label = "hold-tap-bindings";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
+      require-prior-idle-ms = <125>;
+      bindings = <&mo>, <&kp>;
+    };
   };
 };
+
+#define TAP_DANCE_LAYER_sl_mo_to(LAYER) \
+   TAP_DANCE(ls_##LAYER, <&mo_sl LAYER LAYER>, <&to LAYER>)
+
+#define TAP_DANCE_LAYER_kp_mo_to(NAME, LAYER, TAP_KEY) \
+   TAP_DANCE(lk_##LAYER, <&mo_kp LAYER TAP_KEY>, <&to LAYER>)
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   / {\
