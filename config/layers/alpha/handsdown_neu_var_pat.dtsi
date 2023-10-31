@@ -168,12 +168,12 @@
     };
 };
    COMBO_LAYER(CapsW, &caps_word, RTO RTI, ALP)
+   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
    TAP_DANCE_LAYER_sl_mo_to(SYM)
    TAP_DANCE_LAYER_kp_mo_to(NUM_bs, NUM, BACKSPACE)
    TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
-//LAYER_TAP_DANCE(NUM, NUM, &kp BACKSPACE)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
