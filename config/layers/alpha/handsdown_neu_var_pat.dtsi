@@ -142,8 +142,7 @@
 //├────────┼───────┼──────────┼────────┼────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G  &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴╮                           ││                            ╭──┴────────┴───────────┴────────╯
-                     &td_ls_SYM       &td_lk_NUM_bs  &td_spc_shift_ret &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
-//                     &td_ls_SYM       &td_lk_NUM_bs         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
+                     &td_ls_SYM       &td_lk_NUM_bs  &td_spc_shift_ret &rep_capsw_l CMD 0
 //                  ╰─────────┴─────────────────╯╰────────────────┴───────────╯
             >;
          };
@@ -152,10 +151,9 @@
 
 // Defines the LTO key, which is
 // REPEAT on tap
-// Caps Word on Shift-tap
+// Caps Word on Shift-tap (as well as a chord)
 // and momentary layer (&mo) on hold
    MOD_MORPH(rep_capsw, &key_repeat, &caps_word, MOD_LSFT|MOD_RSFT)
-
  / {
    behaviors {
         rep_capsw_l: rep_capsw_l {
@@ -169,7 +167,7 @@
         };
     };
 };
-
+   COMBO(CapsW, &caps_word, RTO RTI)
 
    // thumb keys
    TAP_DANCE_LAYER_sl_mo_to(SYM)
