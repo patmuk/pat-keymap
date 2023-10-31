@@ -11,9 +11,9 @@ layers:
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   commands:
   - [{s: "2x tap", t: "tap", h: ""}]
-  - [{t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         {t: ''},                   {t: ''},         {t: ''},           {t: ''},          {t: ''}]
-  - [{t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},       {t: 'win left'}, {t: 'win middle'}, {t: 'win right'}, {t: 'desktop right'}]
-  - [{t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, {t: $$mdi:keyboard-esc$$}, {t: ''},         {t: ''},           {t: ''},          {t: ''}]
+  - [{t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         $$mdi:volume-plus$$,  $$mdi:volume-mute$$, $$mdi:volume-plus$$, $$mdi:lightbulb-on-40$$, $$mdi:lightbulb-on-70$$]
+  - [{t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},  {t: 'win left'},     {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
+  - [{t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, $$mdi:keyboard-esc$$, {t: ''},             {t: ''},             {t: ''},                 {t: ''}]
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
@@ -30,7 +30,7 @@ layers:
   numbers:
   - [{s: "2x tap", t: "normal tap", h: ""}]
   - [{s: '/', t: '*'}, '9', '8', '7', ',',    '''', '!', '', '°', '∑']
-  - [{s: '-', t: '+'}, '4', '2', '1', '0',    '§', '%', '≤', '≥', '#']
+  - [{s: '-', t: '+'}, '3', '2', '1', '0',    '§', '%', '≤', '≥', '#']
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
@@ -38,31 +38,13 @@ layers:
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   fun:
   - [{s: "double tap", t: "normal tap", h: "with REP held"}]
-  - ['', F4, F5, F6, F10, '', '', '', '', '']
-  - - CAPS
-    - F1
-    - F2
-    - F3
-    - F11
-    - {t: BT, h: '2'}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - {type: held}
-  - - lock
-    - F7
-    - F8
-    - F9
-    - F12
-    - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - BRI DN
-    - BRI UP
-    - {t: ▽, type: trans}
-  - - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - ''
+  - [{s: '', t: ''}, F9, F8, F7, F12,    '', '', '', '', '']
+  - [{s: '', t: ''}, F3, F2, F1, F10,    '', '', '', '', '']
+  - [{s: '', t: ''}, F6, F5, F4, F11,    '', '', '', '', '']
+  - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation', type: held}
+    - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
+    - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
+    - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   danger:
   - [{s: "double tap", t: "normal tap", h: "with REP held"}]
   - ['', '', '', '', '', BT CLR, OUT BLE, OUT USB, '&sys_reset', '']
