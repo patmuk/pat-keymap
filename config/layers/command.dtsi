@@ -19,6 +19,9 @@
  ╰────────────────────────────────╮  ⇧   REP │ │ ⌫W   -L0-╭────────────────╯
                                   ╰──────────╯ ╰──────────╯         
 */
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
 / {
     keymap {
         compatible = "zmk,keymap";
