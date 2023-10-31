@@ -145,7 +145,7 @@
 //├────────┼───────┼──────────┼────────┼───────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G      &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴╮                              ││                            ╭──┴────────┴───────────┴────────╯
-                     &kp LSHFT  &rep_capsw_l CMD 0    &td_spc_bspc     &td_l0_l1
+                     &lt SYM td_SYM    &rep_capsw_l CMD 0    &td_spc_bspc     &td_l0_l1
 //                  ╰─────────┴────────────────────╯╰────────────────┴───────────╯
             >;
          };
@@ -171,13 +171,16 @@
     };
 };
 
+   // thumb keys
+   TAP_DANCE(sym, <&sl SYM>, <&to SYM>)
+
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
-      // Sentence ending auto capitalize
+   // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skq LSHIFT)
    TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
 
-   //tap dance auto shift
+   // tap dance auto shift
    TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
    TAP_DANCE(spc_bspc, <&kp SPACE>, <&kp BACKSPACE>)
    TAP_DANCE(l0_l1, <&to 0>, <&to 1>)
@@ -186,6 +189,7 @@
    TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
    TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
 
+   // tap dance alphas
    MACRO(shift_ae, &kp LA(U) &kp LS(A))
    MACRO(ae, &kp LA(U) &kp A)
    TAP_DANCE(A, <&kp A>, <&kp LS(A)>, <&macro_ae>, <&macro_shift_ae>)
