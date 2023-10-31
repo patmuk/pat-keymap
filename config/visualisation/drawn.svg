@@ -356,10 +356,10 @@ path.combo {
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
 </g>
-<g transform="translate(457, 232) rotate(25.5)" class="key keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
-<text x="0" y="-24" class="key shifted">⌫ Word</text>
+<g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:backspace"/>
+<text x="0" y="-24" class="key held shifted">⌫ Word</text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -367,10 +367,10 @@ path.combo {
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
 <use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key held shifted glyph tabler:arrow-back"/>
 </g>
-<g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
+<g transform="translate(681, 212) rotate(-12.0)" class="key keypos-34">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
+<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:repeat"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="29" width="28" height="26" class="combo"/>
@@ -610,11 +610,11 @@ path.combo {
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
 <text x="0" y="-24" class="key shifted">⌫ Word</text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key held keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">⌴</text>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key held shifted glyph tabler:arrow-back"/>
+<g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⌴</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph tabler:arrow-back"/>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
@@ -839,16 +839,16 @@ path.combo {
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
 <text x="0" y="-24" class="key shifted">⌫ Word</text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key held keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">⌴</text>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key held shifted glyph tabler:arrow-back"/>
+<g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⌴</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph tabler:arrow-back"/>
 </g>
-<g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
+<g transform="translate(681, 212) rotate(-12.0)" class="key keypos-34">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
+<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:repeat"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M170,105 l15,0" class="combo"/>
@@ -1075,16 +1075,16 @@ path.combo {
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
 <text x="0" y="-24" class="key shifted">⌫ Word</text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key held keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">⌴</text>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key held shifted glyph tabler:arrow-back"/>
+<g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">⌴</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph tabler:arrow-back"/>
 </g>
-<g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
+<g transform="translate(681, 212) rotate(-12.0)" class="key keypos-34">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
+<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:repeat"/>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M170,105 l15,0" class="combo"/>
