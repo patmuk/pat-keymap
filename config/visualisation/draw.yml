@@ -1,6 +1,6 @@
 layout: {qmk_info_json: info.json}
 layers:
-  hands_down_neu:
+  alpha:
   - [{s: "2x tap", t: "tap", h: "hold key"}]
   - [{s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
   - [{t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
@@ -59,28 +59,28 @@ layers:
   - ['', '', '', '']
 combos:
 # Special Alphas
-  - {p: [1, 2], k: 'Qu', l: [hands_down_neu]}
+  - {p: [1, 2], k: 'Qu', l: [alpha]}
 
 # HRM - not as chord, but mod-morph-shift, in all layers 
-  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: left, slide: -1, offset: -0.05}
-  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: left, slide: -1, offset: -0.15}
-  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: left, slide: -1, offset: -0.15}  
-  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: left, slide: -1, offset: -0.15}
-  - {p: [15, 33], k: "ctr-alt cmd", l: [], a: left, slide: -1, offset: -0.15}
+  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.05}
+  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
+  - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}  
+  - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
+  - {p: [15, 33], k: "ctr-alt cmd", l: [alpha, commands, symbols, numbers], a: left, slide: -1, offset: -0.15}
 
-  - {p: [16, 33], k: "ctr-alt cmd", l: [], a: right, slide: 1, offset: -0.15}
-  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: right, slide: 1, offset: -0.05}
-  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: right, slide: 1, offset: -0.15}  
-  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: right, slide: 1, offset: -0.15}
-  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: right, slide: 1, offset: -0.1}
+  - {p: [16, 33], k: "ctr-alt cmd", l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}
+  - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.05}
+  - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}  
+  - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.15}
+  - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, commands, symbols, numbers], a: right, slide: 1, offset: -0.1}
 
   # Layer switching
   - {p: [32, 33], k: 'to Alp', l: [], a: bottom, offset: 0.5}
   - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
   - {p: [29, 30], k: 'to DAN', l: [fun]}
 
-#  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
-#  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
+#  - {p: [33, 34], k: 'NUM (hold)', l: [alpha], type: held, a: bottom, offset: 0.25}
+#  - {p: [31, 32], k: 'SYM (1sht)', l: [alpha], type: held, a: bottom, offset: 0.25}
 
 #    L0: normal -> thumb right outside
 #    CapsWord -> thumb left outside & thumb right outside
