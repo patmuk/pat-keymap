@@ -6,46 +6,46 @@
  ╰────────╮30 31│ │32 33╭────────╯
           ╰─────╯ ╰─────╯         */
 / {
-/*  Enter with base layer ⇧+Layer
-    ╭──────────────────╮ ╭───────────────╮
+/*  Enter with base layer SYN
+     ╭──────────────────╮ ╭───────────────╮
     │ W  F  M  P  V    │ │ │  :  J  "  Z │
-    │ R  S  N  T  B    │ │ ;  E  A  I  H │
+    │ R  S  N  T  B    │ │ ;  A  E  I  H │
     │ X  C  L  D  G    │ │ _  U  O  Y  K │
-    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
+    ╰────────╮SYM ⌫/NUM│ │␣/⏎  REP╭──────╯
              ╰─────────╯ ╰────────╯         */
-/*  Enter with base layer ⇧+Layer
-    ╭──────────────────╮ ╭───────────────╮
-    │ ]  }  )  >  ^    │ │ \  !  _  `  _ │
-    │ [  {  (  <  INS  │ │ ?  _  &  @  # │
-    │ _  _  ~  $  ⌦    │ │ -  =  _  _  _ │
-    ╰────────╮ ⇧  REP  │ │ ␣ -L0- ╭──────╯
-             ╰─────────╯ ╰────────╯         */
-/*  pressing ⇧
+/*  
+    ╭─────────────────────────────╮ ╭───────────────╮
+    │ ^  LEFT  DONW  UP  RIGHT    │ │ \  !  _  `  _ │
+    │ [  {     (     <   INS      │ │ ?  @  =  &  # │
+    │ _  _     ~     $   ⌦        │ │ -  €  _  _  _ │
+    ╰───────────────╮trans  trans │ │ trans  trans╭─╯
+                    ╰─────────────╯ ╰─────────────╯   */
+/*  2x tap
     ╭──────────────────╮ ╭───────────────╮
     │ _  _  _  _  _    │ │ _  _  _  _  _ │
     │ ]  }  )  >  _    │ │ _  _  _  _  _ │
     │ _  _  _  _  _    │ │ _  _  _  _  _ │
-    ╰────────╮ ⇧  REP  │ │⌫ -L0- ╭──────╯
-             ╰─────────╯ ╰────────╯         */
+    ╰────╮trans  trans │ │ trans  trans╭─╯
+         ╰─────────────╯ ╰─────────────╯    */
    keymap {
       compatible = "zmk,keymap";
       symbols {
          bindings = <
-//╭───────────┬──────────────┬──────────┬─────────┬───────╮╭─────────┬──────────┬───────────┬──────────┬─────────╮
-   &kp RBKT     &kp RBRC       &kp RPAR   &kp GT   &none    &kp BSLH   &kp EXCL   &none       &kp GRAVE  &none
-//├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼───────────┼──────────┼─────────┤
-   &td_braces   &td_c_braces   &td_pars   &td_LG_T &kp INS  &kp QMARK  &kp AMPS   &kp LA(N2)  &kp AT     &kp HASH
-//├───────────┼──────────────┼──────────┼─────────┼───────┤├─────────┼──────────┼───────────┼──────────┼─────────┤
-   &none        &none          &kp TILDE  &kp DLLR &kp DEL  &trans     &kp EQUAL  &none       &none      &none
-//╰───────────┴──────────────┴╮                           ││                    ╭───────────┴──────────┴─────────╯
-                               &trans     &trans            &trans     &to 0
-//                            ╰─────────┴─────────────────╯╰─────────┴──────────╯
+//╭─────────────┬──────────────┬──────────┬─────────┬──────────╮╭─────────┬───────────┬──────────┬──────────┬─────────╮
+   &kp CARET      &kp LEFT       &kp DOWN   &kp UP    &kp RIGHT  &kp BSLH   &kp EXCL    &none      &kp GRAVE  &none
+//├─────────────┼──────────────┼──────────┼─────────┼──────────┤├─────────┼───────────┼──────────┼──────────┼─────────┤
+   &td_sq_braces  &td_c_braces   &td_pars   &td_LG_T  &kp INS    &kp QMARK  &kp AT      &kp EQUAL  &kp AMPS   &kp HASH
+//├─────────────┼──────────────┼──────────┼─────────┼──────────┤├─────────┼───────────┼──────────┼──────────┼─────────┤
+   &none          &none          &kp TILDE  &kp DLLR  &kp DEL    &trans     &kp LA(N2)  &none      &none      &none
+//╰─────────────┴──────────────┴──────────╮                    ││                     ╭──────────┴──────────┴─────────╯
+                                            &trans    &trans     &trans     &trans
+//                                        ╰─────────┴──────────╯╰─────────┴───────────╯
          >;
       };
    };
 };
 
-   TAP_DANCE(braces, <&kp LBKT>, <&kp RBKT>)
-   TAP_DANCE(c_braces, <&kp LBRC>, <&kp RBRC>)
-   TAP_DANCE(pars, <&kp LPAR>, <&kp RPAR>)
+   TAP_DANCE(sq_braces, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>)
+   TAP_DANCE(c_braces, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>)
+   TAP_DANCE(pars, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>)
    TAP_DANCE(LG_T, <&kp GT>, <&kp LT>)
