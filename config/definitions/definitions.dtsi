@@ -1,4 +1,4 @@
-uu// indebted and with much reference to dxmh's zmk-config
+// shortcut definitions
 
 #include "key_positions.dtsi"
 
