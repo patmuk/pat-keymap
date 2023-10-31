@@ -154,6 +154,7 @@
 // Caps Word on Shift-tap
 // and momentary layer (&mo) on hold
    MOD_MORPH(rep_capsw, &key_repeat, &caps_word, MOD_LSFT|MOD_RSFT)
+
  / {
    behaviors {
         rep_capsw_l: rep_capsw_l {
@@ -172,8 +173,8 @@
 
 
    // thumb keys
-   LAYER_TAP_DANCE(SYM, SYM, <&sl SYM>)
-   LAYER_TAP_DANCE(NUM, NUM, <&kp BACKSPACE>)
+   LAYER_TAP_DANCE(SYM, SYM, &sl SYM)
+   LAYER_TAP_DANCE(NUM, NUM, &kp BACKSPACE)
    TAP_DANCE(spc_bspc, <&kp BACKSPACE>, <&kp RETURN>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
