@@ -11,9 +11,9 @@ layers:
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   commands:
   - [{s: "2x tap", t: "tap", h: ""}]
-  - [{t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         $$mdi:volume-plus$$,  $$mdi:volume-mute$$, $$mdi:volume-plus$$, $$mdi:lightbulb-on-40$$, $$mdi:lightbulb-on-70$$]
-  - [{t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},  {t: 'win left'},     {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
-  - [{t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, $$mdi:keyboard-esc$$, {t: ''},             {t: ''},             {t: ''},                 {t: ''}]
+  - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},         $$mdi:volume-plus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-40$$, $$mdi:lightbulb-on-70$$]
+  - [{t: "select all"},  {t: $$mdi:content-cut$$},   {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},  {t: 'win left'},       {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
+  - [{t: "find prev"},   '',                         '',                        '',                         {t: $$mdi:keyboard-tab$$}, $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols'}
     - {t: 'undo', s: 'to_numbers', h: 'mo_numbers'}
     - {t: 'redo', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
