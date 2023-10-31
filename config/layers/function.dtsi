@@ -30,4 +30,4 @@
                 };
         };
 };
-COMBO_LAYER(to_DANGER, &to DAN, RRB RPB, FUN)
+COMBO_LAYER(to_DANGER, &to DAN, RBR RBP, FUN)
