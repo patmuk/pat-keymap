@@ -111,7 +111,9 @@ combos:
   - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: left, slide: -1, offset: -0.15}
   - {p: [13, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: left, slide: -1, offset: -0.15}  
   - {p: [14, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: left, slide: -1, offset: -0.15}
+  - {p: [15, 33], k: "ctr-alt-cmd", l: [], a: left, slide: -1, offset: -0.15}
 
+  - {p: [16, 33], k: "ctr-alt-cmd", l: [], a: right, slide: 1, offset: -0.15}
   - {p: [17, 33], k: $$mdi:apple-keyboard-command$$, l: [], a: right, slide: 1, offset: -0.05}
   - {p: [18, 33], k: $$mdi:apple-keyboard-option$$, l: [], a: right, slide: 1, offset: -0.15}  
   - {p: [19, 33], k: $$mdi:apple-keyboard-control$$, l: [], a: right, slide: 1, offset: -0.15}
