@@ -142,7 +142,7 @@
 //├────────┼───────┼──────────┼────────┼────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G  &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴╮                           ││                            ╭──┴────────┴───────────┴────────╯
-                     &htb &mo SYM &sl SYM      &kp D         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
+                     &htb_SYM 0 0      &kp D         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
 //                     &td_l_SYM       &kp D         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
 //                     &td_l_SYM  &td_l_NUM         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
 //                  ╰─────────┴─────────────────╯╰────────────────┴───────────╯
@@ -170,13 +170,16 @@
         };
     };
 };
-#define LAYER_TAP_DANCE(NAME, LAYER, TAP_KEY) \
-   TAP_DANCE(l_##NAME, <&htb &mo LAYER TAP_KEY>, <&to LAYER>)
+
+   HOLD_TAP_BEHAVIOR(SYM, <&mo SYM>, <&sl SYM>)
+
+//#define LAYER_TAP_DANCE(NAME, LAYER, TAP_KEY) \
+//   TAP_DANCE(l_##NAME, <&htb &mo LAYER TAP_KEY>, <&to LAYER>)
 
 
    // thumb keys
-   LAYER_TAP_DANCE(SYM, SYM, &sl SYM)
-   LAYER_TAP_DANCE(NUM, NUM, &kp BACKSPACE)
+   //LAYER_TAP_DANCE(SYM, SYM, &sl SYM)
+   //LAYER_TAP_DANCE(NUM, NUM, &kp BACKSPACE)
    TAP_DANCE(spc_bspc, <&kp BACKSPACE>, <&kp RETURN>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)

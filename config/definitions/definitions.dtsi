@@ -19,36 +19,29 @@
       release-after-ms = <1000>;
       quick-release;
     };
-
-    htb: hold_tab_behavior {
-      compatible = "zmk,behavior-hold-tap";
-      label = "hold-tap-bindings";
-      #binding-cells = <2>;
-      flavor = "hold-preferred";
-      tapping-term-ms = <200>;
-      quick-tap-ms = <200>;
-      require-prior-idle-ms = <125>;
-      bindings = <>, <>;
-    };
   };
 };
 
+// #define HOLD_TAP_BEHAVIOR(NAME, BINDING_1, BINDING_2) \
+//   HOLD_TAP_BEHAVIOR_INNER(htb_##NAME, BINDING_1, BINDING_2)\
+//     htb_htb_i_##NAME BINDING_1 0, BINDING_2 0
 
-//#define HOLD_TAP_BEHAVIOR(NAME, BINDING_1, BINDING_2) \
-/ {
-//  behaviors {\
-    htb: hold_tab_behavior {\
+#define HOLD_TAP_BEHAVIOR(NAME, BINDING_1, BINDING_2) \
+/ {\
+  compatible = "zmk,bindings";\
+  behaviors {\
+    htb_##NAME: hold_tab_behavior {\
       compatible = "zmk,behavior-hold-tap";\
       label = "hold-tap-bindings";\
       #binding-cells = <2>;\
-      flavor = "tap-preferred";\
+      flavor = "hold-preferred";\
       tapping-term-ms = <200>;\
       quick-tap-ms = <200>;\
       require-prior-idle-ms = <125>;\
-      bindings = <>, <>;\
+      bindings = BINDING_1, BINDING_2;
     };
-//  };
-//};
+  };
+};
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   / {\
