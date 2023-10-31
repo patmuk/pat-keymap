@@ -30,7 +30,7 @@
       require-prior-idle-ms = <125>;
       bindings = <&mo>, <&sl>;
     };
-    mo_kp: hold-mo_tab-s_layer {
+    mo_kp: hold-mo_tab-kp_layer {
       compatible = "zmk,behavior-hold-tap";
       label = "hold-tap-bindings";
       #binding-cells = <2>;
