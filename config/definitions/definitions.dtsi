@@ -19,6 +19,17 @@
       release-after-ms = <1000>;
       quick-release;
     };
+
+    mo_sl: hold-mo_tab-s_layer {
+      compatible = "zmk,behavior-hold-tap";
+      label = "hold-tap-bindings";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
+      require-prior-idle-ms = <125>;
+      bindings = <&mo>, <&sl>;
+    };
   };
 };
 
