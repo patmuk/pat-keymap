@@ -11,9 +11,9 @@ layers:
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   commands:
   - [ {s: "2x tap", t: "tap", h: ""} ]
-  - [ {t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         {t: ''},                   {t: ''}, {t: ''}, {t: ''}, {t: ''}]
-  - [ {t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, {t: $$mdi:keyboard-esc$$}, {t: ''}, {t: ''}, {t: ''}, {t: ''}]
-  - [ {t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: ''},                   {t: ''}, {t: ''}, {t: ''}, {t: ''}]
+  - [ {t: "find all"},    {t: "find"},              {t: "redo"},               {t: "undo"},                {t: "switch app"},         {t: ''},                   {t: ''},         {t: ''},           {t: ''},          {t: ''}]
+  - [ {t: "select all"},  {t: $$mdi:content-cut$$}, {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},         {t: 'desktop left'},       {t: 'win left'}, {t: 'win middle'}, {t: 'win right'}, {t: 'desktop right'}]
+  - [ {t: "find prev"},   {t: ''},                  {t: ''},                   {t: ''},                    {t: $$mdi:keyboard-tab$$}, {t: $$mdi:keyboard-esc$$}, {t: ''},         {t: ''},           {t: ''},          {t: ''}]
   - - {t: ▽_symbols, s: "▽ numbers", h: '▽ Navigation'}
     - {t: $$tabler:backspace$$, s: '⌫ Word', h: ''}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM", type: held}
@@ -118,7 +118,7 @@ combos:
   - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [], a: right, slide: 1, offset: -0.1}
 
   # Layer switching
-  - {p: [31, 34], k: 'to Alp', l: [], a: bottom, offset: 0.5}
+  - {p: [32, 33], k: 'to Alp', l: [], a: bottom, offset: 0.5}
 
 #  - {p: [33, 34], k: 'NUM (hold)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
 #  - {p: [31, 32], k: 'SYM (1sht)', l: [hands_down_neu], type: held, a: bottom, offset: 0.25}
