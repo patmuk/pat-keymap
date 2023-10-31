@@ -167,7 +167,7 @@
         };
     };
 };
-   COMBO(CapsW, &caps_word, RTO RTI)
+   COMBO_LAYER(CapsW, &caps_word, RTO RTI, ALP)
 
    // thumb keys
    TAP_DANCE_LAYER_sl_mo_to(SYM)
