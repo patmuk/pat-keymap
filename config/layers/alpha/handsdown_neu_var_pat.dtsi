@@ -142,7 +142,8 @@
 //├────────┼───────┼──────────┼────────┼────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G  &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴╮                           ││                            ╭──┴────────┴───────────┴────────╯
-                     &td_l_SYM  &td_l_NUM         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
+                     &kp C &kp D         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
+//                     &td_l_SYM  &td_l_NUM         &kp A &kp B//&mt LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
 //                  ╰─────────┴─────────────────╯╰────────────────┴───────────╯
             >;
          };
