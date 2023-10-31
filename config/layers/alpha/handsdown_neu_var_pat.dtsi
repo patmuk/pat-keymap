@@ -135,15 +135,15 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭────────┬───────┬──────────┬────────┬───────────╮╭────────────────┬──────────────┬────────┬───────────┬────────╮
-   &td_s_W  &td_s_F  &td_s_M    &td_s_P  &td_s_V      &td_slh_pipe     &td_dot_colon  &td_s_J  &td_quotes  &td_s_Z
-//├────────┼───────┼──────────┼────────┼───────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
-   &td_s_R  &td_s_S  &td_s_N    &td_s_T  &td_s_B      &td_comma_semi   &td_A          &td_s_E  &td_s_I     &td_s_H
-//├────────┼───────┼──────────┼────────┼───────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
-   &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G      &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
-//╰────────┴───────┴╮                              ││                            ╭──┴────────┴───────────┴────────╯
-                     &td_l_SYM  &td_l_NUM          &rep_capsw_l CMD 0    &td_spc_bspc
-//                  ╰─────────┴────────────────────╯╰────────────────┴───────────╯
+//╭────────┬───────┬──────────┬────────┬────────╮╭────────────────┬──────────────┬────────┬───────────┬────────╮
+   &td_s_W  &td_s_F  &td_s_M    &td_s_P  &td_s_V  &td_slh_pipe     &td_dot_colon  &td_s_J  &td_quotes  &td_s_Z
+//├────────┼───────┼──────────┼────────┼────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
+   &td_s_R  &td_s_S  &td_s_N    &td_s_T  &td_s_B  &td_comma_semi   &td_A          &td_s_E  &td_s_I     &td_s_H
+//├────────┼───────┼──────────┼────────┼────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
+   &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G  &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
+//╰────────┴───────┴╮                           ││                            ╭──┴────────┴───────────┴────────╯
+                     &td_l_SYM  &td_l_NUM         &mt &kp LSFT &td_spc_bspc     &rep_capsw_l CMD 0    
+//                  ╰─────────┴─────────────────╯╰────────────────┴───────────╯
             >;
          };
       };
@@ -174,6 +174,7 @@
    // thumb keys
    LAYER_TAP_DANCE(SYM, SYM, <&sl SYM>)
    LAYER_TAP_DANCE(NUM, NUM, <&kp BACKSPACE>)
+   TAP_DANCE(spc_bspc, <&kp BACKSPACE>, <&kp RETURN>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
@@ -183,7 +184,6 @@
 
    // tap dance auto shift
    TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
-   TAP_DANCE(spc_bspc, <&kp SPACE>, <&kp BACKSPACE>)
    TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
    TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
    TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
