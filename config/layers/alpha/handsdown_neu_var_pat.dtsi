@@ -142,7 +142,7 @@
 //├────────┼───────┼──────────┼────────┼───────────┤├────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L    &td_s_D  &td_s_G      &td_minus_under  &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴╮                              ││                            ╭──┴────────┴───────────┴────────╯
-                     &lt SYM &td_SYM    &rep_capsw_l CMD 0    &td_spc_bspc     &td_l0_l1
+                     &td_l_SYM  &td_l_NUM          &rep_capsw_l CMD 0    &td_spc_bspc
 //                  ╰─────────┴────────────────────╯╰────────────────┴───────────╯
             >;
          };
@@ -167,9 +167,13 @@
         };
     };
 };
+#define LAYER_TAP_DANCE(NAME, LAYER, TAP_KEY) \
+   TAP_DANCE(l_##NAME, <&lt LAYER TAP_KEY>, <&to LAYER>)
+
 
    // thumb keys
-   TAP_DANCE(SYM, <&sl SYM>, <&to SYM>)
+   LAYER_TAP_DANCE(SYM, SYM, <&sl SYM>)
+   LAYER_TAP_DANCE(NUM, NUM, <&kp BACKSPACE>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
@@ -180,7 +184,6 @@
    // tap dance auto shift
    TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
    TAP_DANCE(spc_bspc, <&kp SPACE>, <&kp BACKSPACE>)
-   TAP_DANCE(l0_l1, <&to 0>, <&to 1>)
    TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
    TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
    TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
