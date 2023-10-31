@@ -127,7 +127,6 @@
          // COMBO(backspace, &kp BSPC, BRM BRR)
          // COMBO(cmd, &sk LCMD, LTI LTO)
          // COMBO(opt, &sk LALT, RTO RTI)
-         // COMBO(qu, &macro_m_QU, LTP LTR)
          //COMBO(z, &kp Z, MLP MLM)
          //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
       // };
