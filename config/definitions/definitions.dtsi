@@ -19,8 +19,36 @@
       release-after-ms = <1000>;
       quick-release;
     };
+
+    htb: hold_tab_behavior {
+      compatible = "zmk,behavior-hold-tap";
+      label = "hold-tap-bindings";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      quick-tap-ms = <200>;
+      require-prior-idle-ms = <125>;
+      bindings = <>, <>;
+    };
   };
 };
+
+
+//#define HOLD_TAP_BEHAVIOR(NAME, BINDING_1, BINDING_2) \
+/ {
+//  behaviors {\
+    htb: hold_tab_behavior {\
+      compatible = "zmk,behavior-hold-tap";\
+      label = "hold-tap-bindings";\
+      #binding-cells = <2>;\
+      flavor = "tap-preferred";\
+      tapping-term-ms = <200>;\
+      quick-tap-ms = <200>;\
+      require-prior-idle-ms = <125>;\
+      bindings = <>, <>;\
+    };
+//  };
+//};
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   / {\
