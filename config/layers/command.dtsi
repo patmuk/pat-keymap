@@ -12,12 +12,12 @@
  ╰────────╮30 31│ │32 33╭────────╯
           ╰─────╯ ╰─────╯         */
 /* Pressing REP+ 
- ╭───────────────────────────────────────────╮ ╭───────────────────────────╮
- │ find_all    find   redo  undo  switch_app │ │ _    _     _     _      _ │
- │ find_prv    LCTRL  LALT  LCMD  TAB        │ │ ESC  RCMD  RALT  RCTRL  _ │
- │ select_all  cut    copy  paste switch_win │ │ +    _     _     _      _ │
- ╰────────────────────────────────╮  ⇧   REP │ │ ⌫W   -L0-╭────────────────╯
-                                  ╰──────────╯ ╰──────────╯         
+ ╭──────────────────────────────────────────────────────────╮ ╭─────────────────────────────────────────────╮
+ │ find_all    find       redo       undo        switch_app │ │ Vol+    Mute   Vol-        Bright+  Bright- │
+ │ select_all  cut/LCTRL  copy/LALT  paste/LCMD  switch_win │ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
+ │ find_prv    find_next   -         TAB         Enter      │ │ ESC     prev   Play/Pause  next      _      │
+ ╰────────────────────────────────────────────╮SYM undo/NUM │ │ redo/⏎  REP╭────────────────────────────────╯
+                                              ╰─────────────╯ ╰────────────╯         
 */
 &key_repeat {
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
@@ -27,19 +27,22 @@
         compatible = "zmk,keymap";
         command {
             bindings = <
-//╭────────────────┬──────────┬──────────────┬──────────┬──────────────╮╭──────────┬──────────┬─────────┬───────────┬──────╮
-   &kp LG(LS(A))     &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)     &none      &none      &none     &none       &none
-//├────────────────┼──────────┼──────────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-   &kp LS(KP_ENTER)  &kp LCTRL  &kp LALT       &kp LCMD   &kp TAB         &kp ESC    &kp RCMD   &kp RALT  &kp RCTRL   &none
-//├────────────────┼──────────┼──────────────┼──────────┼──────────────┤├──────────┼──────────┼─────────┼───────────┼──────┤
-   &kp LG(A)         &kp LG(X)  &kp LG(C)      &kp LG(V)  &kp LG(GRAVE)   &kp PLUS   &none      &none     &none       &none
-//╰────────────────┴──────────┴──────────────╮                         ││                            ╭──┴───────────┴──────╯
-                                               &trans     &trans          &kp LA(BACKSPACE)  &trans
-//                                           ╰──────────┴──────────────╯╰──────────────────┴─────────╯
+//╭────────────────┬──────────┬──────────────┬──────────┬─────────────────╮╭──────────────────┬─────────────────┬──────────────────┬─────────────────────┬─────────────────────╮
+   &kp LG(LS(A))     &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)        &kp C_VOL_UP       &kp C_MUTE        &kp C_VOL_DN       &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC
+//├────────────────┼──────────┼──────────────┼──────────┼─────────────────┤├──────────────────┼─────────────────┼──────────────────┼─────────────────────┼─────────────────────┤
+   &kp LG(A)         &kp LG(X)  &kp LG(C)      &kp LG(V)  &kp LG(GRAVE)      &kp LC(LEFT)       &kp LA(LC(LEFT))  &kp LA(LC(SPACE))  &kp LA(LC(RIGHT))     &kp LC(RIGHT)
+//├────────────────┼──────────┼──────────────┼──────────┼─────────────────┤├──────────────────┼─────────────────┼──────────────────┼─────────────────────┼─────────────────────┤
+   &kp LG(LS(G))    &kp LS(G)   &none          &kp TAB    &kp LS(KP_ENTER)   &kp ESC            &kp K_PREV        &kp C_PLAY_PAUSE   &kp K_NEXT            &none
+//╰────────────────┴──────────┴──────────────╮                           ││                                  ╭──┴──────────────────┴─────────────────────┴─────────────────────╯
+                                               &trans     &td_lk_NUM_undo    &td_redo_shift_return   &trans
+//                                           ╰──────────┴────────────────╯╰───────────────────────┴──────────╯
             >;
         };
     };
 };
+
+TAP_DANCE_LAYER_kp_mo_to(NUM_undo, NUM, LG(Z))
+TAP_DANCE(redo_shift_return, <&mt LSHIFT LS(LG(Z))>, <&kp RETURN>)
 
 // COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
 // COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), LTO LTP)
