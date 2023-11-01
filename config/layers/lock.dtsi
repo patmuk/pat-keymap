@@ -8,7 +8,10 @@
          ╰─────╯ ╰─────╯         */
 
 // un-/lock keyboard
-COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
+// COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
+COMBO(lock_kb, &tog LCK, LMR RMR)
+COMBO(sleep, &kp K_SLEEP_MODE, LMII RMII)
+COMBO(lock_pc, &kp K_LOCK, LMIO RMIO)
 
 / {
     keymap {
