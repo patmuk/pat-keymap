@@ -363,13 +363,13 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap"><tspan style="font-size: 70%">sl_symbols</tspan></text>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 70%">to_symbols</tspan></text>
+<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -634,7 +634,7 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 88%">to_Alpha</tspan></text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_symbols</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -642,7 +642,7 @@ path.combo {
 <tspan x="0" dy="-0.6em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
 </text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -793,13 +793,13 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap"><tspan style="font-size: 70%">sl_symbols</tspan></text>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 70%">to_symbols</tspan></text>
+<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1030,13 +1030,13 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 70%">sl_symbols</tspan></text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 70%">to_symbols</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:backspace"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
+<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1230,13 +1230,13 @@ path.combo {
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap"><tspan style="font-size: 70%">sl_symbols</tspan></text>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 70%">to_symbols</tspan></text>
+<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:backspace"/>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
-<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 70%">to_numbers</tspan></text>
+<text x="0" y="-24" class="key held shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

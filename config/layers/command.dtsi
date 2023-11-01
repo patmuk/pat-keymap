@@ -41,8 +41,8 @@
     };
 };
 
-TAP_DANCE_LAYERS_sl_mo_to(SYM, ALP)
-TAP_DANCE_LAYER_kp_mo_to(NUM_Bsp, NUM, LA(BACKSPACE))
+TAP_DANCE_LAYERS_sl_mo_tog(SYM, ALP)
+TAP_DANCE_LAYER_kp_mo_tog(NUM_Bsp, NUM, LA(BACKSPACE))
 
 
 // COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
