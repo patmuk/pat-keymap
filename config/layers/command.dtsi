@@ -34,7 +34,7 @@
 //├────────────────┼──────────┼──────────────┼──────────┼─────────────────┤├──────────────────┼─────────────────┼──────────────────┼─────────────────────┼─────────────────────┤
    &kp LG(LS(G))    &kp LS(G)   &none          &kp TAB    &kp LS(KP_ENTER)   &kp ESC            &kp K_PREV        &kp C_PLAY_PAUSE   &kp K_NEXT            &none
 //╰────────────────┴──────────┴──────────╮                                ││                                  ╭──┴──────────────────┴─────────────────────┴─────────────────────╯
-                                          &td_lk_ALP_SYM  &td_lk_NUM_Bsp     &td_redo_shift_return   &trans
+                                          &td_lk_SYM_ALP  &td_lk_NUM_Bsp     &td_redo_shift_return   &trans
 //                                       ╰──────────────┴─────────────────╯╰───────────────────────┴──────────╯
             >;
         };
@@ -42,7 +42,7 @@
 };
 
 TAP_DANCE_LAYER_kp_mo_to(NUM_Bsp, NUM, LA(BACKSPACE))
-TAP_DANCE_LAYER_kp_mo_to(SYM, ALP)
+TAP_DANCE_LAYERS_sl_mo_to(SYM, ALP)
 
 // COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
 // COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), LTO LTP)
