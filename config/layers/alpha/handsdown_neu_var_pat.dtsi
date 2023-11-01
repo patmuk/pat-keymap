@@ -141,8 +141,8 @@
 //├────────┼───────┼───────────┼────────┼────────┤├─────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L     &td_s_D  &td_s_G  &td_minus_under    &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴───╮                         ││                                      ╭──┴───────────┴────────╯
-                        &td_ls_SYM  &td_lk_NUM_bs  &td_spc_shift_ret  &ht_mo_rep CMD 0
-//                     ╰──────────┴──────────────╯╰─────────────────┴────────────────────╯
+                        &td_SYM  &td_lk_NUM_bs  &td_spc_shift_ret  &ht_mo_rep CMD 0
+//                     ╰───────┴──────────────╯╰─────────────────┴────────────────────╯
             >;
          };
       };
@@ -154,7 +154,7 @@
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
-   TAP_DANCE_LAYER_sl_mo_tog(SYM)
+   TAP_DANCE(SYM, <&mo SYM>, <&tog SYM>)
    TAP_DANCE_LAYER_kp_mo_tog(NUM_bs, NUM, BACKSPACE)
    TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
 

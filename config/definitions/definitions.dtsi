@@ -51,9 +51,6 @@ HOLD_TAP(mo_kp, &mo, &kp)
 // change Layer: tap: sticky layer, hold: momentary layer, 2x tap: to layer
 #define TAP_DANCE_LAYERS_sl_mo_tog(LAYER, TAP_LAYER) \
    TAP_DANCE(ls_##LAYER##_##TAP_LAYER, <&ht_mo_sl LAYER TAP_LAYER>, <&tog LAYER>)
-// change Layer: tap: sticky layer, hold: momentary layer, 2x tap: to layer
-#define TAP_DANCE_LAYER_sl_mo_tog(LAYER) \
-   TAP_DANCE(ls_##LAYER, <&ht_mo_sl LAYER LAYER>, <&tog LAYER>)
 // change Layer: tap: given Keypress, hold: momentary layer, 2x tap: to layer
 #define TAP_DANCE_LAYER_kp_mo_tog(NAME, LAYER, TAP_KEY) \
    TAP_DANCE(lk_##NAME, <&ht_mo_kp LAYER TAP_KEY>, <&tog LAYER>)
