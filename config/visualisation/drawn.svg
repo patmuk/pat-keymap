@@ -63,6 +63,9 @@
 <svg id="mdi:sleep">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-sleep" viewBox="0 0 24 24"><path d="M23,12H17V10L20.39,6H17V4H23V6L19.62,10H23V12M15,16H9V14L12.39,10H9V8H15V10L11.62,14H15V16M7,20H1V18L4.39,14H1V12H7V14L3.62,18H7V20Z" /></svg>
 </svg>
+<svg id="mdi:volume-minus">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-minus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H22V13H14V11Z" /></svg>
+</svg>
 <svg id="mdi:volume-mute">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-mute" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" /></svg>
 </svg>
@@ -516,7 +519,7 @@ path.combo {
 </g>
 <g transform="translate(644, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:volume-plus" xlink:href="#mdi:volume-plus" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:volume-plus"/>
+<use href="#mdi:volume-minus" xlink:href="#mdi:volume-minus" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:volume-minus"/>
 </g>
 <g transform="translate(700, 35)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -528,11 +531,11 @@ path.combo {
 </g>
 <g transform="translate(812, 35)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:lightbulb-on-40" xlink:href="#mdi:lightbulb-on-40" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:lightbulb-on-40"/>
+<use href="#mdi:lightbulb-on-70" xlink:href="#mdi:lightbulb-on-70" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:lightbulb-on-70"/>
 </g>
 <g transform="translate(868, 49)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:lightbulb-on-70" xlink:href="#mdi:lightbulb-on-70" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:lightbulb-on-70"/>
+<use href="#mdi:lightbulb-on-40" xlink:href="#mdi:lightbulb-on-40" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:lightbulb-on-40"/>
 </g>
 <g transform="translate(196, 105)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
