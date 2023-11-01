@@ -20,6 +20,14 @@
       quick-release;
     };
 
+    skl: sticky_key_long_pressed {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      release-after-ms = <10000>;
+    };
+
     mo_sl: hold-mo_tab-s_layer {
       compatible = "zmk,behavior-hold-tap";
       label = "hold-tap-bindings";
