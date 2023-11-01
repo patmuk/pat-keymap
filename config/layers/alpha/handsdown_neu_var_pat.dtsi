@@ -157,7 +157,7 @@
    TAP_DANCE(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
    TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
    HOLD_TAP(mo_rep, &mo, &key_repeat)
-   TAP_DANCE(CMD_rep, <&ht_mo_rep>, <&tog CMD>)
+   TAP_DANCE(CMD_rep, <&ht_mo_rep CMD 0>, <&tog CMD>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
