@@ -11,9 +11,9 @@
                     // Bluetooth clear, reset, chaning BLE/USB preference, bootloader
                     bindings = <
 //┌───────┬───────┬───────┬───────┬───────┐ ┌────────────┬──────────────┬──────────────┬────────────┬─────────────┐
-    &none   &none   &none   &none   &none     &bt BT_CLR   &out OUT_BLE   &out OUT_USB   &sys_reset   &none
+    &none   &none   &none   &none   &none     &none        &none          &none          &none        &none      &none
 //├───────┼───────┼───────┼───────┼───────┤ ├────────────┼──────────────┼──────────────┼────────────┼─────────────┤
-    &none   &none   &none   &none   &none     &none        &none          &none          &none        &bootloader
+    &none   &none   &none   &none   &none     &none        &none          &none          &none        
 //├───────┼───────┼───────┼───────┼───────┤ ├────────────┼──────────────┼──────────────┼────────────┼─────────────┤
     &trans  &none   &none   &none   &none     &none        &none          &none          &none        &trans
 //└───────┴───────┴───────┴───────┴───────┘ └────────────┴──────────────┴──────────────┴────────────┴─────────────┘
@@ -23,3 +23,6 @@
                 };
         };
 };
+
+COMBO_LAYER(reset, &sys_reset, LBP RBP, DAN)
+COMBO_LAYER(flash, &bootloader, LBR RBR, DAN)
