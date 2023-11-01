@@ -141,13 +141,14 @@
 //├────────┼───────┼───────────┼────────┼────────┤├─────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L     &td_s_D  &td_s_G  &td_minus_under    &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴───╮                         ││                                      ╭──┴───────────┴────────╯
-                        &td_ls_SYM  &td_lk_NUM_bs  &td_spc_shift_ret  &lt CMD &key_repeat
+                        &td_ls_SYM  &td_lk_NUM_bs  &td_spc_shift_ret  &ht_mo_rep CMD 0
 //                     ╰──────────┴──────────────╯╰─────────────────┴────────────────────╯
             >;
          };
       };
    };
 
+   HOLD_TAP(mo_rep, &mo, &key_repeat)
 
    COMBO_LAYER(CapsW, &caps_word, LTO RTO, ALP)
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
