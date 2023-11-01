@@ -431,17 +431,13 @@ path.combo {
 <path d="M399,98 l9,0" class="combo"/>
 <path d="M399,98 v129 a6.0,6.0 0 0 0 6.0,6.0 h187" class="combo"/>
 <rect rx="6" ry="6" x="385" y="85" width="28" height="26" class="combo"/>
-<text x="399" y="98" class="combo tap">
-<tspan x="399" dy="-0.6em">ctr-alt</tspan><tspan x="399" dy="1.2em">cmd</tspan>
-</text>
+<text x="399" y="98" class="combo tap">fn</text>
 </g>
 <g class="combo combopos-8">
 <path d="M665,98 l-9,0" class="combo"/>
 <path d="M665,98 v129 a6.0,6.0 0 0 1 -6.0,6.0 h-29" class="combo"/>
 <rect rx="6" ry="6" x="651" y="85" width="28" height="26" class="combo"/>
-<text x="665" y="98" class="combo tap">
-<tspan x="665" dy="-0.6em">ctr-alt</tspan><tspan x="665" dy="1.2em">cmd</tspan>
-</text>
+<text x="665" y="98" class="combo tap">fn</text>
 </g>
 <g class="combo combopos-9">
 <path d="M726,91 l-15,0" class="combo"/>
@@ -851,17 +847,13 @@ path.combo {
 <path d="M399,98 l9,0" class="combo"/>
 <path d="M399,98 v129 a6.0,6.0 0 0 0 6.0,6.0 h187" class="combo"/>
 <rect rx="6" ry="6" x="385" y="85" width="28" height="26" class="combo"/>
-<text x="399" y="98" class="combo tap">
-<tspan x="399" dy="-0.6em">ctr-alt</tspan><tspan x="399" dy="1.2em">cmd</tspan>
-</text>
+<text x="399" y="98" class="combo tap">fn</text>
 </g>
 <g class="combo combopos-6">
 <path d="M665,98 l-9,0" class="combo"/>
 <path d="M665,98 v129 a6.0,6.0 0 0 1 -6.0,6.0 h-29" class="combo"/>
 <rect rx="6" ry="6" x="651" y="85" width="28" height="26" class="combo"/>
-<text x="665" y="98" class="combo tap">
-<tspan x="665" dy="-0.6em">ctr-alt</tspan><tspan x="665" dy="1.2em">cmd</tspan>
-</text>
+<text x="665" y="98" class="combo tap">fn</text>
 </g>
 <g class="combo combopos-7">
 <path d="M726,91 l-15,0" class="combo"/>
@@ -1064,9 +1056,7 @@ path.combo {
 <path d="M665,98 l-9,0" class="combo"/>
 <path d="M665,98 v129 a6.0,6.0 0 0 1 -6.0,6.0 h-29" class="combo"/>
 <rect rx="6" ry="6" x="651" y="85" width="28" height="26" class="combo"/>
-<text x="665" y="98" class="combo tap">
-<tspan x="665" dy="-0.6em">ctr-alt</tspan><tspan x="665" dy="1.2em">cmd</tspan>
-</text>
+<text x="665" y="98" class="combo tap">fn</text>
 </g>
 <g class="combo combopos-2">
 <path d="M726,91 l-15,0" class="combo"/>
