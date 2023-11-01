@@ -16,7 +16,7 @@ layers:
   - [{t: "find prev"},   'find next',                 '',                       {t: $$mdi:keyboard-tab$$},  'Enter',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: to_Alpha, s: "to_symbols", h: 'mo_symbols'}
     - {t: '⌫ Word', s: 'to_numbers', h: 'mo_numbers'}
-    - {t: 'redo', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
+    - {t: 'undo', s: '', h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
   symbols:
   - [{s: "2x tap", t: "tap", h: ""}]
