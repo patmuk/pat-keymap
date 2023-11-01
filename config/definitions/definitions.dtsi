@@ -148,6 +148,7 @@
     };\
   };
 
+// a high taping-terms value is ok, as REP should be used for repeated key presses
 #define TAP_DANCE(NAME, ...) \
 / {\
   behaviors {\
@@ -155,7 +156,7 @@
       compatible = "zmk,behavior-tap-dance";\
       label = str(tap_dance_##NAME);\
       #binding-cells = <0>;\
-      tapping-term-ms = <200>;\
+      tapping-term-ms = <400>;\
       bindings = __VA_ARGS__;\
      };\
   };\
