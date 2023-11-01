@@ -148,7 +148,6 @@
       };
    };
 
-//   HOLD_TAP(mo_rep, &mo, &key_repeat)
 
    COMBO_LAYER(CapsW, &caps_word, LTO RTO, ALP)
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
@@ -157,7 +156,8 @@
    TAP_DANCE(SYM, <&mo SYM>, <&tog SYM>)
    TAP_DANCE(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
    TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
-   TAP_DANCE(CMD_rep, <&lt CMD &key_repeat>, <&tog CMD>)
+   HOLD_TAP(mo_rep, &mo, &key_repeat)
+   TAP_DANCE(CMD_rep, <&mo_rep>, <&tog CMD>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
