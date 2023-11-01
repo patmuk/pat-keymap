@@ -181,7 +181,7 @@
    TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
 
    // tap dance auto shift
-   TAP_DANCE(comma_semi, <&kp COMMA>, <&kp SEMICOLON>)
+   TAP_DANCE(comma_semi, <&kp COMMA &kp SPACE>, <&kp SEMICOLON>)
    TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
    TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
    TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
