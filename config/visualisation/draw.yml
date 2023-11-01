@@ -60,7 +60,7 @@ layers:
 combos:
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
-  - {p: [33, 34], k: 'CapsW', l: [alpha]}
+  - {p: [32, 33], k: 'CapsW', l: [alpha]}
 
   - {p: [32, 34], k: '⌫ Word', l: [alpha, symbols, numbers], a: top, slide: -0.5}
 

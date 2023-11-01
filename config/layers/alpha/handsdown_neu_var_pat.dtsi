@@ -166,7 +166,7 @@
         };
     };
 };
-   COMBO_LAYER(CapsW, &caps_word, RTO RTI, ALP)
+   COMBO_LAYER(CapsW, &caps_word, LTO RTO, ALP)
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
