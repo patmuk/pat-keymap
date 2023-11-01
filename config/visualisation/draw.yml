@@ -8,7 +8,7 @@ layers:
   - - {t: sl_symbols, s: "to_symbols", h: 'mo_symbols', type: held}
     - {t: $$tabler:backspace$$, s: 'to_numbers', h: 'mo_numbers'}
     - {t: '⌴', s: $$tabler:arrow-back$$, h: "SHIFT & ▽HRM"}
-    - {t: $$tabler:repeat$$, s: '', h: "▽CMD & chords", type: held}
+    - {t: $$tabler:repeat$$, s: '', h: "mo_CMD & chords", type: held}
   commands:
   - [{s: "2x tap", t: "tap", h: ""}]
   - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-plus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-40$$, $$mdi:lightbulb-on-70$$]
@@ -78,7 +78,8 @@ combos:
   - {p: [20, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, symbols, numbers], a: right, slide: 1, offset: -0.1}
 
   # Layer switching
-  - {p: [31, 34], k: 'to Alp', l: [], a: bottom, offset: 0.5}
+    # to Alp is not a chord, but a key on the CMD layer
+  - {p: [31, 34], k: 'to Alp', l: [alpha], a: bottom, offset: 0.5}
   - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
   - {p: [29, 30], k: 'to DAN', l: [fun]}
 
