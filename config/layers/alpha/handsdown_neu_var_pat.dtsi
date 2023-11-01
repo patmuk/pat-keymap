@@ -141,7 +141,7 @@
 //├────────┼───────┼───────────┼────────┼────────┤├─────────────────┼──────────────┼────────┼───────────┼────────┤
    &td_s_X  &td_s_C  &td_s_L     &td_s_D  &td_s_G  &td_minus_under    &td_U          &td_O    &td_s_Y     &td_s_K
 //╰────────┴───────┴────────╮                    ││                                      ╭──┴───────────┴────────╯
-                             &td_SYM  &td_NUM_bsp  &td_spc_shift_ret  &td_CMD_rep//&ht_mo_rep CMD 0
+                             &td_SYM  &td_NUM_bsp  &td_spc_shift_ret  &ht_mo_rep CMD 0
 //                          ╰───────┴────────────╯╰─────────────────┴────────────────────╯
             >;
          };
@@ -157,7 +157,6 @@
    TAP_DANCE(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
    TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
-   TAP_DANCE(CMD_rep, <&ht_mo_rep CMD 0>, <&tog CMD>)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
