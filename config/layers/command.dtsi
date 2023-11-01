@@ -16,8 +16,8 @@
  │ find_all    find       redo       undo        switch_app │ │ Vol+    Mute   Vol-        Bright+  Bright- │
  │ select_all  cut/LCTRL  copy/LALT  paste/LCMD  switch_win │ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
  │ find_prv    find_next   -         TAB         Enter      │ │ ESC     prev   Play/Pause  next      _      │
- ╰────────────────────────────────────────────╮SYM undo/NUM │ │ redo/⏎  REP╭────────────────────────────────╯
-                                              ╰─────────────╯ ╰────────────╯         
+ ╰──────────────────────────────────╮ALP/SYM     ⌫ Word/NUM │ │ redo/⏎  REP╭────────────────────────────────╯
+                                    ╰───────────────────────╯ ╰────────────╯         
 */
 &key_repeat {
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
@@ -33,16 +33,16 @@
    &kp LG(A)         &kp LG(X)  &kp LG(C)      &kp LG(V)  &kp LG(GRAVE)      &kp LC(LEFT)       &kp LA(LC(LEFT))  &kp LA(LC(SPACE))  &kp LA(LC(RIGHT))     &kp LC(RIGHT)
 //├────────────────┼──────────┼──────────────┼──────────┼─────────────────┤├──────────────────┼─────────────────┼──────────────────┼─────────────────────┼─────────────────────┤
    &kp LG(LS(G))    &kp LS(G)   &none          &kp TAB    &kp LS(KP_ENTER)   &kp ESC            &kp K_PREV        &kp C_PLAY_PAUSE   &kp K_NEXT            &none
-//╰────────────────┴──────────┴──────────────╮                           ││                                  ╭──┴──────────────────┴─────────────────────┴─────────────────────╯
-                                               &trans     &td_lk_NUM_undo    &td_redo_shift_return   &trans
-//                                           ╰──────────┴────────────────╯╰───────────────────────┴──────────╯
+//╰────────────────┴──────────┴──────────╮                                ││                                  ╭──┴──────────────────┴─────────────────────┴─────────────────────╯
+                                          &td_lk_ALP_SYM  &td_lk_NUM_Bsp     &td_redo_shift_return   &trans
+//                                       ╰──────────────┴─────────────────╯╰───────────────────────┴──────────╯
             >;
         };
     };
 };
 
-TAP_DANCE_LAYER_kp_mo_to(NUM_undo, NUM, LG(Z))
-TAP_DANCE(redo_shift_return, <&mt LSHIFT LS(LG(Z))>, <&kp RETURN>)
+TAP_DANCE_LAYER_kp_mo_to(NUM_Bsp, NUM, LA(BACKSPACE))
+TAP_DANCE_LAYER_kp_mo_to(SYM, ALP)
 
 // COMBO_LONG_MAC(find_all_mac, &kp LG(LS(A)), LTO LTP)
 // COMBO_LONG_WIN(find_all_win, &kp LC(LS(A)), LTO LTP)
