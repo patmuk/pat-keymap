@@ -154,7 +154,7 @@
 
    // thumb keys
    MOD_MORPH_SHIFT(SYM_return, &lt SYM RETURN, &tog SYM)
-   MOD_MORPH_SHIFT(NUM_bsp, &lt NUM BACKSPACE, &tog SYM)
+   MOD_MORPH_SHIFT(NUM_bsp, &lt NUM BACKSPACE, &tog NUM)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
