@@ -14,7 +14,7 @@
 /* Pressing REP+ 
  ╭──────────────────────────────────────────────────────────╮ ╭─────────────────────────────────────────────╮
  │ find_all    find       redo       undo        switch_app │ │ Vol+    Mute   Vol-        Bright+  Bright- │
- │ select_all  cut/LCTRL  copy/LALT  paste/LCMD  switch_win │ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
+ │ select_all  cut/LCTRL  copy/LALT  paste/LCOM  switch_win │ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
  │ find_prv    find_next   -         TAB         Enter      │ │ ESC     prev   Play/Pause  next      _      │
  ╰──────────────────────────────────╮ALP/SYM     ⌫ Word/NUM │ │ redo/⏎  REP╭────────────────────────────────╯
                                     ╰───────────────────────╯ ╰────────────╯         
@@ -67,8 +67,8 @@
 //    
 // COMBO_LONG(LCTR, &sk LCTRL, LTO LMR)
 // COMBO_LONG(LALT, &sk LALT, LTO LMM)
-// COMBO_LONG(LCMD, &sk LCMD, LTO LMII)
-// COMBO_LONG(RCMD, &sk RCMD, LTO RMII)
+// COMBO_LONG(LCOM, &sk LCOM, LTO LMII)
+// COMBO_LONG(RCOM, &sk RCOM, LTO RMII)
 // COMBO_LONG(RALT, &sk RALT, LTO RMM)
 // COMBO_LONG(RCTR, &sk RCTRL, LTO RMR)
 // 

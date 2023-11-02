@@ -125,7 +125,7 @@
          // COMBO(shift, &skq LSHFT, TRM TRR)
          // COMBO(ctrl, &sk LCTL, BLR BLM)
          // COMBO(backspace, &kp BSPC, BRM BRR)
-         // COMBO(cmd, &sk LCMD, LTI LTO)
+         // COMBO(COM, &sk LCOM, LTI LTO)
          // COMBO(opt, &sk LALT, RTO RTI)
          //COMBO(z, &kp Z, MLP MLM)
          //COMBO_LONG(capsword, &caps_word, MLIO MRIO)
@@ -141,7 +141,7 @@
 //├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
    &kp X  &kp C  &kp L  &kp D  &kp G  &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
 //╰─────┴──────┴──────╮             ││                                  ╭──┴───────────┴────────╯
-         &mm_SYM_return  &mm_NUM_bsp  &mt LSHIFT SPACE  &ht_mo_rep CMD 0
+         &mm_SYM_return  &mm_NUM_bsp  &mt LSHIFT SPACE  &ht_mo_rep COM 0
 //      ╰─────────────┴─────────────╯╰────────────────┴─────────────────╯
             >;
          };

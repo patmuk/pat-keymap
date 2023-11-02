@@ -22,7 +22,7 @@
          ╰─────╯ ╰─────╯         */
 
 #define ALP 0 // Alphabeth characters
-#define CMD 1 // layer for chording
+#define COM 1 // layer for chording
 #define SYM 2 // Symboles
 #define NUM 3 // Numbers
 #define NAV 4 // Navigation
@@ -38,7 +38,7 @@
 #include "layers/function.dtsi"
 #include "layers/danger.dtsi"
 #include "layers/lock.dtsi"
-#define CHORDLAYER CMD
+#define CHORDLAYER COM
 #include "chording/chords.dtsi"
 
 

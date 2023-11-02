@@ -382,7 +382,7 @@ path.combo {
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_CMD &amp; chords</tspan></text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_COM &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="29" width="28" height="26" class="combo"/>
@@ -646,7 +646,7 @@ path.combo {
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽CMD &amp; chords</tspan></text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽COM &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
@@ -803,7 +803,7 @@ path.combo {
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_CMD &amp; chords</tspan></text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_COM &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M513,183 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v24" class="combo"/>
@@ -1035,7 +1035,7 @@ path.combo {
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_CMD &amp; chords</tspan></text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_COM &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M513,183 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v24" class="combo"/>
@@ -1232,7 +1232,7 @@ path.combo {
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_CMD &amp; chords</tspan></text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">mo_COM &amp; chords</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
