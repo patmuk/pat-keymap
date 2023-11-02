@@ -125,11 +125,11 @@
   };
 
 #define CHORD(NAME, BINDINGS, KEYPOS) \
-  MACRO(m_##NAME, BINDINGS) \
-  COMBO(NAME, &macro_m_##NAME, KEYPOS) \
+  MACRO(chord_##NAME, BINDINGS) \
+  COMBO(NAME, &macro_##NAME, KEYPOS) \
 
 #define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
-  MACRO(m_##NAME, BINDINGS) \
+  MACRO(chord_##NAME, BINDINGS) \
   COMBO_LAYER(NAME, &macro_m_##NAME, KEYPOS, LAYER) \
 
 #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
@@ -144,6 +144,9 @@
          };\
     };\
   };
+
+#define MOD_MORPH_SHIFT(NAME, BINDING_PURE, BINDING_MODED) \
+  MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MOD_LSFT|MOD_RSFT)
 
 // a high taping-terms value is ok, as REP should be used for repeated key presses
 #define TAP_DANCE(NAME, ...) \

@@ -134,15 +134,15 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭────────┬───────┬───────────┬────────┬────────╮╭─────────────────┬──────────────┬────────┬───────────┬────────╮
-   &td_s_W  &td_s_F  &td_s_M     &td_s_P  &td_s_V  &td_slh_pipe       &td_dot_colon  &td_s_J  &td_quotes  &td_s_Z
-//├────────┼───────┼───────────┼────────┼────────┤├─────────────────┼──────────────┼────────┼───────────┼────────┤
-   &td_s_R  &td_s_S  &td_s_N     &td_s_T  &td_s_B  &td_comma_semi     &td_A          &td_s_E  &td_s_I     &td_s_H
-//├────────┼───────┼───────────┼────────┼────────┤├─────────────────┼──────────────┼────────┼───────────┼────────┤
-   &td_s_X  &td_s_C  &td_s_L     &td_s_D  &td_s_G  &td_minus_under    &td_U          &td_O    &td_s_Y     &td_s_K
-//╰────────┴───────┴────────╮                    ││                                      ╭──┴───────────┴────────╯
-                             &td_SYM  &td_NUM_bsp  &td_spc_shift_ret  &ht_mo_rep CMD 0
-//                          ╰───────┴────────────╯╰─────────────────┴────────────────────╯
+//╭─────┬──────┬──────┬──────┬──────╮╭───────────────┬──────────────┬────────┬───────────┬────────╮
+   &kp W  &kp F  &kp M  &kp P  &kp V  &mm_slh_pipe     &mm_dot_colon  &kp J  &mm_quotes  &kp Z
+//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼────────┼───────────┼────────┤
+   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_comma_semi   &td_A          &kp E  &kp I     &kp H
+//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼────────┼───────────┼────────┤
+   &kp X  &kp C  &kp L  &kp D  &kp G  &mm_minus_under  &td_U          &td_O    &kp Y     &kp K
+//╰─────┴──────┴──────╮             ││                                      ╭──┴───────────┴────────╯
+         &mm_SYM_return  &mm_NUM_bsp  &mt LSHIFT BACKSPACE  &ht_mo_rep CMD 0
+//      ╰─────────────┴─────────────╯╰────────────────────┴─────────────────╯
             >;
          };
       };
@@ -153,9 +153,8 @@
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
-   TAP_DANCE(SYM, <&mo SYM>, <&tog SYM>)
-   TAP_DANCE(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
-   TAP_DANCE(spc_shift_ret, <&mt LSHIFT SPACE>, <&kp RETURN>)
+   MOD_MORPH_SHIFT(SYM_return, <&lt SYM RETURN>, <&tog SYM>)
+   MOD_MORPH_SHIFT(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
@@ -163,49 +162,33 @@
    // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
    TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
+   MACRO(comma, &kp COMMA &kp SPACE)
+   TAP_DANCE(comma, <&macro_comma>, <&kp COMMA>)
 
    // tap dance auto shift
-   MACRO(comma, &kp COMMA &kp SPACE)
-   TAP_DANCE(comma_semi, <&macro_comma>, <&kp SEMICOLON>)
-   TAP_DANCE(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
-   TAP_DANCE(slh_pipe, <&kp SLASH>, <&kp PIPE>)
-   TAP_DANCE(dot_colon, <&macro_dot>, <&kp COLON>, <&kp DOT>)
-   TAP_DANCE(quotes, <&kp SQT>, <&kp DQT>)
+   MOD_MORPH_SHIFT(slh_pipe, <&kp SLASH>, <&kp PIPE>)
+   MOD_MORPH_SHIFT(dot_colon, <&td_dot>, <&kp COLON>, <&kp DOT>)
+   MOD_MORPH_SHIFT(quotes, <&kp SQT>, <&kp DQT>)
+   MOD_MORPH_SHIFT(comma_semi, <&td_comma>, <&kp SEMICOLON>)
+   MOD_MORPH_SHIFT(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
 
-   // tap dance alphas
-   MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   // Umlaute
    MACRO(ae, &kp LA(U) &kp A)
-   TAP_DANCE(A, <&kp A>, <&kp LS(A)>, <&macro_ae>, <&macro_shift_ae>)
-   TAP_DANCE_SHIFT(B)
-   TAP_DANCE_SHIFT(C)
-   TAP_DANCE_SHIFT(D)
-   TAP_DANCE_SHIFT(E)
-   TAP_DANCE_SHIFT(F)
-   TAP_DANCE_SHIFT(G)
-   TAP_DANCE_SHIFT(H)
-   TAP_DANCE_SHIFT(I)
-   TAP_DANCE_SHIFT(J)
-   TAP_DANCE_SHIFT(K)
-   TAP_DANCE_SHIFT(L)
-   TAP_DANCE_SHIFT(M)
-   TAP_DANCE_SHIFT(N)
-   MACRO(shift_oe, &kp LA(U) &kp LS(O))
+   MACRO(shift_ae, &kp LA(U) &kp LS(A))
+   CHORD(ae, &m_ae, P_A P_E)
+   MOD_MORPH_SHIFT(ae, &macro_ae, &macro_shift_ae)
+
    MACRO(oe, &kp LA(U) &kp O)
-   TAP_DANCE(O, <&kp O>, <&kp LS(O)>, <&macro_oe>, <&macro_shift_oe>)
-   TAP_DANCE_SHIFT(P)
-   TAP_DANCE_SHIFT(Q)
-   TAP_DANCE_SHIFT(R)
-   TAP_DANCE_SHIFT(S)
+   MACRO(shift_oe, &kp LA(U) &kp LS(O))
+   CHORD(oe, &m_oe, P_O P_E)
+   MOD_MORPH_SHIFT(oe, &macro_oe, &macro_shift_oe)
+
+   MACRO(ue, &kp LA(U) &kp U)
+   MACRO(shift_ue, &kp LA(U) &kp LS(U))
+   CHORD(ue, &m_ue, P_U P_E)
+   MOD_MORPH_SHIFT(ue, &macro_ue, &macro_shift_ue)
+
    //ß
    CHORD(ss, &kp LA(S), P_S P_REP)
-   TAP_DANCE_SHIFT(T)
-   MACRO(shift_ue, &kp LA(U) &kp LS(U))
-   MACRO(ue, &kp LA(U) &kp U)
-   TAP_DANCE(U, <&kp U>, <&kp LS(U)>, <&macro_ue>, <&macro_shift_ue>)
-   TAP_DANCE_SHIFT(V)
-   TAP_DANCE_SHIFT(W)
-   TAP_DANCE_SHIFT(X)
-   TAP_DANCE_SHIFT(Y)
-   TAP_DANCE_SHIFT(Z)
 
 
