@@ -5,8 +5,8 @@ layers:
   - [{s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
   - [{t: "r", s: R},  {t: "s", s: S}, {t: "n", s: N}, {t: "t", s: T}, {t: "b", s: B}, {t: ',', s: ;}, {t: "a", s: "A/ä/Ä"}, {t: "e", s: E},       {t: "i", s: I},    {t: "h", s: H}]
   - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
-  - - {t: $$tabler:backspace$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
-    - {t: $$tabler:arrow-back$$,  s: 'tog_numbers', h: 'mo_numbers'}
+  - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
     - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   commands:
@@ -23,8 +23,8 @@ layers:
   - [{s: "", t: "^", h: ""},   {s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""},   {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
   - [{s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: ""},  {s: "", t: "@", h: ""}, {s: "", t: "=", h: ""}, {s: "", t: "&", h: ""}, {s: "", t: "#", h: ""}]
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
-  - - {t: $$tabler:backspace$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
-    - {t: $$tabler:arrow-back$$,  s: 'tog_numbers', h: 'mo_numbers'}
+  - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
     - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   numbers:
@@ -32,8 +32,8 @@ layers:
   - [{s: '/', t: '*'}, '9', '8', '7', ',',    '''', '!', '', '°', '∑']
   - [{s: '-', t: '+'}, '3', '2', '1', '0',    '§', '%', '≤', '≥', '#']
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
-  - - {t: $$tabler:backspace$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
-    - {t: $$tabler:arrow-back$$,  s: 'tog_numbers', h: 'mo_numbers'}
+  - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
     - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   fun:
@@ -41,8 +41,8 @@ layers:
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
-  - - {t: $$tabler:backspace$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
-    - {t: $$tabler:arrow-back$$,  s: 'tog_numbers', h: 'mo_numbers'}
+  - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
     - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   danger:
