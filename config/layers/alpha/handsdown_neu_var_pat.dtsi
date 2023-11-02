@@ -134,13 +134,13 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭─────┬──────┬──────┬──────┬──────╮╭───────────────┬──────────────┬────────┬───────────┬────────╮
+//╭─────┬──────┬──────┬──────┬──────╮╭───────────────┬──────────────┬──────┬───────────┬────────╮
    &kp W  &kp F  &kp M  &kp P  &kp V  &mm_slh_pipe     &mm_dot_colon  &kp J  &mm_quotes  &kp Z
-//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼────────┼───────────┼────────┤
-   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_comma_semi   &td_A          &kp E  &kp I     &kp H
-//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼────────┼───────────┼────────┤
-   &kp X  &kp C  &kp L  &kp D  &kp G  &mm_minus_under  &td_U          &td_O    &kp Y     &kp K
-//╰─────┴──────┴──────╮             ││                                      ╭──┴───────────┴────────╯
+//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
+   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_comma_semi   &kp A          &kp E  &kp I       &kp H
+//├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
+   &kp X  &kp C  &kp L  &kp D  &kp G  &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
+//╰─────┴──────┴──────╮             ││                                      ╭──────────┴────────╯
          &mm_SYM_return  &mm_NUM_bsp  &mt LSHIFT BACKSPACE  &ht_mo_rep CMD 0
 //      ╰─────────────┴─────────────╯╰────────────────────┴─────────────────╯
             >;
@@ -175,17 +175,17 @@
    // Umlaute
    MACRO(ae, &kp LA(U) &kp A)
    MACRO(shift_ae, &kp LA(U) &kp LS(A))
-   CHORD(ae, &m_ae, P_A P_E)
+   CHORD(ae, &macro_ae, P_A P_E)
    MOD_MORPH_SHIFT(ae, &macro_ae, &macro_shift_ae)
 
    MACRO(oe, &kp LA(U) &kp O)
    MACRO(shift_oe, &kp LA(U) &kp LS(O))
-   CHORD(oe, &m_oe, P_O P_E)
+   CHORD(oe, &macro_oe, P_O P_E)
    MOD_MORPH_SHIFT(oe, &macro_oe, &macro_shift_oe)
 
    MACRO(ue, &kp LA(U) &kp U)
    MACRO(shift_ue, &kp LA(U) &kp LS(U))
-   CHORD(ue, &m_ue, P_U P_E)
+   CHORD(ue, &macro_ue, P_U P_E)
    MOD_MORPH_SHIFT(ue, &macro_ue, &macro_shift_ue)
 
    //ß

@@ -126,11 +126,11 @@
 
 #define CHORD(NAME, BINDINGS, KEYPOS) \
   MACRO(chord_##NAME, BINDINGS) \
-  COMBO(NAME, &macro_##NAME, KEYPOS) \
+  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS) \
 
 #define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
   MACRO(chord_##NAME, BINDINGS) \
-  COMBO_LAYER(NAME, &macro_m_##NAME, KEYPOS, LAYER) \
+  COMBO_LAYER(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER) \
 
 #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
 / { \
