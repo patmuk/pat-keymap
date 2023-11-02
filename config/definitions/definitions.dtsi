@@ -146,7 +146,7 @@
   };
 
 #define MOD_MORPH_SHIFT(NAME, BINDING_PURE, BINDING_MODED) \
-  MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MOD_LSFT|MOD_RSFT)
+  MOD_MORPH(s_##NAME, BINDING_PURE, BINDING_MODED, MOD_LSFT|MOD_RSFT)
 
 // a high taping-terms value is ok, as REP should be used for repeated key presses
 #define TAP_DANCE(NAME, ...) \

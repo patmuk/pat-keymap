@@ -135,13 +135,13 @@
          hands_down_neu {
             bindings = <
 //╭─────┬──────┬──────┬──────┬──────╮╭───────────────┬──────────────┬──────┬───────────┬────────╮
-   &kp W  &kp F  &kp M  &kp P  &kp V  &mm_slh_pipe     &mm_dot_colon  &kp J  &mm_quotes  &kp Z
+   &kp W  &kp F  &kp M  &kp P  &kp V  &mm_s_slh_pipe     &mm_s_dot_colon  &kp J  &mm_s_quotes  &kp Z
 //├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
-   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_comma_semi   &kp A          &kp E  &kp I       &kp H
+   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_s_comma_semi   &kp A          &kp E  &kp I       &kp H
 //├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
-   &kp X  &kp C  &kp L  &kp D  &kp G  &mm_minus_under  &kp U          &kp O  &kp Y       &kp K
+   &kp X  &kp C  &kp L  &kp D  &kp G  &mm_s_minus_under  &kp U          &kp O  &kp Y       &kp K
 //╰─────┴──────┴──────╮             ││                                  ╭──┴───────────┴────────╯
-         &mm_SYM_return  &mm_NUM_bsp  &mt LSHIFT SPACE  &ht_mo_rep COM 0
+         &mm_s_SYM_return  &mm_s_NUM_bsp  &mt LSHIFT SPACE  &ht_mo_rep COM 0
 //      ╰─────────────┴─────────────╯╰────────────────┴─────────────────╯
             >;
          };
