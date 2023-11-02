@@ -153,24 +153,24 @@
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
-   MOD_MORPH_SHIFT(SYM_return, &lt SYM RETURN, &tog SYM)
-   MOD_MORPH_SHIFT(NUM_bsp, &lt NUM BACKSPACE, &tog SYM)
+   MOD_MORPH_SHIFT(SYM_return, <&lt SYM RETURN>, <&tog SYM>)
+   MOD_MORPH_SHIFT(NUM_bsp, <&lt NUM BACKSPACE>, <&tog SYM>)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
    // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
-   TAP_DANCE(dot, &macro_dot, &kp DOT)
+   TAP_DANCE(dot, <&macro_dot>, <&kp DOT>)
    MACRO(comma, &kp COMMA &kp SPACE)
-   TAP_DANCE(comma, &macro_comma, &kp COMMA)
+   TAP_DANCE(comma, <&macro_comma>, <&kp COMMA>)
 
    // tap dance auto shift
-   MOD_MORPH_SHIFT(slh_pipe, &kp SLASH, &kp PIPE)
-   MOD_MORPH_SHIFT(dot_colon, &td_dot, &kp COLON)
-   MOD_MORPH_SHIFT(quotes, &kp SQT, &kp DQT)
-   MOD_MORPH_SHIFT(comma_semi, &td_comma, &kp SEMICOLON)
-   MOD_MORPH_SHIFT(minus_under, &kp MINUS, &kp UNDERSCORE)
+   MOD_MORPH_SHIFT(slh_pipe, <&kp SLASH>, <&kp PIPE>)
+   MOD_MORPH_SHIFT(dot_colon, <&td_dot>, <&kp COLON>)
+   MOD_MORPH_SHIFT(quotes, <&kp SQT>, <&kp DQT>)
+   MOD_MORPH_SHIFT(comma_semi, <&td_comma>, <&kp SEMICOLON>)
+   MOD_MORPH_SHIFT(minus_under, <&kp MINUS>, <&kp UNDERSCORE>)
 
    // Umlaute
    MACRO(ae, &kp LA(U) &kp A)
