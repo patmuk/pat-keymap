@@ -38,6 +38,9 @@
 #include "layers/function.dtsi"
 #include "layers/danger.dtsi"
 #include "layers/lock.dtsi"
+#define CHORDLAYER CMD
+#include "chording/chords.dtsi"
+
 
 COMBO(to_Alpha, &to ALP, LTI RTI)
 COMBO(mo_fun, &mo FUN, LTI LTO)
