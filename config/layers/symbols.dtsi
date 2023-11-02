@@ -34,7 +34,7 @@
 //╭─────────────┬──────────────┬──────────┬─────────┬──────────╮╭─────────┬───────────┬─────────────┬──────────┬─────────╮
    &kp CARET      &kp LEFT       &kp DOWN   &kp UP    &kp RIGHT  &kp BSLH   &kp EXCL    &none         &kp GRAVE  &none
 //├─────────────┼──────────────┼──────────┼─────────┼──────────┤├─────────┼───────────┼─────────────┼──────────┼─────────┤
-   &td_sq_braces  &td_c_braces   &td_pars   &td_GL_T  &kp INS    &kp QMARK  &kp AT      &kp KP_EQUAL  &kp AMPS   &kp HASH
+   &mm_s_sq_braces  &mm_s_c_braces   &mm_s_pars   &mm_s_GL_T  &kp INS    &kp QMARK  &kp AT      &kp KP_EQUAL  &kp AMPS   &kp HASH
 //├─────────────┼──────────────┼──────────┼─────────┼──────────┤├─────────┼───────────┼─────────────┼──────────┼─────────┤
    &none          &none          &kp TILDE  &kp DLLR  &kp DEL    &trans     &kp LA(N2)  &none         &none      &none
 //╰─────────────┴──────────────┴──────────╮                    ││                     ╭─────────────┴──────────┴─────────╯
@@ -45,7 +45,7 @@
    };
 };
 
-   TAP_DANCE(sq_braces, <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>)
-   TAP_DANCE(c_braces, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>)
-   TAP_DANCE(pars, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>)
-   TAP_DANCE(GL_T, <&kp LT>, <&kp GT>)
+   MOD_MORPH_SHIFT(sq_braces, &kp LEFT_BRACKET, &kp RIGHT_BRACKET)
+   MOD_MORPH_SHIFT(c_braces, &kp LEFT_BRACE, &kp RIGHT_BRACE)
+   MOD_MORPH_SHIFT(pars, &kp LEFT_BRACE, &kp RIGHT_BRACE)
+   MOD_MORPH_SHIFT(GL_T, &kp LT, &kp GT)
