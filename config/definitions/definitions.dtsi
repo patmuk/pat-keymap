@@ -164,3 +164,41 @@
 
 #define TAP_DANCE_SHIFT(KEY) \
   TAP_DANCE(s_##KEY, <&kp KEY>, <&kp LS(KEY)>)
+
+//      retro-tap;\
+// timeless-homerow-mods from UROB: https://github.com/urob/zmk-config#timeless-homerow-mods
+// left-hand HRMs
+/ {
+  behaviors {
+    hrm_l: hrm_left {
+      compatible = "zmk,behavior-hold-tap";
+      label = str(ht_hrm_left);
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <280>; // trigger hold after these ms - only if HRM one handed 
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <150>;
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <RTIO RTII RTM RTR RTP RMIO RMII RMM RMR RMP RBIO RBII RBM RBR RBP RTO RTI>;// trigger tap if these keys are pressed (so same side rolling doesn't trigger mod)
+      hold-trigger-on-release;             // delay positional check until key-release
+    };
+  };
+};
+
+// right-hand HRMs
+/ {
+  behaviors {
+    hrm_r: hrm_right {
+      compatible = "zmk,behavior-hold-tap";
+      label = str(ht_hrm_right);
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <280>; // trigger hold after these ms - only if HRM one handed 
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <150>;
+      bindings = <&kp>, <&kp>;
+      hold-trigger-key-positions = <LTIO LTII LTM LTR LTP LMIO LMII LMM LMR LMP LBIO LBII LBM LBR LBP LTO LTI>;// trigger tap if these keys are pressed (so same side rolling doesn't trigger mod)
+      hold-trigger-on-release;             // delay positional check until key-release
+    };
+  };
+};
