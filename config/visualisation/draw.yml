@@ -49,8 +49,8 @@ layers:
   - [{s: "double tap", t: "normal tap", h: ''}]
   - ['', '', '', '', '', '', '', '', '', '']
   - ['', '', '', '', '', '', '', '', '', '']
-  - ['&sys_reset', '&bootloader', '', '', '', '', '', '', '&bootloader', '&sys_reset']
-  - ['', '', '', '']
+  - ['', '', '', '', '', '', '', '', {t: '&bootloader', type: held}, {t: '&sys_reset', type: held}]
+  - [{type: held}, {type: held}, '', '']
   lock:
   - [{s: "double tap", t: "normal tap", h: "with REP held"}]
   - ['', '', '', '', '', '', '', '', '', '']
@@ -58,6 +58,10 @@ layers:
   - ['', '', '', '', '', '', '', '', '', '']
   - ['', '', '', '']
 combos:
+# danger keys
+  - {p: [15, 16], k: 'sys reset', l: [danger], a: top}
+  - {p: [14, 17], k: 'boot- loader', l: [danger], a: bottom}
+
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
   - {p: [32, 33], k: 'CapsW', l: [alpha]}
@@ -81,7 +85,7 @@ combos:
     # to Alp is not a chord, but a key on the COM layer
   - {p: [31, 34], k: 'to Alp', l: [alpha], a: bottom, offset: 0.5}
   - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
-  - {p: [29, 30], k: 'to DAN', l: [fun]}
+  - {p: [29, 30], k: 'mo DAN', l: [fun]}
 
 #  - {p: [33, 34], k: 'NUM (hold)', l: [alpha], type: held, a: bottom, offset: 0.25}
 #  - {p: [31, 32], k: 'SYM (1sht)', l: [alpha], type: held, a: bottom, offset: 0.25}

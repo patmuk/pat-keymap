@@ -24,5 +24,5 @@
         };
 };
 
-COMBO_LAYER(reset, &sys_reset, LBP RBP, DAN)
-COMBO_LAYER(flash, &bootloader, LBR RBR, DAN)
+COMBO_LAYER(reset, &sys_reset, LMIO RMIO, DAN)
+COMBO_LAYER(flash, &bootloader, LMII RMII, DAN)
