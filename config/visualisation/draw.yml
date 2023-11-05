@@ -9,15 +9,6 @@ layers:
     - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
     - {t: '⌴',                   s: '',            h: "SHIFT"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
-  commands:
-  - [{s: "Shift", t: "tap", h: "", type: ghost}]
-  - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
-  - [{t: "select all"},  {t: $$mdi:content-cut$$},   {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},    {t: 'desktop left'},  {t: 'win left'},       {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
-  - [{t: "find prev"},   'find next',                 '',                       {t: $$mdi:keyboard-tab$$},  'Enter',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
-  - - {t: to_Alpha, s: '', h: ''}
-    - {t: '⌫ Word', s: '', h: ''}
-    - {t: 'undo', s: '', h: "SHIFT"}
-    - {t: $$tabler:repeat$$, s: '', h: "▽COM & chords", type: held}
   symbols:
   - [{s: "Shift", t: "tap", h: "", type: ghost}]
   - [{s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""}, {s: "", t: "^", h: ""},  {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
@@ -36,6 +27,15 @@ layers:
     - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers',      type: held}
     - {t: '⌴',                   s: '',            h: "SHIFT",           type: trans}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: trans}
+  commands:
+  - [{s: "Shift", t: "tap", h: "", type: ghost}]
+  - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
+  - [{t: "select all"},  {t: $$mdi:content-cut$$},   {t: $$mdi:content-copy$$}, {t: $$mdi:content-paste$$}, {t: "switch win"},    {t: 'desktop left'},  {t: 'win left'},       {t: 'win middle'},   {t: 'win right'},        {t: 'desktop right'}]
+  - [{t: "find prev"},   'find next',                 '',                       {t: $$mdi:keyboard-tab$$},  'Enter',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
+  - - {t: to_Alpha, s: '', h: ''}
+    - {t: '⌫ Word', s: '', h: ''}
+    - {t: 'undo', s: '', h: "SHIFT"}
+    - {t: $$tabler:repeat$$, s: '', h: "▽COM & chords", type: held}
   fun:
   - [{s: "double tap", t: "normal tap", h: "", type: ghost}]
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
