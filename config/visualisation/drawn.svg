@@ -387,12 +387,14 @@ path.combo {
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
-<text x="0" y="24" class="key hold">CHORD</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 78%">tog_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:arrow-back"/>
-<text x="0" y="24" class="key held hold">mo_COM</text>
+<text x="0" y="24" class="key held hold">mo_CMD</text>
+<text x="0" y="-24" class="key held shifted">tog_CMD</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="29" width="28" height="26" class="combo"/>
@@ -426,7 +428,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 </g>
@@ -569,19 +571,21 @@ path.combo {
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">⌴</text>
+<text x="0" y="0" class="key trans tap">mo_FUN</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
 <text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
-<text x="0" y="24" class="key trans hold">CHORD</text>
+<text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
+<text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 78%">tog_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:arrow-back"/>
-<text x="0" y="24" class="key trans hold">mo_COM</text>
+<text x="0" y="0" class="key trans tap">to_ALP</text>
+<text x="0" y="24" class="key trans hold">mo_CMD</text>
+<text x="0" y="-24" class="key trans shifted">tog_CMD</text>
 </g>
 <g class="combo combopos-0">
 <path d="M534,203 h-71 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
@@ -604,7 +608,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 </g>
@@ -743,7 +747,7 @@ path.combo {
 </g>
 <g transform="translate(386, 212) rotate(9.0)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:repeat"/>
+<text x="0" y="0" class="key trans tap">mo_FUN</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
 <text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 64%">tog_numbers</tspan></text>
 </g>
@@ -755,13 +759,17 @@ path.combo {
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
-<text x="0" y="24" class="key trans hold">CHORD</text>
+<text x="0" y="0" class="key trans tap">
+<tspan x="0" dy="-0.6em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
+<text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
+<text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 78%">tog_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
 <use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:arrow-back"/>
-<text x="0" y="24" class="key trans hold">mo_COM</text>
+<text x="0" y="24" class="key trans hold">mo_CMD</text>
+<text x="0" y="-24" class="key trans shifted">tog_CMD</text>
 </g>
 <g class="combo combopos-0">
 <path d="M534,203 h-71 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
@@ -784,7 +792,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 </g>
@@ -957,15 +965,17 @@ path.combo {
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
 <text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 64%">tog_symbols</tspan></text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">undo</text>
-<text x="0" y="24" class="key hold">SHIFT</text>
+<g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
+<text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
+<text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 78%">tog_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key held hold"><tspan style="font-size: 60%">▽COM &amp; chords</tspan></text>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key held tap glyph tabler:arrow-back"/>
+<text x="0" y="24" class="key held hold">mo_CMD</text>
+<text x="0" y="-24" class="key held shifted">tog_CMD</text>
 </g>
 <g class="combo combopos-0">
 <path d="M534,203 h-71 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
@@ -976,17 +986,25 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-1">
+<path d="M533,269 h-141 a6.0,6.0 0 0 1 -6.0,-6.0 v-33" class="combo"/>
+<path d="M533,269 h141 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="519" y="256" width="28" height="26" class="combo"/>
+<text x="533" y="269" class="combo tap">
+<tspan x="533" dy="-0.6em">to</tspan><tspan x="533" dy="1.2em">Alp</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 1414)" class="layer-fun">
-<text x="0" y="28" class="label">fun:</text>
+<g transform="translate(30, 1414)" class="layer-functions">
+<text x="0" y="28" class="label">functions:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(56, 29)" class="key ghost keypos-0">
 <rect rx="6" ry="6" x="-54" y="-26" width="108" height="52" class="key ghost"/>
@@ -1114,26 +1132,30 @@ path.combo {
 </g>
 <g transform="translate(386, 212) rotate(9.0)" class="key held keypos-31">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">mo_fun</text>
+<text x="0" y="0" class="key held tap">mo_FUN</text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">mo_fun</text>
+<text x="0" y="0" class="key held tap">mo_FUN</text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
+<text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
+<text x="0" y="-24" class="key trans shifted"><tspan style="font-size: 78%">tog_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
-<use href="#tabler:repeat" xlink:href="#tabler:repeat" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:repeat"/>
-<text x="0" y="24" class="key trans hold"><tspan style="font-size: 60%">mo_COM &amp; chords</tspan></text>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:arrow-back"/>
+<text x="0" y="24" class="key trans hold">mo_CMD</text>
+<text x="0" y="-24" class="key trans shifted">tog_CMD</text>
 </g>
 <g class="combo combopos-0">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 <g class="combo held combopos-1">
@@ -1141,7 +1163,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo held"/>
 <text x="422" y="289" class="combo held tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 <g class="combo combopos-2">
@@ -1285,7 +1307,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 <g class="combo held combopos-3">
@@ -1420,7 +1442,7 @@ path.combo {
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">fun</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
 </g>

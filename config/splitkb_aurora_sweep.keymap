@@ -22,23 +22,25 @@
          ╰─────╯ ╰─────╯         */
 
 #define ALP 0 // Alphabeth characters
-#define COM 1 // layer for chording
+#define CRD 1 // Layer for Word Chords
 #define SYM 2 // Symboles
 #define NUM 3 // Numbers
-#define NAV 4 // Navigation
-#define FUN 5 // Function Keys
-#define DAN 6 // DANGER!
-#define LCK 7 // Lock KB
+#define CMD 4 // layer for chording
+#define NAV 5 // Navigation
+#define FUN 6 // Function Keys
+#define DAN 7 // DANGER!
+#define LCK 8 // Lock KB
 
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
-#include "layers/command.dtsi"
+#include "layers/chording_layer.dtsi"
 #include "layers/symbols.dtsi"
 #include "layers/numbers.dtsi"
+#include "layers/command.dtsi"
 #include "layers/navigation.dtsi"
 #include "layers/function.dtsi"
 #include "layers/danger.dtsi"
 #include "layers/lock.dtsi"
-#define CHORDLAYER COM
+#define CHORDLAYER CRD
 #include "chording/chords.dtsi"
 
 

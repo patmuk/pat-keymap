@@ -7,16 +7,13 @@
 ╰────────╮30 31│ │32 33╭────────╯
          ╰─────╯ ╰─────╯         */
 
-// un-/lock keyboard
-// COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
-COMBO(lock_kb, &tog LCK, LMR RMR)
-COMBO(sleep, &kp C_SLEEP_MODE, LMII RMII)
-COMBO(lock_pc, &kp K_POWER, LMIO RMIO)
+// chord layer
+// so chords can be done with a leader key
 
 / {
     keymap {
         compatible = "zmk,keymap";
-                lock_layer {
+                chording_layer {
 // ---------------------------------------------------------------
 // |     |     |     |     |     | |     |     |     |     |     |
 // |     |     |     |     |     | |     |     |     |     |     |
@@ -30,7 +27,7 @@ COMBO(lock_pc, &kp K_POWER, LMIO RMIO)
 //├───────┼───────┼───────┼───────┼───────┤ ├──────┼──────┼───────┼──────┼───────┤
     &none   &none   &none   &none   &none    &none  &none   &none   &none  &none 
 //└───────┴───────┴───────┴───────┴───────┘ └──────┴──────┴───────┴──────┴───────┘
-                            &none   &none    &none  &none
+                            &trans  &trans   &trans &trans
 //                        └───────┴───────┘ └──────┴──────┘                        
                         >;
                 };

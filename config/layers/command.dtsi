@@ -25,7 +25,7 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        command {
+        command_layer {
             bindings = <
 //╭────────────────┬──────────┬──────────────┬──────────┬─────────────────╮╭──────────────────┬─────────────────┬──────────────────┬─────────────────────┬─────────────────────╮
    &kp LG(LS(A))     &kp LG(F)  &kp LG(LS(Z))  &kp LG(Z)  &kp LG(TAB)        &kp K_VOL_DN       &kp K_MUTE        &kp K_VOL_UP       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC

@@ -14,26 +14,26 @@ layers:
   - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
   - - {t: $$tabler:repeat$$, s: 'tog_numbers', h: 'mo_numbers', type: held}
     - {t: '⌴',  s: 'tog_symbols', h: 'mo_symbols'}
-    - {t: $$tabler:backspace$$,                   s: '',            h: "CHORD"}
-    - {t: $$tabler:arrow-back$$,     s: '',            h: "mo_COM", type: held}
+    - {t: $$tabler:backspace$$,                   s: 'tog_CHORD',            h: "mo_CHORD"}
+    - {t: $$tabler:arrow-back$$,     s: 'tog_CMD',            h: "mo_CMD", type: held}
   symbols:
   - [{s: "Shift", t: "tap", h: "", type: ghost}]
   - [{s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""}, {s: "", t: "^", h: ""},  {s: "", t: "\\", h: ""}, {s: "", t: "!", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "", h: ""}]
   - [{s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "INS", h: ""}, {s: "", t: "?", h: $$mdi:apple-keyboard-shift$$},  {s: "", t: "@", h: $$mdi:apple-keyboard-command$$}, {s: "", t: "=", h: $$mdi:apple-keyboard-option$$}, {s: "", t: "&", h: $$mdi:apple-keyboard-control$$}, {s: "", t: "#", h: 'fn'}]
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: $$tabler:repeat$$, s: 'tog_numbers', h: 'mo_numbers',       type: held}
-    - {t: '⌴',  s: 'tog_symbols', h: 'mo_symbols',       type: trans}
-    - {t: $$tabler:backspace$$,                   s: '',            h: "CHORD",            type: trans}
-    - {t: $$tabler:arrow-back$$,     s: '',            h: "mo_COM",  type: trans}
+    - {t: 'mo_FUN',  s: 'tog_symbols', h: 'mo_symbols',       type: trans}
+    - {t: $$tabler:backspace$$,                   s: 'tog_CHORD',            h: "mo_CHORD",            type: trans}
+    - {t: 'to_ALP',     s: 'tog_CMD',            h: "mo_CMD",  type: trans}
   numbers:
   - [{s: "Shift", t: "normal tap", h: "", type: ghost}]
   - [{s: '/', t: '*'}, '9', '8', '7', ',',    '''', '!', '', '°', '∑']
   - [{s: '-', t: '+'}, '3', '2', '1', '0',    '§', '%', '≤', '≥', '#']
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
-  - - {t: $$tabler:repeat$$, s: 'tog_numbers', h: 'mo_numbers',      type: trans}
+  - - {t: 'mo_FUN', s: 'tog_numbers', h: 'mo_numbers',      type: trans}
     - {t: '⌴',  s: 'tog_symbols', h: 'mo_symbols',      type: held}
-    - {t: $$tabler:backspace$$,                   s: '',            h: "CHORD",           type: trans}
-    - {t: $$tabler:arrow-back$$,     s: '',            h: "mo_COM", type: trans}
+    - {t: '⌫ Word',                   s: 'tog_CHORD',            h: "mo_CHORD",           type: trans}
+    - {t: $$tabler:arrow-back$$,     s: 'tog_CMD',            h: "mo_CMD", type: trans}
   commands:
   - [{s: "Shift", t: "tap", h: "", type: ghost}]
   - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
@@ -41,17 +41,17 @@ layers:
   - [{t: "find prev"},   'find next',                 '',                       {t: $$mdi:keyboard-tab$$},  'Enter',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: to_Alpha, s: '', h: ''}
     - {t: '⌴',  s: 'tog_symbols', h: 'mo_symbols',      type: trans}
-    - {t: 'undo', s: '', h: "SHIFT"}
-    - {t: $$tabler:repeat$$, s: '', h: "▽COM & chords", type: held}
-  fun:
+    - {t: $$tabler:backspace$$,                   s: 'tog_CHORD',            h: "mo_CHORD",            type: trans}
+    - {t: $$tabler:arrow-back$$, s: 'tog_CMD', h: "mo_CMD", type: held}
+  functions:
   - [{s: "double tap", t: "normal tap", h: "", type: ghost}]
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
-  - - {t: 'mo_fun', type: held}
-    - {t: 'mo_fun', type: held}
-    - {t: '',                s: '', h: ""}
-    - {t: $$tabler:repeat$$, s: '', h: "mo_COM & chords", type: trans}
+  - - {t: 'mo_FUN', type: held}
+    - {t: 'mo_FUN', type: held}
+    - {t: $$tabler:backspace$$, s: 'tog_CHORD', h: "mo_CHORD", type: trans}
+    - {t: $$tabler:arrow-back$$, s: 'tog_CMD', h: "mo_CMD", type: trans}
   danger:
   - [{s: "double tap", t: "normal tap", h: '', type: ghost}]
   - ['', '', '', '', '', '', '', '', '', '']
@@ -91,10 +91,10 @@ combos:
   # Layer switching
     # to Alp is not a chord, but a key on the COM layer
   - {p: [31, 34], k: 'to Alp', l: [alpha], a: bottom, offset: 0.5, type: held}
-  - {p: [31, 34], k: 'to Alp', l: [symbols, numbers], a: bottom, offset: 0.5}
-  - {p: [31, 32], k: 'mo fun', l: [], a: bottom, offset: 0.5}
-  - {p: [31, 32], k: 'mo fun', l: [fun], a: bottom, offset: 0.5, type: held}
-  - {p: [29, 30], k: 'mo DAN', l: [fun]}
+  - {p: [31, 34], k: 'to Alp', l: [symbols, numbers, commands], a: bottom, offset: 0.5}
+  - {p: [31, 32], k: 'mo FUN', l: [], a: bottom, offset: 0.5}
+  - {p: [31, 32], k: 'mo FUN', l: [functions], a: bottom, offset: 0.5, type: held}
+  - {p: [29, 30], k: 'mo DAN', l: [functions]}
   - {p: [29, 30], k: 'mo DAN', l: [danger], type: held}
 
 #  - {p: [33, 34], k: 'NUM (hold)', l: [alpha], type: held, a: bottom, offset: 0.25}

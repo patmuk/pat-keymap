@@ -29,7 +29,7 @@
          ╰─────────────╯ ╰─────────────╯    */
    keymap {
       compatible = "zmk,keymap";
-      symbols {
+      symbols_layer {
          bindings = <
 //╭───────────────┬───────────────┬───────────┬───────────┬──────────╮╭──────────┬───────────┬─────────────┬──────────┬─────────╮
    &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT   &kp CARET   &kp BSLH   &kp EXCL    &none         &kp GRAVE  &none
