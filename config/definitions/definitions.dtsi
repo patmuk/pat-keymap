@@ -171,7 +171,7 @@
 //    hold-trigger-key-positions = HOLD_KEYS; ==> trigger tap if these keys are pressed (so same side rolling doesn't trigger mod)
 //    hold-trigger-on-release; ==> delay positional check until key-release
 
-#define HOME_ROW_MOD(NAME, HOLD_KEYS) \
+#define HOME_ROW_MOD_BEHAVIOR(NAME, BEHAVIOR, HOLD_KEYS) \
 / {\
   behaviors {\
     hrm_##NAME: home_row_mod_##NAME {\
@@ -182,17 +182,18 @@
       tapping-term-ms = <280>;\
       quick-tap-ms = <175>;\
       require-prior-idle-ms = <150>;\
-      bindings = <&kp>, <&kp>;\
+      bindings = <&kp>, <BEHAVIOR>;\
       hold-trigger-key-positions = HOLD_KEYS;\
       hold-trigger-on-release;\
     };\
   };\
 };
-
+#define HOME_ROW_MOD(NAME, HOLD_KEYS) \
+  HOME_ROW_MOD_BEHAVIOR(NAME, &kp, HOLD_KEYS)
 // left-hand HRMs
-  HOME_ROW_MOD(l, <RTIO RTII RTM RTR RTP RMIO RMII RMM RMR RMP RBIO RBII RBM RBR RBP RTO RTI>)
+  HOME_ROW_MOD(l, RIGHT_SIDE_KEYS)
 // right-hand HRMs
-  HOME_ROW_MOD(r, <LTIO LTII LTM LTR LTP LMIO LMII LMM LMR LMP LBIO LBII LBM LBR LBP LTO LTI>)
+  HOME_ROW_MOD(r, LEFT_SIDE_KEYS)
 
 // alternative: RTI as mod key for HRM keys
 // #define MOD_MORPH_HRM(NAME, BINDING_PURE, BINDING_MODED) \

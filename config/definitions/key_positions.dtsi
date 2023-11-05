@@ -7,6 +7,7 @@
          ╰─────╯ ╰─────╯         */
 
 // LEFT SIDE
+#define LEFT_SIDE_KEYS <LTIO LTII LTM LTR LTP LMIO LMII LMM LMR LMP LBIO LBII LBM LBR LBP LTO LTI>
 // TOP 
 #define LTP 0
 #define LTR 1
@@ -30,6 +31,7 @@
 #define LTO 31
 
 // RIGHT SIDE
+#define RIGHT_SIDE_KEYS <RTIO RTII RTM RTR RTP RMIO RMII RMM RMR RMP RBIO RBII RBM RBR RBP RTO RTI>
 // TOP 
 #define RTIO 5
 #define RTII 6

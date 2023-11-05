@@ -134,25 +134,24 @@
          compatible = "zmk,keymap";
          hands_down_neu {
             bindings = <
-//╭──────────────┬───────────────┬──────────────┬──────────────┬───────────────╮╭───────────────────────┬────────────────┬──────────────┬───────────────┬────────────╮
-   &kp W           &kp F           &kp M          &kp P          &kp V           &mm_s_slh_pipe           &mm_s_dot_colon  &kp J          &mm_s_quotes    &kp Z
-//├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├───────────────────────┼────────────────┼──────────────┼───────────────┼────────────┤
-   // &hrm_l GLOBE R  &hrm_l LCTRL S  &hrm_l LALT N  &hrm_l LCMD T  &hrm_l LSHFT B  &hrm_r RSHFT comma_semi  &hrm_r RCMD A    &hrm_r RALT E  &hrm_r RCTRL I  &hrm_l GLOBE H
-   &hrm_l GLOBE R  &hrm_l LCTRL S  &hrm_l LALT N  &hrm_l LCMD T  &hrm_l LSHFT B  &kp A  &hrm_r RCMD A    &hrm_r RALT E  &hrm_r RCTRL I  &hrm_r GLOBE H
+//╭──────────────┬───────────────┬──────────────┬──────────────┬───────────────╮╭─────────────────────────┬────────────────┬──────────────┬───────────────┬────────────╮
+   &kp W           &kp F           &kp M          &kp P          &kp V           &mm_s_slh_pipe             &mm_s_dot_colon  &kp J          &mm_s_quotes    &kp Z
+//├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼────────────────┼──────────────┼───────────────┼────────────┤
+   &hrm_l GLOBE R  &hrm_l LCTRL S  &hrm_l LALT N  &hrm_l LCMD T  &hrm_l LSHFT B  &hrm_r_comma_semi RSHFT 0  &hrm_r RCMD A    &hrm_r RALT E  &hrm_r RCTRL I  &hrm_r GLOBE H
 // alternative HRM with RTI pressed
 //   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
-//├──────────────┼───────────────┼─────────────┼─────────────┼─────────────────┤├───────────────────────┼────────────────┼──────────────┼───────────────┼────────────┤
-   &kp X           &kp C           &kp L          &kp D       &kp G              &mm_s_minus_under        &kp U            &kp O          &kp Y           &kp K
-//╰──────────────┴───────────────┴──────────╮                                  ││                                        ╭──────────────┴───────────────┴────────────╯
-                                             &mm_s_SYM_return  &mm_s_NUM_bsp     &mt RSHIFT SPACE         &ht_mo_rep COM 0
+//├──────────────┼───────────────┼─────────────┼─────────────┼─────────────────┤├─────────────────────────┼────────────────┼──────────────┼───────────────┼────────────┤
+   &kp X           &kp C           &kp L          &kp D       &kp G              &mm_s_minus_under          &kp U            &kp O          &kp Y           &kp K
+//╰──────────────┴───────────────┴──────────╮                                  ││                                          ╭──────────────┴───────────────┴────────────╯
+                                             &mm_s_SYM_return  &mm_s_NUM_bsp     &mt RSHIFT SPACE           &ht_mo_rep COM 0
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
-//                                          ╰────────────────┴─────────────────╯╰───────────────────────┴─────────────────╯
+//                                          ╰────────────────┴─────────────────╯╰─────────────────────────┴─────────────────╯
             >;
          };
       };
    };
-
+   
 
    COMBO_LAYER(CapsW, &caps_word, LTO RTO, ALP)
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
@@ -180,6 +179,7 @@
    // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
    MOD_MORPH(dot, &macro_dot, &kp DOT, MOD_LALT|MOD_RALT)
+
    MACRO(comma, &kp COMMA &kp SPACE)
    MOD_MORPH(comma, &macro_comma, &kp COMMA, MOD_LALT|MOD_RALT)
 
@@ -188,6 +188,8 @@
    MOD_MORPH_SHIFT(dot_colon, &mm_dot, &kp COLON)
    MOD_MORPH_SHIFT(quotes, &kp SQT, &kp DQT)
    MOD_MORPH_SHIFT(comma_semi, &mm_comma, &kp SEMICOLON)
+   HOME_ROW_MOD_BEHAVIOR(r_comma_semi, &mm_s_comma_semi, LEFT_SIDE_KEYS)
+
    MOD_MORPH_SHIFT(minus_under, &kp MINUS, &kp UNDERSCORE)
 
    // Umlaute
