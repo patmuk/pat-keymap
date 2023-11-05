@@ -137,11 +137,11 @@
 //╭─────┬──────┬──────┬──────┬──────╮╭───────────────┬──────────────┬──────┬───────────┬────────╮
    &kp W  &kp F  &kp M  &kp P  &kp V  &mm_s_slh_pipe     &mm_s_dot_colon  &kp J  &mm_s_quotes  &kp Z
 //├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
-   &kp R  &kp S  &kp N  &kp T  &kp B  &mm_s_comma_semi   &kp A          &kp E  &kp I       &kp H
+   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
 //├─────┼──────┼──────┼──────┼──────┤├───────────────┼──────────────┼──────┼───────────┼────────┤
    &kp X  &kp C  &kp L  &kp D  &kp G  &mm_s_minus_under  &kp U          &kp O  &kp Y       &kp K
 //╰─────┴──────┴──────╮             ││                                  ╭──┴───────────┴────────╯
-         &mm_s_SYM_return  &mm_s_NUM_bsp  &mt LSHIFT SPACE  &ht_mo_rep COM 0
+         &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE  &ht_mo_rep COM 0
 //      ╰─────────────┴─────────────╯╰────────────────┴─────────────────╯
             >;
          };
@@ -153,9 +153,21 @@
    COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTI, ALP SYM NUM)
 
    // thumb keys
-   MOD_MORPH_SHIFT(SYM_return, &lt SYM RETURN, &tog SYM)
-   MOD_MORPH_SHIFT(NUM_bsp, &lt NUM BACKSPACE, &tog NUM)
+   MOD_MORPH_HRM(SYM_return, &lt SYM RETURN, &tog SYM)
+   MOD_MORPH_HRM(NUM_bsp, &lt NUM BACKSPACE, &tog NUM)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
+
+   // HRM
+   MOD_MORPH_HRM(R, &kp R, &kp LSHIFT)
+   MOD_MORPH_HRM(S, &kp S, &kp LCTRL)
+   MOD_MORPH_HRM(N, &kp N, &kp LALT)
+   MOD_MORPH_HRM(T, &kp T, &kp LCMD)
+   MOD_MORPH_HRM(B, &kp B, &kp GLOBE)
+   
+   MOD_MORPH_HRM(A, &kp A, &kp RCMD)
+   MOD_MORPH_HRM(E, &kp E, &kp RALT)
+   MOD_MORPH_HRM(I, &kp I, &kp RCTRL)
+   MOD_MORPH_HRM(H, &kp H, &kp LSHIFT)
 
    CHORD(QU, &kp Q &kp U, LTP LTR)
 
@@ -165,7 +177,7 @@
    MACRO(comma, &kp COMMA &kp SPACE)
    TAP_DANCE(comma, <&macro_comma>, <&kp COMMA>)
 
-   // tap dance auto shift
+   // shift
    MOD_MORPH_SHIFT(slh_pipe, &kp SLASH, &kp PIPE)
    MOD_MORPH_SHIFT(dot_colon, &td_dot, &kp COLON)
    MOD_MORPH_SHIFT(quotes, &kp SQT, &kp DQT)
