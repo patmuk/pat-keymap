@@ -41,10 +41,10 @@ layers:
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
-  - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
-    - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
-    - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
-    - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
+  - - {t: 'mo_fun', type: held}
+    - {t: 'mo_fun', type: held}
+    - {t: '',                   s: '',            h: ""}
+    - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords"}
   danger:
   - [{s: "double tap", t: "normal tap", h: ''}]
   - ['', '', '', '', '', '', '', '', '', '']
