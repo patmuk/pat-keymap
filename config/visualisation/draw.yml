@@ -7,7 +7,7 @@ layers:
   - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
   - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
     - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
-    - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
+    - {t: '⌴',                   s: '',            h: "SHIFT"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   commands:
   - [{s: "Shift", t: "tap", h: ""}]
@@ -16,7 +16,7 @@ layers:
   - [{t: "find prev"},   'find next',                 '',                       {t: $$mdi:keyboard-tab$$},  'Enter',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: to_Alpha, s: '', h: ''}
     - {t: '⌫ Word', s: '', h: ''}
-    - {t: 'undo', s: '', h: "SHIFT & ▽HRM"}
+    - {t: 'undo', s: '', h: "SHIFT"}
     - {t: $$tabler:repeat$$, s: '', h: "▽COM & chords", type: held}
   symbols:
   - [{s: "Shift", t: "tap", h: ""}]
@@ -25,7 +25,7 @@ layers:
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "⌦", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
     - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
-    - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
+    - {t: '⌴',                   s: '',            h: "SHIFT"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   numbers:
   - [{s: "Shift", t: "normal tap", h: ""}]
@@ -34,7 +34,7 @@ layers:
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
   - - {t: $$tabler:arrow-back$$, s: 'tog_symbols', h: 'mo_symbols', type: held}
     - {t: $$tabler:backspace$$,  s: 'tog_numbers', h: 'mo_numbers'}
-    - {t: '⌴',                   s: '',            h: "SHIFT & ▽HRM"}
+    - {t: '⌴',                   s: '',            h: "SHIFT"}
     - {t: $$tabler:repeat$$,     s: '',            h: "mo_COM & chords", type: held}
   fun:
   - [{s: "double tap", t: "normal tap", h: ""}]

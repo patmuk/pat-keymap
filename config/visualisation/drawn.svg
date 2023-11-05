@@ -377,7 +377,7 @@ path.combo {
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌴</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<text x="0" y="24" class="key hold">SHIFT</text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
@@ -641,7 +641,7 @@ path.combo {
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">undo</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<text x="0" y="24" class="key hold">SHIFT</text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
@@ -798,7 +798,7 @@ path.combo {
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌴</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<text x="0" y="24" class="key hold">SHIFT</text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
@@ -1030,7 +1030,7 @@ path.combo {
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌴</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">SHIFT &amp; ▽HRM</tspan></text>
+<text x="0" y="24" class="key hold">SHIFT</text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
