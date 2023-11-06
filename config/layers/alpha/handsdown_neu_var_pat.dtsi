@@ -143,8 +143,7 @@
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼────────────────┼──────────────┼───────────────┼───────────────┤
    &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp U            &kp O          &kp Y           &kp K
 //╰──────────────┴───────────────┴──────────────╮                              ││                                          ╭──────────────┴───────────────┴───────────────╯
-                                                  &kp A  &kp A   &lt CRD BACKSPACE          &lt CMD RETURN
-                                                //   &mm_s_NUM_rep  &mm_s_SYM_spc   &lt CRD BACKSPACE          &lt COM RETURN
+                                                  &mm_s_NUM_rep  &mm_s_SYM_spc   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                              ╰──────────────┴───────────────╯╰─────────────────────────┴────────────────╯
@@ -153,14 +152,10 @@
       };
    };
    
-
-   COMBO_LAYER(CapsW_left_shift, &caps_word, LTO LMIO, ALP)
-   COMBO_LAYER(CapsW_right_shift, &caps_word, LTO RMIO, ALP)
-   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTO, ALP SYM NUM CMD)
-
    // thumb keys
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
    MOD_MORPH_SHIFT(NUM_rep, &ht_mo_rep NUM 0, &tog NUM)
+
    MOD_MORPH_SHIFT(SYM_spc, &lt SYM SPACE, &tog SYM)
 
    /* alternative: RTI as mod key to activate HRMs
@@ -176,7 +171,11 @@
    MOD_MORPH_HRM(H, &kp H, &kp LSHIFT)
 */
 
+   // Combo keys
    CHORD_LAYER(QU, &kp Q &kp U, LTP LTR, ALP)
+   COMBO_LAYER(CapsW_left_shift, &caps_word, LTO LMIO, ALP)
+   COMBO_LAYER(CapsW_right_shift, &caps_word, LTO RMIO, ALP)
+   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTO, ALP SYM NUM CMD)
 
    // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
