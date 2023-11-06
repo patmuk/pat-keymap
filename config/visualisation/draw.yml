@@ -75,6 +75,8 @@ combos:
 
   - {p: [32, 33], k: '⌫ Word', l: [alpha, symbols, numbers, commands], a: top}
 
+  - {p: [31, 33], k: 'Shift (CRD)', l: [alpha], a: bottom, slide: 1, offset: 1}
+
 # HRM - not as chord, but mod-morph-shift, in all layers 
 #  - {p: [11, 33], k: $$mdi:apple-keyboard-shift$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.05}
 #  - {p: [12, 33], k: $$mdi:apple-keyboard-control$$, l: [alpha, symbols], a: left, slide: -1, offset: -0.15}

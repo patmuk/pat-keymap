@@ -45,8 +45,8 @@
 #define P_D LBII
 #define P_G LBIO
 // THUMB
-#define P_SHIFT LTI
-#define P_REP LTO
+#define P_REP LTI
+#define P_SPACE LTO
 
 // RIGHT SIDE
 // TOP 
@@ -69,7 +69,7 @@
 #define P_K RBP
 // THUMB
 #define P_BACKSPACE RTO
-#define P_LAYER1 RTI
+#define P_RETURN RTI
 
 &caps_word {
    continue-list = <UNDERSCORE MINUS BACKSPACE>;
