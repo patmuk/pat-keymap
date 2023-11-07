@@ -20,11 +20,11 @@
 //                   |     |     | |     |     |     |     |     |
                         bindings = <
 //┌────────────┬─────────────┬─────────────┬─────────────┬─────────────┐ ┌────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
-   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP 
+   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &kp TAB        &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP 
 //├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
    &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP 
 //├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP 
+   &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &kp TAB        &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP  &exit_to_ALP 
 //└────────────┴─────────────┴─────────────┴─────────────┴─────────────┘ └────────────┴─────────────┴─────────────┴─────────────┴─────────────┘
                                              &exit_to_ALP  &exit_to_ALP   &exit_to_ALP  &exit_to_ALP
 //                                         └─────────────┴─────────────┘ └────────────┴─────────────┘                        
