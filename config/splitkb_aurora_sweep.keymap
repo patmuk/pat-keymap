@@ -11,8 +11,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#include "definitions/definitions.dtsi"
-
 /*           34 Keys
 ╭──────────────╮ ╭──────────────╮
 │ 0  1  2  3  4│ │ 5  6  7  8  9│
@@ -30,6 +28,8 @@
 #define DAN 6 // DANGER!
 #define LCK 7 // Lock KB
 #define MOD 8 // layer which holds a mod key, e.g. for holeing alt in alt+tap
+
+#include "definitions/definitions.dtsi"
 
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 #include "layers/symbols.dtsi"
