@@ -146,7 +146,7 @@
                                                 //   &ht_mo_rep NUM 0  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &mo NUM  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &key_repeat  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
-                                                &ht_mo_rep NUM 0  &lt SYM SPACE  &lt NUM BACKSPACE          &mo NUM
+                                                &ht_mo_rep NUM SPACE  &lt SYM SPACE  &lt NUM BACKSPACE          &mo NUM
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                              ╰──────────────┴───────────────╯╰─────────────────────────┴────────────────╯
@@ -156,6 +156,7 @@
    };
    
    // thumb keys
+   // HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
 
    /* alternative: RTI as mod key to activate HRMs
@@ -210,6 +211,6 @@
    MOD_MORPH_SHIFT(ue, &macro_ue, &macro_shift_ue)
 
    //ß
-   CHORD_LAYER(ss, &kp LA(S), P_S P_REP, ALP)
+   CHORD_LAYER(ss, &kp LA(S), P_S P_E, ALP)
 
 
