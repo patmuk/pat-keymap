@@ -29,6 +29,7 @@
 #define FUN 5 // Function Keys
 #define DAN 6 // DANGER!
 #define LCK 7 // Lock KB
+#define MOD 8 // layer which holds a mod key, e.g. for holeing alt in alt+tap
 
 #include "layers/alpha/handsdown_neu_var_pat.dtsi"
 #include "layers/symbols.dtsi"
@@ -38,6 +39,7 @@
 #include "layers/function.dtsi"
 #include "layers/danger.dtsi"
 #include "layers/lock.dtsi"
+#include "layers/hold_mod.dtsi"
 #define CHORDLAYER CRD
 #include "chording/chords.dtsi"
 
