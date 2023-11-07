@@ -71,7 +71,7 @@ combos:
 
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
-  - {p: [15, 16, 32], k: 'CapsW', l: [alpha]}
+  - {p: [15, 16], k: 'CapsW', l: [alpha, symbols, numbers]}
 
   - {p: [32, 33], k: '⌫ Word', l: [alpha, symbols, numbers, commands], a: top}
 
