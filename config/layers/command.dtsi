@@ -13,9 +13,9 @@
           ╰─────╯ ╰─────╯         */
 /* Pressing REP+ 
  ╭──────────────────────────────────────────────────────────╮ ╭─────────────────────────────────────────────╮
- │ find_all    find       redo       undo        switch_app │ │ Vol+    Mute   Vol-        Bright+  Bright- │
- │ select_all  cut/LCTRL  copy/LALT  paste/LCOM  switch_win │ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
- │ find_prv    find_next   -         TAB         Enter      │ │ ESC     prev   Play/Pause  next      _      │
+ │ find_all    find       redo       undo        switch_win │ │ Vol+    Mute   Vol-        Bright+  Bright- │
+ │ select_all  cut/LCTRL  copy/LALT  paste/LCOM  past_H/LSFT│ │ <-Desk  <-Win  WinMid      Win->    Desk->  │
+ │ find_prv    find_next  Enter      TAB         switch_app │ │ ESC     prev   Play/Pause  next      _      │
  ╰──────────────────────────────────╮ALP/SYM     ⌫ Word/NUM │ │ redo/⏎  REP╭────────────────────────────────╯
                                     ╰───────────────────────╯ ╰────────────╯         
 */
@@ -28,7 +28,7 @@
         command_layer {
             bindings = <
 //╭──────────────────┬───────────────────┬──────────────────┬──────────────────┬───────────────────────╮╭─────────────────────┬─────────────────────────┬──────────────────────────┬───────────────────────────┬───────────────────────╮
-   &kp LG(LS(A))       &kp LG(F)           &kp LG(LS(Z))      &kp LG(Z)          &kp LG(GRAVE)           &kp K_VOL_DN           &kp K_MUTE                &kp K_VOL_UP               &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC
+   &kp LG(LS(A))       &kp LG(F)           &kp LG(LS(Z))      &kp LG(Z)          &kp LA(TAB)           &kp K_VOL_DN           &kp K_MUTE                &kp K_VOL_UP               &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC
 //├──────────────────┼───────────────────┼──────────────────┼──────────────────┼───────────────────────┤├─────────────────────┼─────────────────────────┼──────────────────────────┼───────────────────────────┼───────────────────────┤
    &hrm_l GLOBE LG(A)  &hrm_l RCTRL LG(X)  &hrm_l RALT LG(C)  &hrm_l RCMD LG(V)  &hrm_l RSHFT LS(LG(V))  &hrm_r RSHFT LC(LEFT)  &hrm_r RCMD LA(LC(LEFT))  &hrm_r RALT LA(LC(SPACE))  &hrm_r RCTRL LA(LC(RIGHT))  &hrm_r GLOBE LC(RIGHT)
 //├──────────────────┼───────────────────┼──────────────────┼──────────────────┼───────────────────────┤├─────────────────────┼─────────────────────────┼──────────────────────────┼───────────────────────────┼───────────────────────┤
