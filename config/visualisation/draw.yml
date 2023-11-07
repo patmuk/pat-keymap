@@ -69,6 +69,11 @@ combos:
   - {p: [15, 16], k: 'sys reset', l: [danger], a: top}
   - {p: [14, 17], k: 'boot- loader', l: [danger], a: bottom}
 
+# lock keys
+  - {p: [15, 17], k: $$mdi:sleep$$, l: [functions]}
+  - {p: [14, 18], k: $$mdi:lock$$, l: [functions], a: bottom, offset: 0.15}
+  - {p: [13, 19], k: $$mdi:keyboard-off$$, l: [functions], a: bottom, offset: 0.75}
+
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
   - {p: [15, 16], k: 'CapsW', l: [alpha, symbols, numbers]}

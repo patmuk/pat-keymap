@@ -9,9 +9,9 @@
 
 // un-/lock keyboard
 // COMBO_LAYER(lock, &tog LCK, 20 29 30 33, NORMAL_LAYERS LOCK_LAYER)
-COMBO(lock_kb, &tog LCK, LMR RMR)
-COMBO(sleep, &kp C_SLEEP_MODE, LMII RMII)
-COMBO(lock_pc, &kp K_POWER, LMIO RMIO)
+COMBO_LAYER(lock_kb, &tog LCK, LMR RMR, FUN LCK)
+COMBO_LAYER(sleep, &kp C_SLEEP_MODE, LMII RMII, FUN LCK)
+COMBO_LAYER(lock_pc, &kp K_POWER, LMIO RMIO, FUN LCK)
 
 / {
     keymap {

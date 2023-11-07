@@ -1,4 +1,4 @@
-<svg width="956" height="2558" viewBox="0 0 956 2558" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="956" height="2572" viewBox="0 0 956 2572" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -1156,6 +1156,24 @@ path.combo {
 <text x="0" y="24" class="key trans hold">mo_CMD</text>
 </g>
 <g class="combo combopos-0">
+<path d="M560,94 l-121,3" class="combo"/>
+<path d="M560,94 l121,-3" class="combo"/>
+<rect rx="6" ry="6" x="546" y="82" width="28" height="26" class="combo"/>
+<use href="#mdi:sleep" xlink:href="#mdi:sleep" x="553" y="88" height="14" width="14.0" class="combo tap glyph mdi:sleep"/>
+</g>
+<g class="combo combopos-1">
+<path d="M560,128 h-190 a6.0,6.0 0 0 1 -6.0,-6.0 v-13" class="combo"/>
+<path d="M560,128 h190 a6.0,6.0 0 0 0 6.0,-6.0 v-20" class="combo"/>
+<rect rx="6" ry="6" x="546" y="115" width="28" height="26" class="combo"/>
+<use href="#mdi:lock" xlink:href="#mdi:lock" x="553" y="121" height="14" width="14.0" class="combo tap glyph mdi:lock"/>
+</g>
+<g class="combo combopos-2">
+<path d="M560,162 h-246 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
+<path d="M560,162 h246 a6.0,6.0 0 0 0 6.0,-6.0 v-46" class="combo"/>
+<rect rx="6" ry="6" x="546" y="149" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-off" xlink:href="#mdi:keyboard-off" x="553" y="155" height="14" width="14.0" class="combo tap glyph mdi:keyboard-off"/>
+</g>
+<g class="combo combopos-3">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
@@ -1163,7 +1181,7 @@ path.combo {
 <tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
-<g class="combo held combopos-1">
+<g class="combo held combopos-4">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo held"/>
@@ -1171,7 +1189,7 @@ path.combo {
 <tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
 </text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-5">
 <rect rx="6" ry="6" x="826" y="141" width="28" height="26" class="combo"/>
 <text x="840" y="154" class="combo tap">
 <tspan x="840" dy="-0.6em">mo</tspan><tspan x="840" dy="1.2em">DAN</tspan>
@@ -1179,7 +1197,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1795)" class="layer-danger">
+<g transform="translate(30, 1809)" class="layer-danger">
 <text x="0" y="28" class="label">danger:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(56, 29)" class="key ghost keypos-0">
@@ -1323,7 +1341,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2149)" class="layer-lock">
+<g transform="translate(30, 2163)" class="layer-lock">
 <text x="0" y="28" class="label">lock:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(56, 29)" class="key ghost keypos-0">
