@@ -146,7 +146,7 @@
                                                 //   &ht_mo_rep NUM 0  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &mo NUM  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &key_repeat  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
-                                                &ht_mo_rep NUM SPACE  &lt SYM SPACE  &lt NUM BACKSPACE          &mo NUM
+                                                &mo_rep NUM 0  &mo NUM        &mo SYM     &mo_rep SYM 0
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                              ╰──────────────┴───────────────╯╰─────────────────────────┴────────────────╯
@@ -157,7 +157,21 @@
    
    // thumb keys
    // HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
-   HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
+   // HOLD_TAP_BEHAVIORS(mo_rep, &mo NUM, &key_repeat)
+/ {\
+  behaviors {\
+    mo_rep: mo_repeat {\
+      compatible = "zmk,behavior-hold-tap";\
+      label = "mo_repeat_key";\
+      #binding-cells = <2>;\
+      flavor = "hold-preferred";\
+      retro-tap;\
+      tapping-term-ms = <280>;\
+      bindings = <&mo>, <&key_repeat>;\
+    };\
+  };\
+};
+      // quick-tap-ms = <200>;\
 
    /* alternative: RTI as mod key to activate HRMs
    MOD_MORPH_HRM(R, &kp R, &kp LSHIFT)
