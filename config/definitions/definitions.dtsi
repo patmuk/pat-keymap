@@ -228,7 +228,7 @@
         <&macro_tap &kp TAB &to MOD>;
     };
     cmd_tab: cmd_tab_enter {
-      label = "alt_tab_enter";
+      label = "cmd_tab_enter";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       wait-ms = <10>;
