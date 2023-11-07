@@ -146,7 +146,7 @@
                                                 //   &ht_mo_rep NUM 0  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &mo NUM  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
                                                 //   &key_repeat  &lt SYM SPACE   &lt CRD BACKSPACE          &lt CMD RETURN
-                                                  &ht_mo_rep NUM 0     &lt CRD BACKSPACE          &lt CMD RETURN
+                                                &ht_mo_rep NUM 0  &lt SYM SPACE  &lt CRD BACKSPACE          &lt CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                              ╰──────────────┴───────────────╯╰─────────────────────────┴────────────────╯
