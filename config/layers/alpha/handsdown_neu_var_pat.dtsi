@@ -172,7 +172,8 @@
    COMBO_LONG(capsword, &caps_word, LMIO RMIO)
    COMBO_LAYER(CapsW_left_shift, &caps_word, LTO LMIO, ALP)
    COMBO_LAYER(CapsW_right_shift, &caps_word, LTO RMIO, ALP)
-   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTO, ALP SYM NUM CMD)
+//  done on the chord layer instead, so BSPC can be hold instead of pressed together
+//   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTO, ALP SYM NUM CMD)
 
    // Sentence ending auto capitalize
    MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
