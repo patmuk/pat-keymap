@@ -33,9 +33,9 @@
 #define HOLD_TAP_BEHAVIORS(NAME, HOLD_BEHAVIOR, TAP_BEHAVIOR) \
 / {\
   behaviors {\
-    ht_##NAME: ht_behavior {\
+    ht_##NAME: ht_behavior_##NAME {\
       compatible = "zmk,behavior-hold-tap";\
-      label = "hold_tap_ht_behavior";\
+      label = str(hold_tap_ht_behavior_##NAME);\
       #binding-cells = <2>;\
       flavor = "hold-preferred";\
       retro-tap;\
