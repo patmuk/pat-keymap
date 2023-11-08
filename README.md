@@ -9,6 +9,11 @@ For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of 
 ### Status
 The Lock and Danger layers don't work - but I don't need these (now).
 
+## Design Decissions
+### Layer Alpha
+#### Layout
+
+
 # How To ...
 ## build
 ### remote (prefered)
@@ -22,6 +27,7 @@ west build -b nice_nano_v2 -- -DSHIELD=pats_left -DZMK_CONFIG="./config"
 2. copy each uf2 to each half
 3. wait until the drive unmounts itself (OS complains of unclean removal, but that is no problem)
 
+# Misc
 ## files
 
 config/info.json:       layout for visual editors  

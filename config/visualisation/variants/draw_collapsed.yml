@@ -1,0 +1,58 @@
+layout: {qmk_info_json: info.json}
+layers:
+
+  alpha:
+  - [{h: "Shift/HRM", t: "Alphas", s: "symbols", type: ghost}]
+  - [{t: "W", s: $$mdi:arrow-left$$},  {t: F, s: "$$mdi:arrow-down$$"}, {t: M, s: '$$mdi:arrow-up$$'}, {t: P, s: "$$mdi:arrow-right$$"}, {t: V, s: '^'}, {t: '/', h: '|', s: '\'}, {t: '.', h: ':', s: '!'},       {t: J},       {t: "'", h: '"', s: '`'}, {t: Z}]
+  - [{t: R, h: 'fn', s: "}{"},  {t: S, h: $$mdi:apple-keyboard-control$$, s: "]["}, {t: N, h: $$mdi:apple-keyboard-option$$, s: ")("}, {t: T, h: $$mdi:apple-keyboard-command$$, s: "><"}, {t: B, h: $$mdi:apple-keyboard-shift$$, s: "⌦"}, {s: "?", t: ;, h: $$mdi:apple-keyboard-shift$$}, {s: "@", t: "A", h: $$mdi:apple-keyboard-command$$}, {s: "=", t: E, h: $$mdi:apple-keyboard-option$$}, {s: "&", t: I, h: $$mdi:apple-keyboard-control$$}, {s: "#", t: H, h: 'fn'}]
+  - [{t: X},  {t: C}, {t: L, s: "~"}, {t: D, s: "$"}, {t: G, s: "INS"}, {t: '-', h: _, s: '-'}, {t: "U", s: "€"}, {t: "O"}, {t: Y},    {t: K}]
+  - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers'}
+    - {t: '⌴',                   s: '', h: 'mo_symbols', type: held}
+    - {t: $$tabler:backspace$$,  s: '',   h: "mo_CHORD"}
+    - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD"}
+  numbers:
+  - [{s: "commands", t: "normal tap", h: "shft/functions", type: ghost}]
+  - [{h: '/', t: '*', s: "find all"}, {t: '9', s: "find"}, {t: '8', s: "redo"}, {t: '7', s: "undo"}, {t: ',', s: "switch app"}, {t: '''', s:  $$mdi:volume-minus$$},{t:  '!', s: $$mdi:volume-mute$$},{t:  '', s: $$mdi:volume-plus$$},{t:  '°', s: $$mdi:lightbulb-on-70$$},{t:  '∑', s: $$mdi:lightbulb-on-40$$}]
+  - [{h: '-', t: '+', s: "select all"}, {t: '3', s: $$mdi:content-cut$$}, {t: '2', s: $$mdi:content-copy$$}, {t: '1', s: $$mdi:content-paste$$}, {t: '0', s: "paste hist"}, {t: '§', s: 'desktop left'}, {t: '%', s: 'win left'}, {t: '≤', s: 'win middle'}, {t: '≥', s: 'win right'}, {t: '#', s: 'desktop right'}]
+  - [{h: '^', t: '=', s: 'find prev'},
+   {t: '6', s: 'find next'},  {t: '5', s: 'Enter'}, {t: '4', s: $$mdi:keyboard-tab$$}, {t: '.', s: 'switch win'}, {t: '_', s: $$mdi:keyboard-esc$$}, {t: 'µ', s: $$mdi:skip-previous$$}, {t: '±', s: $$mdi:play-pause$$}, {t: '≈', s: $$mdi:skip-next$$}, {t: '≠'}]
+  - - {t: $$tabler:repeat$$,    s: '', h: 'mo_numbers', type: held}
+    - {t: 'mo_FUN',             s: '', h: 'mo_symbols', type: trans}
+    - {t: $$tabler:backspace$$, s: '',   h: "mo_CHORD",   type: trans}
+    - {t: 'to_ALP',             s: '',     h: "mo_CMD",     type: trans}
+  functions:
+  - [{s: "double tap", t: "normal tap", h: "", type: ghost}]
+  - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
+  - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
+  - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
+  - - {t: 'mo_FUN', type: held}
+    - {t: 'mo_FUN', type: held}
+    - {t: $$tabler:backspace$$,  s: '', h: "mo_CHORD", type: trans}
+    - {t: $$tabler:arrow-back$$, s: '',   h: "mo_CMD",   type: trans}
+
+combos:
+# lock keys
+  - {p: [15, 17], k: $$mdi:sleep$$, l: [functions]}
+  - {p: [14, 18], k: $$mdi:lock$$, l: [functions], a: bottom, offset: 0.15}
+  - {p: [13, 19], k: $$mdi:keyboard-off$$, l: [functions], a: bottom, offset: 0.75}
+
+# Special Alphas
+  - {p: [1, 2], k: 'Qu', l: [alpha]}
+  - {p: [17, 18], k: {t: 'ä', s: 'Ä'}, l: [alpha], slide: -0.3}
+  - {p: [28, 18], k: {t: 'ö', s: 'Ü'}, l: [alpha], slide: 0.75, a: right, offset: -0.15}
+  - {p: [27, 18], k: {t: 'ü', s: 'Ü'}, l: [alpha], slide: -0.75, a: right, offset: -1.1}
+  - {p: [12, 18], k: 'ß', l: [alpha], slide: -0.93}
+
+  - {p: [15, 16], k: 'CapsW', l: [alpha, numbers]}
+  - {p: [32, 33], k: '⌫ Word', l: [alpha, numbers], a: top}
+
+  - {p: [31, 33], k: 'Shift (CRD)', l: [alpha], a: bottom, slide: 1, offset: 1}
+
+  # Layer switching
+    # to Alp is not a chord, but a key on the COM layer
+  - {p: [31, 34], k: 'to Alp', l: [alpha], a: bottom, offset: 0.5, type: held}
+  - {p: [31, 34], k: 'to Alp', l: [alpha, numbers], a: bottom, offset: 0.5}
+  - {p: [31, 32], k: 'mo FUN', l: [], a: bottom, offset: 0.5}
+  - {p: [31, 32], k: 'mo FUN', l: [functions], a: bottom, offset: 0.5, type: held}
+  - {p: [29, 30], k: 'mo DAN', l: [functions]}
+
