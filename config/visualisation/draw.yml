@@ -10,8 +10,8 @@ layers:
   alpha:
   - [{s: "Shift", t: "tap", h: "hold key", type: ghost}]
   - [{s: W, t: "w"},  {t: "f", s: F}, {t: "m", s: M}, {t: 'p', s: P}, {t: "v", s: V}, {t: /, s: '|'}, {t: ., s: ':'},       {t: "j", s: J},       {t: '''', s: '"'}, {t: "z", s: Z}]
-  - [{t: "r", s: R, h: 'fn'},  {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:apple-keyboard-shift$$}, {t: ',', s: ;, h: $$mdi:apple-keyboard-shift$$}, {t: "a", s: "A/ä/Ä", h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$},       {t: "i", s: I, h: $$mdi:apple-keyboard-control$$},    {t: "h", s: H, h: 'fn'}]
-  - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U/ü/Ü"}, {t: "o", s: "O/ö/Ö"}, {t: "y", s: Y},    {t: "k", s: K}]
+  - [{t: "r", s: R, h: 'fn'},  {t: "s", s: S, h: $$mdi:apple-keyboard-control$$}, {t: "n", s: N, h: $$mdi:apple-keyboard-option$$}, {t: "t", s: T, h: $$mdi:apple-keyboard-command$$}, {t: "b", s: B, h: $$mdi:apple-keyboard-shift$$}, {t: ',', s: ;, h: $$mdi:apple-keyboard-shift$$}, {t: "a", s: "A", h: $$mdi:apple-keyboard-command$$}, {t: "e", s: E, h: $$mdi:apple-keyboard-option$$},       {t: "i", s: I, h: $$mdi:apple-keyboard-control$$},    {t: "h", s: H, h: 'fn'}]
+  - [{t: "x", s: X},  {t: "c", s: C}, {t: "l", s: L}, {t: "d", s: D}, {t: "g", s: G}, {t: '-', s: _}, {t: "u", s: "U"}, {t: "o", s: "O"}, {t: "y", s: Y},    {t: "k", s: K}]
   - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers', type: held}
     - {t: '⌴',                   s: '', h: 'mo_symbols'}
     - {t: $$tabler:backspace$$,  s: '',   h: "mo_CHORD"}
@@ -76,8 +76,12 @@ combos:
 
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
-  - {p: [15, 16], k: 'CapsW', l: [alpha, symbols, numbers]}
+  - {p: [17, 18], k: {t: 'ä', s: 'Ä'}, l: [alpha], slide: -0.3}
+  - {p: [28, 18], k: {t: 'ö', s: 'Ü'}, l: [alpha], slide: 0.75, a: right, offset: -0.15}
+  - {p: [27, 18], k: {t: 'ü', s: 'Ü'}, l: [alpha], slide: -0.75, a: right, offset: -1.1}
+  - {p: [12, 18], k: 'ß', l: [alpha], slide: -0.93}
 
+  - {p: [15, 16], k: 'CapsW', l: [alpha, symbols, numbers]}
   - {p: [32, 33], k: '⌫ Word', l: [alpha, symbols, numbers, commands], a: top}
 
   - {p: [31, 33], k: 'Shift (CRD)', l: [alpha], a: bottom, slide: 1, offset: 1}

@@ -170,7 +170,11 @@
 */
 
    // Combo keys
-   CHORD_LAYER(QU, &kp Q &kp U, LTP LTR, ALP)
+   MACRO(qu, &kp Q &kp U)
+   MACRO(shift_qu, &kp LS(Q) &kp U)
+   MOD_MORPH_SHIFT(qu, &macro_qu, &macro_shift_qu)
+   CHORD_LAYER(qu, &mm_s_qu, LTP LTR, ALP)
+
    COMBO_LONG(capsword, &caps_word, LMIO RMIO)
    COMBO_LAYER(CapsW_left_shift, &caps_word, LTO LMIO, ALP)
    COMBO_LAYER(CapsW_right_shift, &caps_word, LTO RMIO, ALP)
@@ -196,18 +200,18 @@
    // Umlaute
    MACRO(ae, &kp LA(U) &kp A)
    MACRO(shift_ae, &kp LA(U) &kp LS(A))
-   CHORD_LAYER(ae, &macro_ae, P_A P_E, ALP)
    MOD_MORPH_SHIFT(ae, &macro_ae, &macro_shift_ae)
+   CHORD_LAYER(ae, &mm_s_ae, P_A P_E, ALP)
 
    MACRO(oe, &kp LA(U) &kp O)
    MACRO(shift_oe, &kp LA(U) &kp LS(O))
-   CHORD_LAYER(oe, &macro_oe, P_O P_E, ALP)
    MOD_MORPH_SHIFT(oe, &macro_oe, &macro_shift_oe)
+   CHORD_LAYER(oe, &mm_s_oe, P_O P_E, ALP)
 
    MACRO(ue, &kp LA(U) &kp U)
    MACRO(shift_ue, &kp LA(U) &kp LS(U))
-   CHORD_LAYER(ue, &macro_ue, P_U P_E, ALP)
    MOD_MORPH_SHIFT(ue, &macro_ue, &macro_shift_ue)
+   CHORD_LAYER(ue, &mm_s_ue, P_U P_E, ALP)
 
    //ß
    CHORD_LAYER(ss, &kp LA(S), P_S P_E, ALP)
