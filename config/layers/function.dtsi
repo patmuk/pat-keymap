@@ -18,7 +18,7 @@
                 ╰─────────────╯ ╰─────────────╯   */
                         bindings = <
 //┌────────┬────────┬────────┬────────┬────────┐ ┌────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
-    &kp F5   &kp F4   &kp F3   &kp F2   &kp F1    &bt_sel_led 0 248  &bt_sel_led 1 276  &bt_sel_led 2 48  &bt_sel_led 3 38  &bt_sel_led 4 128
+    &kp F5   &kp F4   &kp F3   &kp F2   &kp F1    &bt_sel_0  &bt_sel_1  &bt_sel_2  &bt_sel_3  &bt_sel_4
 //├────────┼────────┼────────┼────────┼────────┤ ├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp F10  &kp F9   &kp F8   &kp F7   &kp F6    &none         &kp F16       &kp F17       &kp F18       &kp F19            
 //├────────┼────────┼────────┼────────┼────────┤ ├────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -32,7 +32,7 @@
 };
 COMBO_LAYER(to_DANGER, &mo DAN, RBR RBP, FUN)
 
-#define bt_sel_led(BT_CHANNEL, COLOR) \
+#define BT_SEL_LED(BT_CHANNEL, COLOR) \
   / { \
     macros { \
       bt_sel_##BT_CHANNEL: bt_sel_##BT_CHANNEL { \
@@ -47,6 +47,12 @@ COMBO_LAYER(to_DANGER, &mo DAN, RBR RBP, FUN)
       };\
     };\
   };
+
+BT_SEL_LED(0, 248)
+BT_SEL_LED(1, 276)
+BT_SEL_LED(2, 48)
+BT_SEL_LED(3, 38)
+BT_SEL_LED(4, 128)
 
 /*
 //// Layer Switching
