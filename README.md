@@ -4,8 +4,7 @@ For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of 
 
 ![Aurora sweep](https://cdn.shopify.com/s/files/1/0227/9171/6941/products/AUR-SWP-build-left_1620x1080.jpg?v=1665581860)
 ## Layout
-![Alt text](Keyboard Layout)
-<img src="./config/visualisation/drawn.svg">
+![Keyboard Layout](./config/visualisation/drawn.svg)
 
 ## build
 ### remote (prefered)
