@@ -1,4 +1,4 @@
-# zmk-config
+# My Keyboard Layout (aka zmk-config)
 
 For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of the [ferris sweep](https://github.com/davidphilipbarr/Sweep), which is based on the [ferris](https://github.com/pierrechevalier83/ferris). Utilizing the cradio firmware of ZMK or QMK.
 
@@ -6,6 +6,10 @@ For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of 
 ## Layout
 ![Keyboard Layout](./config/visualisation/drawn.svg)
 
+### Status
+The Lock and Danger layers don't work - but I don't need these (now).
+
+# How To ...
 ## build
 ### remote (prefered)
 in github -> actions -> run workflows -> build
@@ -20,8 +24,8 @@ west build -b nice_nano_v2 -- -DSHIELD=pats_left -DZMK_CONFIG="./config"
 
 ## files
 
-config/info.json:       layout for visual editors
-config/visualisation/:  files to visualize the layout
+config/info.json:       layout for visual editors  
+config/visualisation/:  files to visualize the layout 
 
 ## editors
 Best, plantUML like:  
