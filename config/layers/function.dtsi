@@ -48,15 +48,7 @@ COMBO_LAYER(to_DANGER, &mo DAN, RBR RBP, FUN)
     };\
   };
 
-MACRO_LAYER_SWITCH_LED(ALP, 248)// Alphabeth characters
-MACRO_LAYER_SWITCH_LED(CRD, 276) // Layer for Word Chords
-MACRO_LAYER_SWITCH_LED(SYM, 48) // Symboles
-MACRO_LAYER_SWITCH_LED(NUM, 38) // Numbers
-MACRO_LAYER_SWITCH_LED(CMD, 128) // layer for chording
-
-
 /*
-
 //// Layer Switching
 // with changing underglow
 #define MACRO_mo_LAYER_SWITCH_LED(LAYER, COLOR) \
