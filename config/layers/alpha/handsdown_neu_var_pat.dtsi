@@ -142,7 +142,7 @@
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼────────────────┼──────────────┼───────────────┼───────────────┤
    &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp U            &kp O          &kp Y           &kp K
 //╰──────────────┴───────────────┴─────────────╮                               ││                                          ╭──────────────┴───────────────┴───────────────╯
-                                                &ht_mo_rep NUM 0  &lt SYM SPACE  &lt CRD BACKSPACE          &ht_mo_alp CMD RETURN
+                                                &ht_lt_NUM_rep 0  &ht_lt_SYM SPACE  &ht_lt_CRD BACKSPACE          &ht_lt_CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                             ╰───────────────┴───────────────╯╰─────────────────────────┴────────────────╯
@@ -152,9 +152,13 @@
    };
    
    // thumb keys
-   HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
+   HOLD_TAP_BEHAVIORS(lt_NUM_rep, &ls_mo_NUM, &key_repeat)
+   HOLD_TAP_BEHAVIORS(lt_CMD, &ls_mo_CMD, &kp)
 
-   HOLD_TAP_BEHAVIORS(mo_alp, &mo_alp, &kp)
+   HOLD_TAP_BEHAVIORS(lt_SYM, &ls_mo_SYM, &kp)
+   HOLD_TAP_BEHAVIORS(lt_CRD, &ls_mo_CRD, &kp)
+
+
 
    /* alternative: RTI as mod key to activate HRMs
    MOD_MORPH_HRM(R, &kp R, &kp LSHIFT)

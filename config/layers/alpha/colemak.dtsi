@@ -83,9 +83,9 @@
 //├──────┼──────┼──────┼──────┼───────┤├─────┼──────┼───────────┼───────┼───────┤
    &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I   &kp O
 //├──────┼──────┼──────┼──────┼───────┤├─────┼──────┼───────────┼───────┼───────┤
-   &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT &mo FUN
+   &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT &ls_mo_FUN
 //╰──────┴──────┴──╮                  ││                 ╭──────┴───────┴───────╯
-                    &mo SYM  &kp SPACE   &kp RET  &mo NUM
+                    &ls_mo_SYM  &kp SPACE   &kp RET  &ls_mo_NUM
 //                 ╰────────┴─────────╯ ╰────────┴───────╯
    >;
                 };
