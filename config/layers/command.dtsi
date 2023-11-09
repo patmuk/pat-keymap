@@ -28,11 +28,11 @@
         command_layer {
             bindings = <
 //╭──────────────────┬───────────────────┬──────────────────┬──────────────────┬───────────────────────╮╭─────────────────────┬─────────────────────────┬──────────────────────────┬───────────────────────────┬───────────────────────╮
-   &kp LG(LS(A))       &kp LG(F)           &kp LG(LS(Z))      &kp LG(Z)          &alt_tab                &kp K_VOL_DN           &kp K_MUTE                &kp K_VOL_UP               &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC
+   &kp LG(LS(A))       &kp LG(F)           &kp LG(LS(Z))      &kp LG(Z)          &cmd_tab                &kp K_VOL_DN           &kp K_MUTE                &kp K_VOL_UP               &kp C_BRIGHTNESS_DEC        &kp C_BRIGHTNESS_INC
 //├──────────────────┼───────────────────┼──────────────────┼──────────────────┼───────────────────────┤├─────────────────────┼─────────────────────────┼──────────────────────────┼───────────────────────────┼───────────────────────┤
    &hrm_l GLOBE LG(A)  &hrm_l RCTRL LG(X)  &hrm_l RALT LG(C)  &hrm_l RCMD LG(V)  &hrm_l RSHFT LS(LG(V))  &hrm_r RSHFT LC(LEFT)  &hrm_r RCMD LA(LC(LEFT))  &hrm_r RALT LA(LC(SPACE))  &hrm_r RCTRL LA(LC(RIGHT))  &hrm_r GLOBE LC(RIGHT)
 //├──────────────────┼───────────────────┼──────────────────┼──────────────────┼───────────────────────┤├─────────────────────┼─────────────────────────┼──────────────────────────┼───────────────────────────┼───────────────────────┤
-   &kp LG(LS(G))       &kp LG(G)           &kp LS(KP_ENTER)   &kp TAB            &cmd_tab                &kp ESC                &kp K_PREV                &kp C_PLAY_PAUSE           &kp K_NEXT                  &none
+   &kp LG(LS(G))       &kp LG(G)           &kp LS(KP_ENTER)   &kp TAB            &alt_tab                &kp ESC                &kp K_PREV                &kp C_PLAY_PAUSE           &kp K_NEXT                  &none
 //╰──────────────────┴───────────────────┴──────────────────╮                                          ││                                               ╭──────────────────────────┴───────────────────────────┴───────────────────────╯
                                                               &to ALP            &trans                  &trans                 &trans
 //                                                          ╰──────────────────┴───────────────────────╯╰─────────────────────┴─────────────────────────╯

@@ -12,10 +12,10 @@ layers:
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD"}
   numbers:
   - [{s: "commands", t: "normal tap", h: "shft/functions", type: ghost}]
-  - [{h: '/', t: '*', s: "find all"}, {t: '9', s: "find"}, {t: '8', s: "redo"}, {t: '7', s: "undo"}, {t: ',', s: "switch app"}, {t: '''', s:  $$mdi:volume-minus$$},{t:  '!', s: $$mdi:volume-mute$$},{t:  '', s: $$mdi:volume-plus$$},{t:  '°', s: $$mdi:lightbulb-on-70$$},{t:  '∑', s: $$mdi:lightbulb-on-40$$}]
+  - [{h: '/', t: '*', s: "find all"}, {t: '9', s: "find"}, {t: '8', s: "redo"}, {t: '7', s: "undo"}, {t: ',', s: "switch win"}, {t: '''', s:  $$mdi:volume-minus$$},{t:  '!', s: $$mdi:volume-mute$$},{t:  '', s: $$mdi:volume-plus$$},{t:  '°', s: $$mdi:lightbulb-on-70$$},{t:  '∑', s: $$mdi:lightbulb-on-40$$}]
   - [{h: '-', t: '+', s: "select all"}, {t: '3', s: $$mdi:content-cut$$}, {t: '2', s: $$mdi:content-copy$$}, {t: '1', s: $$mdi:content-paste$$}, {t: '0', s: "paste hist"}, {t: '§', s: 'desktop left'}, {t: '%', s: 'win left'}, {t: '≤', s: 'win middle'}, {t: '≥', s: 'win right'}, {t: '#', s: 'desktop right'}]
   - [{h: '^', t: '=', s: 'find prev'},
-   {t: '6', s: 'find next'},  {t: '5', s: 'Enter'}, {t: '4', s: $$mdi:keyboard-tab$$}, {t: '.', s: 'switch win'}, {t: '_', s: $$mdi:keyboard-esc$$}, {t: 'µ', s: $$mdi:skip-previous$$}, {t: '±', s: $$mdi:play-pause$$}, {t: '≈', s: $$mdi:skip-next$$}, {t: '≠'}]
+   {t: '6', s: 'find next'},  {t: '5', s: 'Enter'}, {t: '4', s: $$mdi:keyboard-tab$$}, {t: '.', s: 'switch app'}, {t: '_', s: $$mdi:keyboard-esc$$}, {t: 'µ', s: $$mdi:skip-previous$$}, {t: '±', s: $$mdi:play-pause$$}, {t: '≈', s: $$mdi:skip-next$$}, {t: '≠'}]
   - - {t: $$tabler:repeat$$,    s: '', h: 'mo_numbers', type: held}
     - {t: 'mo_FUN',             s: '', h: 'mo_symbols', type: trans}
     - {t: ⌫ Word, s: '',   h: "mo_CHORD",   type: trans}
