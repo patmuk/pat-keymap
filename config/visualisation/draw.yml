@@ -8,7 +8,7 @@ layers:
   - [{t: X},  {t: C}, {t: L}, {t: D}, {t: G}, {t: '-', s: _}, {t: "U"}, {t: "O"}, {t: Y},    {t: K}]
   - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers', type: held}
     - {t: '⌴',                   s: '', h: 'mo_symbols'}
-    - {t: $$tabler:backspace$$,  s: '',   h: "mo_CHORD"}
+    - {t: '⌫ Word',  s: '',   h: "mo_CHORD"}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: held}
   symbols:
   - [{s: "Shift or hold", t: "tap", h: "", type: ghost}]
@@ -17,7 +17,7 @@ layers:
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "INS", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: 'mo_FUN',              s: '', h: 'mo_numbers', type: trans}
     - {t: '⌴',                   s: '', h: 'mo_symbols', type: held}
-    - {t: $$tabler:backspace$$,  s: '',   h: "mo_CHORD",   type: trans}
+    - {t: '⌫ Word',  s: '',   h: "mo_CHORD",   type: trans}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: trans}
   numbers:
   - [{s: "Shift", t: "normal tap", h: "", type: ghost}]
@@ -35,7 +35,7 @@ layers:
   - [{t: "find prev"},   'find next',                 'Enter',                       {t: $$mdi:keyboard-tab$$},  'switch win',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: to_Alpha,              s: '',            h: ''}
     - {t: '⌴',                   s: '', h: 'mo_symbols', type: trans}
-    - {t: $$tabler:backspace$$,  s: '',   h: "mo_CHORD",   type: trans}
+    - {t: '⌫ Word',  s: '',   h: "mo_CHORD",   type: trans}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: held}
   functions:
   - [{s: "double tap", t: "normal tap", h: "", type: ghost}]
@@ -44,7 +44,7 @@ layers:
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
   - - {t: 'mo_FUN', type: held}
     - {t: 'mo_FUN', type: held}
-    - {t: $$tabler:backspace$$,  s: '', h: "mo_CHORD", type: trans}
+    - {t: '⌫ Word',  s: '', h: "mo_CHORD", type: trans}
     - {t: $$tabler:arrow-back$$, s: '',   h: "mo_CMD",   type: trans}
   danger:
   - [{s: "double tap", t: "normal tap", h: '', type: ghost}]
@@ -76,7 +76,7 @@ combos:
   - {p: [12, 18], k: 'ß', l: [alpha], slide: -0.93}
 
   - {p: [15, 16], k: 'CapsW', l: [alpha, symbols, numbers]}
-  - {p: [32, 33], k: '⌫ Word', l: [alpha, symbols, numbers, commands], a: top}
+  - {p: [32, 33], k: '$$tabler:backspace$$', l: [alpha, symbols, numbers, commands], a: top}
 
   - {p: [31, 33], k: 'Shift (CRD)', l: [alpha], a: bottom, slide: 1, offset: 1}
 

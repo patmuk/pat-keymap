@@ -381,7 +381,9 @@ path.combo {
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key keypos-34">
@@ -427,9 +429,7 @@ path.combo {
 <path d="M534,203 h-71 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M534,203 h71 a6.0,6.0 0 0 1 6.0,6.0 v5" class="combo"/>
 <rect rx="6" ry="6" x="520" y="190" width="28" height="26" class="combo"/>
-<text x="534" y="203" class="combo tap">
-<tspan x="534" dy="-0.6em">⌫</tspan><tspan x="534" dy="1.2em">Word</tspan>
-</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="527" y="196" height="14" width="14.0" class="combo tap glyph tabler:backspace"/>
 </g>
 <g class="combo combopos-7">
 <path d="M611,318 h-219 a6.0,6.0 0 0 1 -6.0,-6.0 v-81" class="combo"/>
@@ -639,7 +639,9 @@ path.combo {
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
+<text x="0" y="0" class="key trans tap">
+<tspan x="0" dy="-1.2em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
@@ -657,9 +659,7 @@ path.combo {
 <path d="M534,203 h-71 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M534,203 h71 a6.0,6.0 0 0 1 6.0,6.0 v5" class="combo"/>
 <rect rx="6" ry="6" x="520" y="190" width="28" height="26" class="combo"/>
-<text x="534" y="203" class="combo tap">
-<tspan x="534" dy="-0.6em">⌫</tspan><tspan x="534" dy="1.2em">Word</tspan>
-</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="527" y="196" height="14" width="14.0" class="combo tap glyph tabler:backspace"/>
 </g>
 <g class="combo combopos-2">
 <path d="M533,269 h-141 a6.0,6.0 0 0 1 -6.0,-6.0 v-33" class="combo"/>
@@ -816,7 +816,9 @@ path.combo {
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:backspace"/>
+<text x="0" y="0" class="key trans tap">
+<tspan x="0" dy="-1.2em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
