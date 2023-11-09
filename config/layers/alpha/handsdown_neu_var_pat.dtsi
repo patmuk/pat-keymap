@@ -96,16 +96,16 @@
  │ w  f  m  p  v  │ │ /  .  j  '  z │
  │ r  s  n  t  b  │ │ ,  a  e  i  h │
  │ x  c  l  d  g  │ │ -  u  o  y  k │
- ╰────────╮ ⇧ REP │ │ ␣ -L0- ╭──────╯
+ ╰────────╮ REP ␣ │ │ ⌫  ⏎   ╭──────╯
           ╰───────╯ ╰────────╯         
 */
-/* = ⇧ =   34 Keys - Hands Down neu - variante Pat
-    ╭──────────────────╮ ╭───────────────╮
-    │ W  F  M  P  V    │ │ │  :  J  "  Z │
-    │ R  S  N  T  B    │ │ ;  A  E  I  H │
-    │ X  C  L  D  G    │ │ _  U  O  Y  K │
-    ╰────────╮SYM ⌫/NUM│ │␣/⏎  REP╭──────╯
-             ╰─────────╯ ╰────────╯         */
+/* hold  =   34 Keys - Hands Down neu - variante Pat
+    ╭──────────────────╮ ╭────────────────╮
+    │  -  -  -  -  -   │ │ -  -  -  -  -  │
+    │ fn  ⌃  ⌥  ⌘  ⇧   │ │ ⇧  ⌘  ⌥  ⌃  fn │
+    │  -  -  -  -  -   │ │ -  -  -  -  -  │
+    ╰──────╮ NUM  SYM  │ │ CRD CMD ╭──────╯
+           ╰───────────╯ ╰─────────╯         */
 /*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
     ╭──────────────╮ ╭─────────────────╮
     │ Qu           │ │                 │
@@ -141,11 +141,11 @@
 //   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼────────────────┼──────────────┼───────────────┼───────────────┤
    &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp U            &kp O          &kp Y           &kp K
-//╰──────────────┴───────────────┴─────────────╮                               ││                                          ╭──────────────┴───────────────┴───────────────╯
-                                                &ht_mo_rep NUM 0  &lt SYM SPACE  &lt CRD LA(BACKSPACE)     &ht_mo_alp CMD RETURN
+//╰──────────────┴───────────────┴─────╮                                       ││                                                ╭────────┴───────────────┴───────────────╯
+                                        &ht_mo_rep NUM 0  &lt SYM LA(BACKSPACE)  &lt CRD SPACE              &ht_mo_alp CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
-//                                             ╰───────────────┴───────────────╯╰─────────────────────────┴────────────────╯
+//                                     ╰────────────────┴──────────────────────╯╰─────────────────────────┴──────────────────────╯
             >;
          };
       };
