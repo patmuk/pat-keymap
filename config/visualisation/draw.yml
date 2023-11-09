@@ -17,7 +17,7 @@ layers:
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "INS", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: 'mo_FUN',              s: '', h: 'mo_numbers', type: trans}
     - {t: '⌴',                   s: '', h: 'mo_symbols', type: held}
-    - {t: '⌫ Word',  s: '',   h: "mo_CHORD",   type: trans}
+    - {t: '$$tabler:backspace$$',  s: '',   h: "mo_CHORD",   type: trans}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: trans}
   numbers:
   - [{s: "Shift", t: "normal tap", h: "", type: ghost}]
