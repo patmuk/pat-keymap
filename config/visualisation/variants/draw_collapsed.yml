@@ -4,7 +4,7 @@ layers:
   alpha:
   - [{h: "Shift/HRM", t: "Alphas", s: "symbols", type: ghost}]
   - [{t: "W", s: $$mdi:arrow-left$$},  {t: F, s: "$$mdi:arrow-down$$"}, {t: M, s: '$$mdi:arrow-up$$'}, {t: P, s: "$$mdi:arrow-right$$"}, {t: V, s: '^'}, {t: '/', h: '|', s: '\'}, {t: '.', h: ':', s: '!'},       {t: J},       {t: "'", h: '"', s: '`'}, {t: Z}]
-  - [{t: R, h: 'fn', s: "}{"},  {t: S, h: $$mdi:apple-keyboard-control$$, s: "]["}, {t: N, h: $$mdi:apple-keyboard-option$$, s: ")("}, {t: T, h: $$mdi:apple-keyboard-command$$, s: "><"}, {t: B, h: $$mdi:apple-keyboard-shift$$, s: "⌦"}, {s: "?", t: ;, h: $$mdi:apple-keyboard-shift$$}, {s: "@", t: "A", h: $$mdi:apple-keyboard-command$$}, {s: "=", t: E, h: $$mdi:apple-keyboard-option$$}, {s: "&", t: I, h: $$mdi:apple-keyboard-control$$}, {s: "#", t: H, h: 'fn'}]
+  - [{t: R, h: 'fn', s: "}{"},  {t: S, h: $$mdi:apple-keyboard-control$$, s: "]["}, {t: N, h: $$mdi:apple-keyboard-option$$, s: ")("}, {t: T, h: $$mdi:apple-keyboard-command$$, s: "><"}, {t: B, h: $$mdi:apple-keyboard-shift$$, s: "⌦"}, {s: "?", t: ', ;', h: $$mdi:apple-keyboard-shift$$}, {s: "@", t: "A", h: $$mdi:apple-keyboard-command$$}, {s: "=", t: E, h: $$mdi:apple-keyboard-option$$}, {s: "&", t: I, h: $$mdi:apple-keyboard-control$$}, {s: "#", t: H, h: 'fn'}]
   - [{t: X},  {t: C}, {t: L, s: "~"}, {t: D, s: "$"}, {t: G, s: "INS"}, {t: '-', h: _, s: '-'}, {t: "U", s: "€"}, {t: "O"}, {t: Y},    {t: K}]
   - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers'}
     - {t: '⌫ Word',                   s: '', h: 'mo_symbols', type: held}
@@ -14,8 +14,7 @@ layers:
   - [{s: "commands", t: "normal tap", h: "shft/functions", type: ghost}]
   - [{h: '/', t: '*', s: "find all"}, {t: '9', s: "find"}, {t: '8', s: "redo"}, {t: '7', s: "undo"}, {t: ',', s: "switch win"}, {t: '''', s:  $$mdi:volume-minus$$},{t:  '!', s: $$mdi:volume-mute$$},{t:  '', s: $$mdi:volume-plus$$},{t:  '°', s: $$mdi:lightbulb-on-70$$},{t:  '∑', s: $$mdi:lightbulb-on-40$$}]
   - [{h: '-', t: '+', s: "select all"}, {t: '3', s: $$mdi:content-cut$$}, {t: '2', s: $$mdi:content-copy$$}, {t: '1', s: $$mdi:content-paste$$}, {t: '0', s: "paste hist"}, {t: '§', s: 'desktop left'}, {t: '%', s: 'win left'}, {t: '≤', s: 'win middle'}, {t: '≥', s: 'win right'}, {t: '#', s: 'desktop right'}]
-  - [{h: '^', t: '=', s: 'find prev'},
-   {t: '6', s: 'find next'},  {t: '5', s: 'Enter'}, {t: '4', s: $$mdi:keyboard-tab$$}, {t: '.', s: 'switch app'}, {t: '_', s: $$mdi:keyboard-esc$$}, {t: 'µ', s: $$mdi:skip-previous$$}, {t: '±', s: $$mdi:play-pause$$}, {t: '≈', s: $$mdi:skip-next$$}, {t: '≠'}]
+  - [{h: '^', t: '=', s: 'find prev'}, {t: '6', s: 'find next'},  {t: '5', s: 'Enter'}, {t: '4', s: $$mdi:keyboard-tab$$}, {t: '.', s: 'switch app'}, {t: '_', s: $$mdi:keyboard-esc$$}, {t: 'µ', s: $$mdi:skip-previous$$}, {t: '±', s: $$mdi:play-pause$$}, {t: '≈', s: $$mdi:skip-next$$}, {t: '≠'}]
   - - {t: $$tabler:repeat$$,    s: '', h: 'mo_numbers', type: held}
     - {t: 'mo_FUN',             s: '', h: 'mo_symbols', type: trans}
     - {t: ⌴, s: '',   h: "mo_CHORD",   type: trans}
