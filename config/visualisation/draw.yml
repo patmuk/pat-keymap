@@ -30,9 +30,9 @@ layers:
     - {t: 'to_ALP',              s: '',     h: "mo_CMD",     type: trans}
   commands:
   - [{s: "Shift", t: "tap", h: "", type: ghost}]
-  - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch win"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
+  - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
   - [{t: "select all", h: 'fn'},  {t: $$mdi:content-cut$$, h: $$mdi:apple-keyboard-control$$},   {t: $$mdi:content-copy$$, h: $$mdi:apple-keyboard-option$$}, {t: $$mdi:content-paste$$, h: $$mdi:apple-keyboard-command$$}, {t: "paste hist", h: $$mdi:apple-keyboard-shift$$},    {t: 'desktop left', h: $$mdi:apple-keyboard-shift$$},  {t: 'win left', h: $$mdi:apple-keyboard-command$$},       {t: 'win middle', h: $$mdi:apple-keyboard-option$$},   {t: 'win right', h: $$mdi:apple-keyboard-control$$},        {t: 'desktop right', h: 'fn'}]
-  - [{t: "find prev"},   'find next',                 'Enter',                       {t: $$mdi:keyboard-tab$$},  'switch app',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
+  - [{t: "find prev"},   'find next',                 'Enter',                       {t: $$mdi:keyboard-tab$$},  'switch win',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
   - - {t: to_Alpha,              s: '',            h: ''}
     - {t: '⌫ Word',                   s: '', h: 'mo_symbols', type: trans}
     - {t: '⌴',  s: '',   h: "mo_CHORD",   type: trans}
