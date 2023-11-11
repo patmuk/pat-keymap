@@ -50,7 +50,7 @@ For the [Aurora Sweep](https://splitkb.com/products/aurora-sweep), a variant of 
 ![Keyboard Layout](./config/visualisation/drawn.svg)
 
 ## Status
-The Lock and Danger layers don't work - but I don't need these (now).
+The Lock layer doesn't work - but I don't need it (now).
 
 # ZMK specific notes 
 ## Splitting the ZMK-keymap-p file 
@@ -235,8 +235,7 @@ Here are two chords:
 - 'sys reset' is resetting the keyboard, and requires pressing both middle row outer index keys. This can be triggered by pressing the reset button *once* as well.
 - 'bootloader' is setting the keyboard to bootloader mode so a new firmware image can be flashed.  It is activated by pressing both index finger home positions simultaniously. This can be triggered by pressing the reset button *twice* as well.
 
-Currently this key combinations seem not to work. However, I don't really need them, as I can do the same with the reset button.
-
+Note that these affect the left side only.
 ### Lock layer
 In this layer all key presses do nothing - except a combo to return to the alpha layer. This is useful to deactivate the keyboard so it doesn't accidentally switches on while packed in a rucksack.
 The combos are only active in the Function key layer (although they are definded in the lock layer file), thus require both left thumb keys to be pressed.  
