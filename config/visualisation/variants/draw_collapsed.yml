@@ -6,8 +6,8 @@ layers:
   - [{t: "W", s: $$mdi:arrow-left$$},  {t: F, s: "$$mdi:arrow-down$$"}, {t: M, s: '$$mdi:arrow-up$$'}, {t: P, s: "$$mdi:arrow-right$$"}, {t: V, s: '^'}, {t: '/', h: '|', s: '\'}, {t: ',', h: ';', s: '?'},       {t: J},       {t: "'", h: '"', s: '`'}, {t: Z}]
   - [{t: R, h: 'fn', s: "}{"},  {t: S, h: $$mdi:apple-keyboard-control$$, s: "]["}, {t: N, h: $$mdi:apple-keyboard-option$$, s: ")("}, {t: T, h: $$mdi:apple-keyboard-command$$, s: "><"}, {t: B, h: $$mdi:apple-keyboard-shift$$, s: "⌦"}, {s: "!", t: './:', h: $$mdi:apple-keyboard-shift$$}, {s: "@", t: "A", h: $$mdi:apple-keyboard-command$$}, {s: "=", t: E, h: $$mdi:apple-keyboard-option$$}, {s: "&", t: I, h: $$mdi:apple-keyboard-control$$}, {s: "#", t: H, h: 'fn'}]
   - [{t: X},  {t: C}, {t: L, s: "~"}, {t: D, s: "$"}, {t: G, s: "INS"}, {t: '-', h: _, s: '-'}, {t: "U", s: "€"}, {t: "O"}, {t: Y},    {t: K}]
-  - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers'}
-    - {t: '⌫ Word',                   s: '', h: 'mo_symbols', type: held}
+  - - {t: '⌫ Word',     s: '', h: 'mo_numbers'}
+    - {t: '$$tabler:repeat$$',                   s: '', h: 'mo_symbols', type: held}
     - {t: '⌴',  s: '',   h: "mo_CHORD"}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD"}
   numbers:

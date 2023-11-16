@@ -6,8 +6,8 @@ layers:
   - [{t: "W", $$mdi:arrow-left$$},  {t: F}, {t: M}, {t: P}, {t: V}, {t: /, s: '|'}, {t: ',', s: ';'},       {t: J},       {t: '''', s: '"'}, {t: Z}]
   - [{t: R, h: 'fn'},  {t: S, h: $$mdi:apple-keyboard-control$$}, {t: N, h: $$mdi:apple-keyboard-option$$}, {t: T, h: $$mdi:apple-keyboard-command$$}, {t: B, h: $$mdi:apple-keyboard-shift$$}, {t: './:', h: $$mdi:apple-keyboard-shift$$}, {t: "A", h: $$mdi:apple-keyboard-command$$}, {t: E, h: $$mdi:apple-keyboard-option$$},       {t: I, h: $$mdi:apple-keyboard-control$$},    {t: H, h: 'fn'}]
   - [{t: X},  {t: C}, {t: L}, {t: D}, {t: G}, {t: '-', s: _}, {t: "U"}, {t: "O"}, {t: Y},    {t: K}]
-  - - {t: $$tabler:repeat$$,     s: '', h: 'mo_numbers', type: held}
-    - {t: '⌫ Word',                   s: '', h: 'mo_symbols'}
+  - - {t: '⌫ Word',     s: '', h: 'mo_numbers', type: held}
+    - {t: '$$tabler:repeat$$',  s: '', h: 'mo_symbols'}
     - {t: '⌴',  s: '',   h: "mo_CHORD"}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: held}
   symbols:
