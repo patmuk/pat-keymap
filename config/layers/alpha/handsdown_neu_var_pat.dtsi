@@ -142,7 +142,7 @@
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼─────────────────┼──────────────┼───────────────┼───────────────┤
    &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp U             &kp O          &kp Y           &kp K
 //╰──────────────┴───────────────┴─────╮                                       ││                                                ╭────────┴───────────────┴───────────────╯
-                                        &lt NUM LA(BACKSPACE)  &ht_mo_rep SYM 0  &ht_mo_alp CMD RETURN
+                                        &lt NUM LA(BACKSPACE)  &ht_mo_rep SYM 0  &lt CRD SPACE              &ht_mo_alp CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
 //                                     ╰────────────────┴──────────────────────╯╰─────────────────────────┴──────────────────────╯
