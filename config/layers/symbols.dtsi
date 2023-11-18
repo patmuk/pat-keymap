@@ -32,11 +32,11 @@
       symbols_layer {
          bindings = <
 //╭───────────────┬───────────────┬───────────┬───────────┬──────────╮╭───────────────────┬───────────────┬─────────────────────┬──────────────────┬──────────────────╮
-   &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT   &kp CARET   &kp BSLH            &kp QMARK       &none                 &kp GRAVE          &none
+   &kp LEFT         &kp DOWN        &kp UP      &kp RIGHT   &kp CARET   &kp GRAVE           &kp QMARK       &none                 &none              &none
 //├───────────────┼───────────────┼───────────┼───────────┼──────────┤├───────────────────┼───────────────┼─────────────────────┼──────────────────┼──────────────────┤
    &mm_s_sq_braces  &mm_s_c_braces  &mm_s_pars  &mm_s_GL_T  &kp DEL     &hrm_r RSHFT EXCL   &hrm_r RCMD AT  &hrm_r RALT KP_EQUAL  &hrm_r RCTRL AMPS  &hrm_r GLOBE HASH
 //├───────────────┼───────────────┼───────────┼───────────┼──────────┤├───────────────────┼───────────────┼─────────────────────┼──────────────────┼──────────────────┤
-   &none            &none           &kp TILDE   &kp DLLR    &kp INS     &trans              &kp LA(N2)      &none                 &none              &none
+   &none            &none           &kp TILDE   &kp DLLR    &kp BSLH    &trans              &kp LA(N2)      &none                 &none              &none
 //╰───────────────┴───────────────┴───────────╮                      ││                   ╭───────────────┴─────────────────────┴──────────────────┴──────────────────╯
                                                 &trans      &trans      &trans              &trans
 //                                            ╰───────────┴──────────╯╰───────────────────┴───────────────╯

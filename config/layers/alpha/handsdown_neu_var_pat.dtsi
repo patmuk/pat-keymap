@@ -93,9 +93,9 @@
 / {
 /*     34 Keys - Hands Down neu - variante Pat
  ╭────────────────╮ ╭───────────────╮
- │ w  f  m  p  v  │ │ /  .  j  '  z │
+ │ w  f  m  p  v  │ │ '  .  g  j  z │
  │ r  s  n  t  b  │ │ ,  a  e  i  h │
- │ x  c  l  d  g  │ │ -  u  o  y  k │
+ │ x  c  l  d  /  │ │ -  u  o  y  k │
  ╰────────╮ REP ␣ │ │ ⌫  ⏎   ╭──────╯
           ╰───────╯ ╰────────╯         
 */
@@ -134,13 +134,13 @@
          hands_down_neu {
             bindings = <
 //╭──────────────┬───────────────┬──────────────┬──────────────┬───────────────╮╭─────────────────────────┬─────────────────┬──────────────┬───────────────┬───────────────╮
-   &kp W           &kp F           &kp M          &kp P          &kp V           &mm_s_slh_pipe             &mm_s_comma_semi  &kp J          &mm_s_quotes    &kp Z
+   &kp W           &kp F           &kp M          &kp P          &kp V           &mm_s_quotes              &mm_s_comma_semi  &kp G          &kp J           &kp Z
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼─────────────────┼──────────────┼───────────────┼───────────────┤
    &hrm_l GLOBE R  &hrm_l LCTRL S  &hrm_l LALT N  &hrm_l LCMD T  &hrm_l LSHFT B  &hrm_r_dot_colon RSHFT 0  &hrm_r RCMD A      &hrm_r RALT E  &hrm_r RCTRL I  &hrm_r GLOBE H
 // alternative HRM with RTI pressed
 //   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼─────────────────┼──────────────┼───────────────┼───────────────┤
-   &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp O             &kp U          &kp Y           &kp K
+   &kp X           &kp C           &kp L          &kp D          &mm_s_slh_pipe  &mm_s_minus_under         &kp O             &kp U          &kp Y           &kp K
 //╰──────────────┴───────────────┴─────╮                                       ││                                                ╭────────┴───────────────┴───────────────╯
                                         &lt NUM LA(BACKSPACE)  &ht_mo_rep SYM 0  &lt CRD SPACE              &ht_mo_alp CMD RETURN
                                                 // alternative HRM with RTI pressed
