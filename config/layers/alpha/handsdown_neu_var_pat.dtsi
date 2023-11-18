@@ -45,30 +45,30 @@
 #define P_D LBII
 #define P_G LBIO
 // THUMB
-#define P_REP LTI
-#define P_SPACE LTO
+#define P_BACKSPACE LTI
+#define P_REP LTO
 
 // RIGHT SIDE
 // TOP 
 #define P_SLASH RTIO
-#define P_DOT RTII
+#define P_COMMA RTII
 #define P_J RTM
 #define P_GRAVE RTR
 #define P_Z RTP
 // MIDDLE
-#define P_COMMA RMIO
+#define P_DOT RMIO
 #define P_A RMII
 #define P_E RMM
 #define P_I RMR
 #define P_H RMP
 // BOTTOM
 #define P_MINUS RBIO
-#define P_U RBII
-#define P_O RBM
+#define P_O RBII
+#define P_U RBM
 #define P_Y RBR
 #define P_K RBP
 // THUMB
-#define P_BACKSPACE RTO
+#define P_SPACE RTO
 #define P_RETURN RTI
 
 &caps_word {
@@ -140,7 +140,7 @@
 // alternative HRM with RTI pressed
 //   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼─────────────────┼──────────────┼───────────────┼───────────────┤
-   &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp U             &kp O          &kp Y           &kp K
+   &kp X           &kp C           &kp L          &kp D          &kp G           &mm_s_minus_under          &kp O             &kp U          &kp Y           &kp K
 //╰──────────────┴───────────────┴─────╮                                       ││                                                ╭────────┴───────────────┴───────────────╯
                                         &lt NUM LA(BACKSPACE)  &ht_mo_rep SYM 0  &lt CRD SPACE              &ht_mo_alp CMD RETURN
                                                 // alternative HRM with RTI pressed
@@ -170,10 +170,7 @@
 */
 
    // Combo keys
-   MACRO(qu, &kp Q &kp U)
-   MACRO(shift_qu, &kp LS(Q) &kp U)
-   MOD_MORPH_SHIFT(qu, &macro_qu, &macro_shift_qu)
-   CHORD_LAYER(qu, &mm_s_qu, LTP LTR, ALP)
+   CHORD_SHIFT(qu, Q, &kp U, LTP LTR, ALP)
 
    COMBO_LONG(capsword, &caps_word, LMIO RMIO)
    COMBO_LAYER(CapsW_left_shift, &caps_word, LTO LMIO, ALP)
@@ -215,5 +212,6 @@
 
    //ß
    CHORD_LAYER(ss, &kp LA(S), P_S P_E, ALP)
-
-
+   
+   //sch - because 's' and 'c' is on the same finger (sfb)
+   CHORD_SHIFT(sch, S, &kp C &kp H, P_S P_H, ALP)

@@ -4,7 +4,8 @@
 
 / {
   compatible = "zmk,bindings";
-  #define LONG_TIMEOUT_MS 100
+  #define NORMAL_TIMEOUT_MS 100
+  #define LONG_TIMEOUT_MS 200
   #define NORMAL_LAYERS ALP NUM SYM CRD
   #define NORMAL_LAYERS_MAC 3 4
   #define NORMAL_LAYERS_WIN 5 6
@@ -45,59 +46,7 @@
   };\
 };
 
-
-#define COMBO(NAME, BINDINGS, KEYPOS) \
-  / {\
-    combos {\
-      compatible = "zmk,combos";\
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <NORMAL_LAYERS>; \
-      };\
-    };\
-  };
-
-#define COMBO_LONG(NAME, BINDINGS, KEYPOS) \
-  / {\
-    combos {\
-      compatible = "zmk,combos";\
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <NORMAL_LAYERS>; \
-        timeout-ms = <LONG_TIMEOUT_MS>; \
-      };\
-    };\
-  };
-
-#define COMBO_LONG_MAC(NAME, BINDINGS, KEYPOS) \
-  / {\
-    combos {\
-      compatible = "zmk,combos";\
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <NORMAL_LAYERS NORMAL_LAYERS_MAC>; \
-        timeout-ms = <LONG_TIMEOUT_MS>; \
-      };\
-    };\
-  };
-
-#define COMBO_LONG_WIN(NAME, BINDINGS, KEYPOS) \
-  / {\
-    combos {\
-      compatible = "zmk,combos";\
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <NORMAL_LAYERS NORMAL_LAYERS_WIN>; \
-        timeout-ms = <LONG_TIMEOUT_MS>; \
-      };\
-    };\
-  };
-
-#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIME_OUT) \
   / {\
     combos {\
       compatible = "zmk,combos";\
@@ -105,9 +54,25 @@
         bindings = <BINDINGS>; \
         key-positions = <KEYPOS>; \
         layers = <LAYERS>; \
+        timeout-ms = <TIME_OUT>; \
       };\
    };\
   };
+
+#define COMBO_NORMAL(NAME, BINDINGS, KEYPOS) \
+  COMBO(NAME, BINDINGS, KEYPOS, NORMAL_LAYERS, NORMAL_TIMEOUT_MS)
+
+#define COMBO_LAYER(NAME, BINDINGS, KEYPOS, LAYERS) \
+  COMBO(NAME, BINDINGS, KEYPOS, LAYERS, NORMAL_TIMEOUT_MS)
+
+#define COMBO_LONG(NAME, BINDINGS, KEYPOS) \
+  COMBO(NAME, BINDINGS, KEYPOS, NORMAL_LAYERS, LONG_TIMEOUT_MS)
+
+#define COMBO_LONG_MAC(NAME, BINDINGS, KEYPOS) \
+  COMBO(NAME, BINDINGS, KEYPOS, NORMAL_LAYERS NORMAL_LAYERS_MAC, LONG_TIMEOUT_MS)
+
+#define COMBO_LONG_WIN(NAME, BINDINGS, KEYPOS) \
+  COMBO(NAME, BINDINGS, KEYPOS, NORMAL_LAYERS NORMAL_LAYERS NORMAL_LAYERS_WIN, LONG_TIMEOUT_MS)
 
 #define str(s) #s
 #define MACRO(NAME, BINDINGS) \
@@ -124,13 +89,25 @@
     };\
   };
 
-#define CHORD(NAME, BINDINGS, KEYPOS) \
+
+
+#define CHORD(NAME, BINDINGS, KEYPOS, LAYER, TIME_OUT) \
   MACRO(chord_##NAME, BINDINGS) \
-  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS) \
+  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER, TIME_OUT)
+
+#define CHORD_NORMAL(NAME, BINDINGS, KEYPOS) \
+  CHORD(NAME, BINDINGS, KEYPOS, NORMAL_LAYERS, NORMAL_TIMEOUT_MS)
 
 #define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
   MACRO(chord_##NAME, BINDINGS) \
-  COMBO_LAYER(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER) \
+  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER, LONG_TIMEOUT_MS)
+
+#define CHORD_SHIFT(NAME, FIRST_LETTER, BINDINGS, KEYPOS, LAYER) \
+  MACRO(chord_##NAME, &kp FIRST_LETTER BINDINGS) \
+  MACRO(chord_shift_##NAME, &kp LS(FIRST_LETTER) BINDINGS) \
+  MOD_MORPH_SHIFT(NAME, &macro_chord_##NAME, &macro_chord_shift_##NAME) \
+  COMBO(chord_##NAME, &mm_s_##NAME, KEYPOS, LAYER, NORMAL_TIMEOUT_MS)
+
 
 #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
 / { \

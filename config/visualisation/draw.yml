@@ -5,7 +5,7 @@ layers:
   - [{s: "Shift", t: "tap", h: "NUM", type: ghost}]
   - [{t: "W", $$mdi:arrow-left$$},  {t: F}, {t: M}, {t: P}, {t: V}, {t: /, s: '|'}, {t: ',', s: ';'},       {t: J},       {t: '''', s: '"'}, {t: Z}]
   - [{t: R, h: 'fn'},  {t: S, h: $$mdi:apple-keyboard-control$$}, {t: N, h: $$mdi:apple-keyboard-option$$}, {t: T, h: $$mdi:apple-keyboard-command$$}, {t: B, h: $$mdi:apple-keyboard-shift$$}, {t: './:', h: $$mdi:apple-keyboard-shift$$}, {t: "A", h: $$mdi:apple-keyboard-command$$}, {t: E, h: $$mdi:apple-keyboard-option$$},       {t: I, h: $$mdi:apple-keyboard-control$$},    {t: H, h: 'fn'}]
-  - [{t: X},  {t: C}, {t: L}, {t: D}, {t: G}, {t: '-', s: _}, {t: "U"}, {t: "O"}, {t: Y},    {t: K}]
+  - [{t: X},  {t: C}, {t: L}, {t: D}, {t: G}, {t: '-', s: _}, {t: "O"}, {t: "U"}, {t: Y},    {t: K}]
   - - {t: '⌫ Word',     s: '', h: 'mo_numbers', type: held}
     - {t: '$$tabler:repeat$$',  s: '', h: 'mo_symbols'}
     - {t: '⌴',  s: '',   h: "mo_CHORD"}
@@ -70,6 +70,7 @@ combos:
 
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
+  - {p: [12, 20], k: 'sch', l: [alpha], a: top}
   - {p: [17, 18], k: {t: 'ä', s: 'Ä'}, l: [alpha], slide: -0.3}
   - {p: [28, 18], k: {t: 'ö', s: 'Ü'}, l: [alpha], slide: 0.75, a: right, offset: -0.15}
   - {p: [27, 18], k: {t: 'ü', s: 'Ü'}, l: [alpha], slide: -0.75, a: right, offset: -1.1}

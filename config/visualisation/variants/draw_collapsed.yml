@@ -5,7 +5,7 @@ layers:
   - [{h: "Shift/HRM", t: "Alphas", s: "symbols", type: ghost}]
   - [{t: "W", s: $$mdi:arrow-left$$},  {t: F, s: "$$mdi:arrow-down$$"}, {t: M, s: '$$mdi:arrow-up$$'}, {t: P, s: "$$mdi:arrow-right$$"}, {t: V, s: '^'}, {t: '/', h: '|', s: '\'}, {t: ',', h: ';', s: '?'},       {t: J},       {t: "'", h: '"', s: '`'}, {t: Z}]
   - [{t: R, h: 'fn', s: "}{"},  {t: S, h: $$mdi:apple-keyboard-control$$, s: "]["}, {t: N, h: $$mdi:apple-keyboard-option$$, s: ")("}, {t: T, h: $$mdi:apple-keyboard-command$$, s: "><"}, {t: B, h: $$mdi:apple-keyboard-shift$$, s: "⌦"}, {s: "!", t: './:', h: $$mdi:apple-keyboard-shift$$}, {s: "@", t: "A", h: $$mdi:apple-keyboard-command$$}, {s: "=", t: E, h: $$mdi:apple-keyboard-option$$}, {s: "&", t: I, h: $$mdi:apple-keyboard-control$$}, {s: "#", t: H, h: 'fn'}]
-  - [{t: X},  {t: C}, {t: L, s: "~"}, {t: D, s: "$"}, {t: G, s: "INS"}, {t: '-', h: _, s: '-'}, {t: "U", s: "€"}, {t: "O"}, {t: Y},    {t: K}]
+  - [{t: X},  {t: C}, {t: L, s: "~"}, {t: D, s: "$"}, {t: G, s: "INS"}, {t: '-', h: _, s: '-'}, {t: "O", s: "€"}, {t: "U"}, {t: Y},    {t: K}]
   - - {t: '⌫ Word',     s: '', h: 'mo_numbers'}
     - {t: '$$tabler:repeat$$',                   s: '', h: 'mo_symbols', type: held}
     - {t: '⌴',  s: '',   h: "mo_CHORD"}
@@ -37,6 +37,7 @@ combos:
 
 # Special Alphas
   - {p: [1, 2], k: 'Qu', l: [alpha]}
+  - {p: [12, 20], k: 'sch', l: [alpha], a: top}
   - {p: [17, 18], k: {t: 'ä', s: 'Ä'}, l: [alpha], slide: -0.3}
   - {p: [28, 18], k: {t: 'ö', s: 'Ü'}, l: [alpha], slide: 0.75, a: right, offset: -0.15}
   - {p: [27, 18], k: {t: 'ü', s: 'Ü'}, l: [alpha], slide: -0.75, a: right, offset: -1.1}
