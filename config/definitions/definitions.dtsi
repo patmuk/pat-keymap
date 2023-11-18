@@ -4,7 +4,7 @@
 
 / {
   compatible = "zmk,bindings";
-  #define NORMAL_TIMEOUT_MS 100
+  #define NORMAL_TIMEOUT_MS 50
   #define LONG_TIMEOUT_MS 200
   #define NORMAL_LAYERS ALP NUM SYM CRD
   #define NORMAL_LAYERS_MAC 3 4
@@ -100,7 +100,7 @@
 
 #define CHORD_LAYER(NAME, BINDINGS, KEYPOS, LAYER) \
   MACRO(chord_##NAME, BINDINGS) \
-  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER, LONG_TIMEOUT_MS)
+  COMBO(chord_##NAME, &macro_chord_##NAME, KEYPOS, LAYER, NORMAL_TIMEOUT_MS)
 
 #define CHORD_SHIFT(NAME, FIRST_LETTER, BINDINGS, KEYPOS, LAYER) \
   MACRO(chord_##NAME, &kp FIRST_LETTER BINDINGS) \
