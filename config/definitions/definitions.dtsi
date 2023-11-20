@@ -124,7 +124,7 @@
   };
 
 #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
-  MOD_MORPH_KEEP(NAME, BINDING_PURE, BINDING_MODED, MODS, )
+  MOD_MORPH_KEEP(NAME, BINDING_PURE, BINDING_MODED, MODS, 0)
 // / { \
 // behaviors { \
 //         mm_##NAME: mod_morph_##NAME {\
