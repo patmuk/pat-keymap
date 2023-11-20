@@ -141,17 +141,22 @@
 //   &mm_hrm_R  &mm_hrm_S  &mm_hrm_N  &mm_hrm_T  &kp B  &mm_s_comma_semi   &mm_hrm_A          &mm_hrm_E  &mm_hrm_I       &mm_hrm_H
 //├──────────────┼───────────────┼──────────────┼──────────────┼───────────────┤├─────────────────────────┼─────────────────┼──────────────┼───────────────┼───────────────┤
    &kp X           &kp C           &kp L          &kp D          &mm_s_slh_pipe  &mm_s_minus_under         &kp O             &kp U          &kp Y           &kp K
-//╰──────────────┴───────────────┴─────╮                                       ││                                                ╭────────┴───────────────┴───────────────╯
-                                        &lt NUM LA(BACKSPACE)  &ht_mo_rep SYM 0  &lt CRD SPACE              &ht_mo_alp CMD RETURN
+//╰──────────────┴───────────────┴──────────╮                                  ││                                               ╭──────────┴───────────────┴───────────────╯
+                                             &ht_mo_bsp NUM 0  &ht_mo_rep SYM 0  &lt CRD SPACE             &ht_mo_alp CMD RETURN
                                                 // alternative HRM with RTI pressed
                                                // &mm_hrm_SYM_return  &mm_hrm_NUM_bsp  &mt RSHIFT SPACE   &ht_mo_rep COM 0
-//                                     ╰────────────────┴──────────────────────╯╰─────────────────────────┴──────────────────────╯
+//                                          ╰─────────────────┴────────────────╯╰─────────────────────────┴──────────────────────╯
             >;
          };
       };
    };
    
    // thumb keys
+
+   // BACKSPACE-Word behave like Backspace, if other mods are pressed (e.g. cmd+BSPC)
+   MOD_MORPH(backspace_word, &kp LA(BACKSPACE), &kp BACKSPACE, MOD_LSFT | MOD_RSFT | MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT | MOD_LGUI | MOD_RGUI)
+   HOLD_TAP_BEHAVIORS(mo_bsp, &mo, &mm_backspace_word)
+
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
 
    HOLD_TAP_BEHAVIORS(mo_alp, &mo_alp, &kp)
