@@ -109,6 +109,20 @@
   COMBO(chord_##NAME, &mm_s_##NAME, KEYPOS, LAYER, NORMAL_TIMEOUT_MS)
 
 
+#define MOD_MORPH_KEEP(NAME, BINDING_PURE, BINDING_MODED, MODS, KEEP_MODS) \
+/ { \
+    behaviors { \
+         mm_##NAME: mod_morph_##NAME {\
+            compatible = "zmk,behavior-mod-morph";\
+            label = str(mod_morph_##NAME);\
+            #binding-cells = <0>;\
+            bindings = <BINDING_PURE>, <BINDING_MODED>;\
+            mods = <(MODS)>;\
+            keep-mods = <(KEEP_MODS)>;
+         };\
+    };\
+  };
+
 #define MOD_MORPH(NAME, BINDING_PURE, BINDING_MODED, MODS) \
 / { \
     behaviors { \

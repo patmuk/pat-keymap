@@ -154,7 +154,7 @@
    // thumb keys
 
    // BACKSPACE-Word behave like Backspace, if other mods are pressed (e.g. cmd+BSPC)
-   MOD_MORPH(backspace_word, &kp LA(BACKSPACE), &kp BACKSPACE, MOD_LSFT | MOD_RSFT | MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT | MOD_LGUI | MOD_RGUI)
+   MOD_MORPH_KEEP(backspace_word, &kp LA(BACKSPACE), &kp BACKSPACE, MOD_LSFT | MOD_RSFT | MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT | MOD_LGUI | MOD_RGUI, MOD_LSFT | MOD_RSFT | MOD_LCTL | MOD_RCTL | MOD_LALT | MOD_RALT | MOD_LGUI | MOD_RGUI)
    HOLD_TAP_BEHAVIORS(mo_bsp, &mo, &mm_backspace_word)
 
    HOLD_TAP_BEHAVIORS(mo_rep, &mo, &key_repeat)
