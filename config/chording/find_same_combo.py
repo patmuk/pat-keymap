@@ -1,7 +1,6 @@
 import sys
-from itertools import combinations
 
-def find_same_parameters(lines):
+def parse_entries(lines):
     keys_word = {}
     
     # Iterate through each line
@@ -25,6 +24,18 @@ def read_lines_from_file(file_path):
     with open(file_path, 'r') as file:
         return file.readlines()
 
+def interactive_mode(parsed_lines):
+    while True:
+        user_input = input("Enter key combination (or 'exit' to quit): ")
+        
+        if user_input.lower() == 'exit':
+            break
+
+        if user_input in parsed_lines:
+            print(f"Chords for key combination '{user_input}': {parsed_lines[user_input]}")
+        else:
+            print(f"No chords found for key combination '{user_input}'")
+
 if __name__ == "__main__":
     # Check if a file name is provided as a command-line argument
     if len(sys.argv) != 2:
@@ -39,10 +50,9 @@ if __name__ == "__main__":
         input_lines = read_lines_from_file(file_name)
 
         # Find lines with the same parameters
-        parsed_lines = find_same_parameters(input_lines)
+        parsed_lines = parse_entries(input_lines)
 
         # Find lines with the same parameters
-
         same_lines = dict(filter(lambda item: len(item[1]) > 2, parsed_lines.items()))
 
         # Print the result if same_lines isn't empty
@@ -50,10 +60,13 @@ if __name__ == "__main__":
             print("Same parameters found:")
             for keys, chords in same_lines.items():
                 print(f"  {keys}: {chords}")
+            # Interactive mode
+            interactive_mode(parsed_lines)
         else:
             print("# Chords::")
             for keys, chord in parsed_lines.items():
-                    print(f"  {chord}: {keys}")
+                print(f"  {chord}: {keys}")
+
                 
     except FileNotFoundError:
         print(f"File not found: {file_name}")
