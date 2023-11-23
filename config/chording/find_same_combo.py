@@ -56,7 +56,7 @@ if __name__ == "__main__":
         parsed_lines = parse_entries(input_lines)
 
         # Find lines with the same parameters
-        same_lines = dict(filter(lambda item: len(item[1]) > 2, parsed_lines.items()))
+        same_lines = dict(filter(lambda item: len(item[1]) >= 2, parsed_lines.items()))
 
         # Print the result if same_lines isn't empty
         if same_lines:
