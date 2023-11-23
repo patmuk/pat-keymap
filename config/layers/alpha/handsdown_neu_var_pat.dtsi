@@ -5,18 +5,18 @@
  */
 
 /* = ⇧ =   34 Keys - Hands Down neu - variante Pat
-    ╭──────────────────╮ ╭───────────────╮
-    │ W  F  M  P  V    │ │ /  .  J  '  Z │
-    │ R  S  N  T  B    │ │ ,  E  A  I  H │
-    │ X  C  L  D  G    │ │ -  U  O  Y  K │
-    ╰────────╮ ⇧ CapsW │ │⌫ -L1- ╭──────╯
-             ╰─────────╯ ╰────────╯         */
+ ╭────────────────╮ ╭───────────────╮
+ │ w  f  m  p  v  │ │ '  .  g  j  z │
+ │ r  s  n  t  b  │ │ ,  a  e  i  h │
+ │ x  c  l  d  /  │ │ -  u  o  y  k │
+ ╰────────╮ ⌫W REP│ │ ␣  ⏎   ╭──────╯
+          ╰───────╯ ╰────────╯         /*
 /*     Chorded Letters - 34 Keys - Hands Down neu - variante Pat
     ╭──────────────╮ ╭─────────────────╮
     │ Qu           │ │                 │
     │ / \          │ │                 │
     │ W  F  _  _  _│ │_  _     _  _  _ │
-    │ _  _  _  _  _│ │_  E -Ä- A  _  _ │
+    │ _  ß -_--_--_│ │_- E -Ä- A  _  _ │
     │              │ │   │ \           │
     │              │ │   Ü  Ö          │
     │              │ │   │    \        │
@@ -43,17 +43,17 @@
 #define P_C LBR
 #define P_L LBM
 #define P_D LBII
-#define P_G LBIO
+#define P_SLASH LBIO
 // THUMB
 #define P_BACKSPACE LTI
 #define P_REP LTO
 
 // RIGHT SIDE
 // TOP 
-#define P_SLASH RTIO
+#define P_GRAVE RTIO
 #define P_COMMA RTII
-#define P_J RTM
-#define P_GRAVE RTR
+#define P_G RTM
+#define P_J RTR
 #define P_Z RTP
 // MIDDLE
 #define P_DOT RMIO
@@ -96,7 +96,7 @@
  │ w  f  m  p  v  │ │ '  .  g  j  z │
  │ r  s  n  t  b  │ │ ,  a  e  i  h │
  │ x  c  l  d  /  │ │ -  u  o  y  k │
- ╰────────╮ REP ␣ │ │ ⌫  ⏎   ╭──────╯
+ ╰────────╮ ⌫W REP│ │ ␣  ⏎   ╭──────╯
           ╰───────╯ ╰────────╯         
 */
 /* hold  =   34 Keys - Hands Down neu - variante Pat
@@ -111,10 +111,10 @@
     │ Qu           │ │                 │
     │ / \          │ │                 │
     │ W  F  _  _  _│ │_  _     _  _  _ │
-    │ _  _  _  _  _│ │_  A -Ä- E  _  _ │
-    │              │ │        /│       │
-    │              │ │      Ü  Ö       │
-    │              │ │     /   │       │
+    │ _  ß -_--_--_│ │_- E -Ä- A  _  _ │
+    │              │ │   │ \           │
+    │              │ │   Ü  Ö          │
+    │              │ │   │    \        │
     │ _  _  _  _  _│ │_  U     O  _  _ │
     ╰────────╮ _  _│ │_  _ ╭───────────╯
              ╰─────╯ ╰─────╯         
