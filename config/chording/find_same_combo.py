@@ -31,6 +31,9 @@ def interactive_mode(parsed_lines):
         if user_input.lower() == 'exit':
             break
 
+        # Sort the keys to handle the order indifference
+        user_input = ' '.join(sorted(user_input.split()))        
+
         if user_input in parsed_lines:
             print(f"Chords for key combination '{user_input}': {parsed_lines[user_input]}")
         else:
