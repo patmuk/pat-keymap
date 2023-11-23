@@ -220,12 +220,12 @@ path.combo {
 <g transform="translate(252, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F</text>
-<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:arrow-down"/>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:arrow-up"/>
 </g>
 <g transform="translate(308, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">M</text>
-<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:arrow-up"/>
+<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-5" y="-24" height="10" width="10.0" class="key shifted glyph mdi:arrow-down"/>
 </g>
 <g transform="translate(364, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

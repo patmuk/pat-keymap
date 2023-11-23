@@ -12,7 +12,7 @@ layers:
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: held}
   symbols:
   - [{s: "Shift or hold", t: "tap", h: "", type: ghost}]
-  - [{s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-down$$", h: ""},   {s: "", t: '$$mdi:arrow-up$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""}, {s: "", t: "^", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "?", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""}, {s: "", t: "", h: ""}]
+  - [{s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-up$$", h: ""},   {s: "", t: '$$mdi:arrow-down$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""}, {s: "", t: "^", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "?", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""}, {s: "", t: "", h: ""}]
   - [{s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "⌦", h: ""}, {s: "", t: "!", h: $$mdi:apple-keyboard-shift$$},  {s: "", t: "@", h: $$mdi:apple-keyboard-command$$}, {s: "", t: "=", h: $$mdi:apple-keyboard-option$$}, {s: "", t: "&", h: $$mdi:apple-keyboard-control$$}, {s: "", t: "#", h: 'fn'}]
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "\\", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
   - - {t: 'mo_FUN', s: '', h: 'mo_numbers', type: trans}
