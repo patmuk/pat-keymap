@@ -80,6 +80,14 @@ As I was afraid of accidentally executing chords, I assigned the right inner thu
 Thus, the key positioning in the base layer doesn't matter much - any hard to write word can be a combo.  
 I took the basis idea from [the characoder](https://www.charachorder.com/en-ch) and [dilip's blog post](https://dlip.github.io/posts/hybrid-keyboard-chording-with-zmk/) (n.b.: dilip's implementation for ZMK doesn't work anymore. As he switched to QMK, he is not supporting it.).
 
+### Help for assigning keys for chords
+Assigning unused keys for chording is tricky - especially when the order of the keys is different for same keys (which doesn't matter when pressed). Thus I wrote 'find_same_combo.py', which is a python 3 program located in the 'chording' directory. 
+This program is printing all douplicated chord combinations and asks the user for a key combo to check, if it is still free.
+If there is no overlapping key the list of all keys is printed instead.
+
+### Alternative forms
+As there where too many conflicts when assigning chords to, e.g., past tense forms, I assigned the leftmost thumb key to chord the past tense form, and the inner left thumb key to chord the 'ing' form. Thus, the chord for 'eat' becomes 'ate' or 'eating'.S
+
 ## Layouts
 
 ### Alpha Layer
