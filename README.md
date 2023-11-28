@@ -197,7 +197,8 @@ The last two keys in the lower row activate the danger layer as long as they are
 It is by intention that they are on a hard to reach position.
 
 ### Commands layer
-These are OS level commands.
+These are OS level commands.  
+In addition to the right outermost thumb key, this layer can be activated by holding both left thumb keys. While this is less convinient, it enables cammand executing with one hand, espacially useful for copy & paste with the left hand on the keys while the right is operating the mouse.  
 In the middle row, on the left side (for having the mouse in the right hand) are the most common used commands:
 - 'paste' on the index finger home position,
 - 'paste history' on it's right side

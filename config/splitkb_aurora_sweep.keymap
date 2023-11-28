@@ -45,7 +45,8 @@
 
 
 COMBO_NORMAL(to_Alpha, &to ALP, LTI RTI)
-COMBO_NORMAL(mo_fun, &mo FUN, LTI LTO)
+COMBO_NORMAL(mo_cmd, &mo CMD, LTI LTO)
+COMBO_NORMAL(mo_fun, &mo FUN, RTI RTO)
 
 
 

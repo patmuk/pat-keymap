@@ -1,4 +1,4 @@
-<svg width="956" height="2572" viewBox="0 0 956 2572" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="956" height="2516" viewBox="0 0 956 2516" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -431,11 +431,19 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-10">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo"/>
+<text x="646" y="290" class="combo tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo combopos-11">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
 </text>
 </g>
 </g>
@@ -571,7 +579,7 @@ path.combo {
 </g>
 <g transform="translate(386, 212) rotate(9.0)" class="key trans keypos-31">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">mo_FUN</text>
+<text x="0" y="0" class="key trans tap">mo_CMD</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
@@ -612,11 +620,19 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-3">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo"/>
+<text x="646" y="290" class="combo tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
 </text>
 </g>
 </g>
@@ -760,7 +776,7 @@ path.combo {
 </g>
 <g transform="translate(457, 232) rotate(25.5)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">mo_FUN</text>
+<text x="0" y="0" class="key trans tap">mo_CMD</text>
 <text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
@@ -794,11 +810,19 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-3">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo"/>
+<text x="646" y="290" class="combo tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
 </text>
 </g>
 </g>
@@ -964,16 +988,15 @@ path.combo {
 <g transform="translate(868, 161)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(386, 212) rotate(9.0)" class="key keypos-31">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">to_Alpha</tspan></text>
+<g transform="translate(386, 212) rotate(9.0)" class="key held keypos-31">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">mo_CMD</text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
 </g>
-<g transform="translate(457, 232) rotate(25.5)" class="key trans keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">
-<tspan x="0" dy="-1.2em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
-</text>
-<text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
+<g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">mo_CMD</text>
+<text x="0" y="24" class="key held hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
 </g>
 <g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1000,11 +1023,27 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-2">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo"/>
+<text x="646" y="290" class="combo tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
+</text>
+</g>
+<g class="combo held combopos-4">
+<path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
+<path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
+<rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo held"/>
+<text x="422" y="289" class="combo held tap">
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
 </text>
 </g>
 </g>
@@ -1135,23 +1174,25 @@ path.combo {
 <g transform="translate(868, 161)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(386, 212) rotate(9.0)" class="key held keypos-31">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">mo_FUN</text>
+<g transform="translate(386, 212) rotate(9.0)" class="key keypos-31">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">to_Alpha</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 70%">mo_numbers</tspan></text>
 </g>
-<g transform="translate(457, 232) rotate(25.5)" class="key held keypos-32">
+<g transform="translate(457, 232) rotate(25.5)" class="key trans keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">
+<tspan x="0" dy="-1.2em">⌫</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
+<text x="0" y="24" class="key trans hold"><tspan style="font-size: 70%">mo_symbols</tspan></text>
+</g>
+<g transform="translate(611, 233) rotate(-23.0)" class="key held keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap">mo_FUN</text>
 </g>
-<g transform="translate(611, 233) rotate(-23.0)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">⌴</text>
-<text x="0" y="24" class="key trans hold"><tspan style="font-size: 88%">mo_CHORD</tspan></text>
-</g>
-<g transform="translate(681, 212) rotate(-12.0)" class="key trans keypos-34">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key trans"/>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph tabler:arrow-back"/>
-<text x="0" y="24" class="key trans hold">mo_CMD</text>
+<g transform="translate(681, 212) rotate(-12.0)" class="key held keypos-34">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">mo_FUN</text>
 </g>
 <g class="combo combopos-0">
 <path d="M560,94 l-121,3" class="combo"/>
@@ -1172,22 +1213,30 @@ path.combo {
 <use href="#mdi:keyboard-off" xlink:href="#mdi:keyboard-off" x="553" y="155" height="14" width="14.0" class="combo tap glyph mdi:keyboard-off"/>
 </g>
 <g class="combo combopos-3">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo"/>
+<text x="646" y="290" class="combo tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo held combopos-4">
+<path d="M646,290 h-29 a6.0,6.0 0 0 1 -6.0,-6.0 v-32" class="combo"/>
+<path d="M646,290 h29 a6.0,6.0 0 0 0 6.0,-6.0 v-53" class="combo"/>
+<rect rx="6" ry="6" x="632" y="277" width="28" height="26" class="combo held"/>
+<text x="646" y="290" class="combo held tap">
+<tspan x="646" dy="-0.6em">mo</tspan><tspan x="646" dy="1.2em">FUN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
 <path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
 <path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
 <rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
 <text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
+<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">CMD</tspan>
 </text>
 </g>
-<g class="combo held combopos-4">
-<path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
-<path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
-<rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo held"/>
-<text x="422" y="289" class="combo held tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
-</text>
-</g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="826" y="141" width="28" height="26" class="combo"/>
 <text x="840" y="154" class="combo tap">
 <tspan x="840" dy="-0.6em">mo</tspan><tspan x="840" dy="1.2em">DAN</tspan>
@@ -1322,15 +1371,7 @@ path.combo {
 <tspan x="532" dy="-0.6em">boot-</tspan><tspan x="532" dy="1.2em">loader</tspan>
 </text>
 </g>
-<g class="combo combopos-2">
-<path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
-<path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
-<rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
-<text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
-</text>
-</g>
-<g class="combo held combopos-3">
+<g class="combo held combopos-2">
 <rect rx="6" ry="6" x="826" y="141" width="28" height="26" class="combo held"/>
 <text x="840" y="154" class="combo held tap">
 <tspan x="840" dy="-0.6em">mo</tspan><tspan x="840" dy="1.2em">DAN</tspan>
@@ -1338,7 +1379,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2163)" class="layer-lock">
+<g transform="translate(30, 2135)" class="layer-lock">
 <text x="0" y="28" class="label">lock:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(56, 29)" class="key ghost keypos-0">
@@ -1455,14 +1496,6 @@ path.combo {
 </g>
 <g transform="translate(681, 212) rotate(-12.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
-</g>
-<g class="combo combopos-0">
-<path d="M422,289 h-30 a6.0,6.0 0 0 1 -6.0,-6.0 v-53" class="combo"/>
-<path d="M422,289 h30 a6.0,6.0 0 0 0 6.0,-6.0 v-32" class="combo"/>
-<rect rx="6" ry="6" x="408" y="276" width="28" height="26" class="combo"/>
-<text x="422" y="289" class="combo tap">
-<tspan x="422" dy="-0.6em">mo</tspan><tspan x="422" dy="1.2em">FUN</tspan>
-</text>
 </g>
 </g>
 </g>

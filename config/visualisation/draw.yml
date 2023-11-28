@@ -15,7 +15,7 @@ layers:
   - [{s: "", t: $$mdi:arrow-left$$, h: ""},   {s: "", t: "$$mdi:arrow-up$$", h: ""},   {s: "", t: '$$mdi:arrow-down$$', h: ""},   {s: "", t: "$$mdi:arrow-right$$", h: ""}, {s: "", t: "^", h: ""},  {s: "", t: "`", h: ""}, {s: "", t: "?", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""}, {s: "", t: "", h: ""}]
   - [{s: "}", t: "{", h: ""}, {s: "]", t: "[", h: ""}, {s: ")", t: "(", h: ""}, {s: ">", t: "<", h: ""}, {s: "", t: "⌦", h: ""}, {s: "", t: "!", h: $$mdi:apple-keyboard-shift$$},  {s: "", t: "@", h: $$mdi:apple-keyboard-command$$}, {s: "", t: "=", h: $$mdi:apple-keyboard-option$$}, {s: "", t: "&", h: $$mdi:apple-keyboard-control$$}, {s: "", t: "#", h: 'fn'}]
   - [{s: "", t: "", h: ""},   {s: "", t: "", h: ""},   {s: "", t: "~", h: ""},  {s: "", t: "$", h: ""},  {s: "", t: "\\", h: ""},   {s: "", t: "-", h: ""},  {s: "", t: "€", h: ""}, {s: "", t: "", h: ""},  {s: "", t: "", h: ""},  {s: "", t: "", h: ""}]
-  - - {t: 'mo_FUN', s: '', h: 'mo_numbers', type: trans}
+  - - {t: 'mo_CMD', s: '', h: 'mo_numbers', type: trans}
     - {t: '⌫ Word', s: '', h: 'mo_symbols', type: held}
     - {t: '⌴',  s: '',   h: "mo_CHORD",   type: trans}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: trans}
@@ -25,7 +25,7 @@ layers:
   - [{s: '-', t: '+'}, '3', '2', '1', '0',    '§', '%', '≤', '≥', '#']
   - [{s: '^', t: '='}, '6', '5', '4', '.',    '_', 'µ', '±', '≈', '≠']
   - - {t: '$$tabler:repeat$$',   s: '', h: 'mo_numbers', type: held}
-    - {t: 'mo_FUN',              s: '', h: 'mo_symbols', type: trans}
+    - {t: 'mo_CMD',              s: '', h: 'mo_symbols', type: trans}
     - {t: '⌴',              s: '',   h: "mo_CHORD",   type: trans}
     - {t: 'to_ALP',              s: '',     h: "mo_CMD",     type: trans}
   commands:
@@ -33,8 +33,8 @@ layers:
   - [{t: "find all"},    {t: "find"},                {t: "redo"},               {t: "undo"},                {t: "switch app"},    $$mdi:volume-minus$$,  $$mdi:volume-mute$$,   $$mdi:volume-plus$$, $$mdi:lightbulb-on-70$$, $$mdi:lightbulb-on-40$$]
   - [{t: "select all", h: 'fn'},  {t: $$mdi:content-cut$$, h: $$mdi:apple-keyboard-control$$},   {t: $$mdi:content-copy$$, h: $$mdi:apple-keyboard-option$$}, {t: $$mdi:content-paste$$, h: $$mdi:apple-keyboard-command$$}, {t: "paste hist", h: $$mdi:apple-keyboard-shift$$},    {t: 'desktop left', h: $$mdi:apple-keyboard-shift$$},  {t: 'win left', h: $$mdi:apple-keyboard-command$$},       {t: 'win middle', h: $$mdi:apple-keyboard-option$$},   {t: 'win right', h: $$mdi:apple-keyboard-control$$},        {t: 'desktop right', h: 'fn'}]
   - [{t: "find prev"},   'find next',                 'Enter',                       {t: $$mdi:keyboard-tab$$},  'switch win',              $$mdi:keyboard-esc$$, $$mdi:skip-previous$$, $$mdi:play-pause$$,  $$mdi:skip-next$$,         {t: ''}]
-  - - {t: to_Alpha,              s: '',            h: ''}
-    - {t: '⌫ Word',                   s: '', h: 'mo_symbols', type: trans}
+  - - {t: 'mo_CMD', s: '', h: 'mo_numbers', type: held}
+    - {t: 'mo_CMD', s: '', h: 'mo_symbols', type: held}
     - {t: '⌴',  s: '',   h: "mo_CHORD",   type: trans}
     - {t: $$tabler:arrow-back$$, s: '',     h: "mo_CMD",     type: held}
   functions:
@@ -42,10 +42,10 @@ layers:
   - [F5,  F4,  F3,  F2,  F1,    'BT_1', 'BT_2', 'BT_3', 'BT_4', 'BT_5']
   - [F10, F9,  F8,  F7,  F6,    '', F16, F17, F18, F19]
   - [F15, F14, F13, F12, F11,   'BT_CLR', 'OUT_BT', 'OUT_USB', '', '']
-  - - {t: 'mo_FUN', type: held}
+  - - {t: to_Alpha,              s: '',            h: 'mo_numbers'}
+    - {t: '⌫ Word',                   s: '', h: 'mo_symbols', type: trans}
     - {t: 'mo_FUN', type: held}
-    - {t: '⌴',  s: '', h: "mo_CHORD", type: trans}
-    - {t: $$tabler:arrow-back$$, s: '',   h: "mo_CMD",   type: trans}
+    - {t: 'mo_FUN', type: held}
   danger:
   - [{s: "", t: "normal tap", h: '', type: ghost}]
   - ['', '', '', '', '', '', '', '', '', '']
@@ -85,8 +85,10 @@ combos:
     # to Alp is not a chord, but a key on the COM layer
   - {p: [31, 34], k: 'to Alp', l: [alpha], a: bottom, offset: 0.5, type: held}
   - {p: [31, 34], k: 'to Alp', l: [symbols, numbers, commands], a: bottom, offset: 0.5}
-  - {p: [31, 32], k: 'mo FUN', l: [], a: bottom, offset: 0.5}
-  - {p: [31, 32], k: 'mo FUN', l: [functions], a: bottom, offset: 0.5, type: held}
+  - {p: [33, 34], k: 'mo FUN', l: [alpha, symbols, numbers, commands, functions], a: bottom, offset: 0.5}
+  - {p: [33, 34], k: 'mo FUN', l: [functions], a: bottom, offset: 0.5, type: held}
+  - {p: [31, 32], k: 'mo CMD', l: [alpha, symbols, numbers, commands, functions], a: bottom, offset: 0.5}
+  - {p: [31, 32], k: 'mo CMD', l: [commands], a: bottom, offset: 0.5, type: held}
   - {p: [29, 30], k: 'mo DAN', l: [functions]}
   - {p: [29, 30], k: 'mo DAN', l: [danger], type: held}
 
