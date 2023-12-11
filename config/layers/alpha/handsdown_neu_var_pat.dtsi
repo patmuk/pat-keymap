@@ -184,7 +184,7 @@
 //   COMBO_LAYER(DelW, &kp LA(BACKSPACE), LTO RTO, ALP SYM NUM CMD)
 
    // Sentence ending auto capitalize
-   MACRO(dot, &kp DOT &kp SPACE &skl LSHIFT)
+   MACRO(dot, &kp DOT &kp SPACE &skq LSHIFT)
    MOD_MORPH(dot, &macro_dot, &kp DOT, MOD_LALT|MOD_RALT)
 
    MACRO(comma, &kp COMMA &kp SPACE)
