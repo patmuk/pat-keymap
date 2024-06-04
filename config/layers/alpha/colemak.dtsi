@@ -61,8 +61,8 @@
 #define P_RETURN RTO
 #define P_NUM RTI
 / {
-    keymap {
-        compatible = "zmk,keymap";
+   keymap {
+      compatible = "zmk,keymap";
 //              colemak_layer {
 /*           34 Keys
 ╭───────────────╮ ╭─────────────────╮
@@ -82,6 +82,6 @@
                     &mo SYM  &kp SPACE   &kp RET  &mo NUM
 //                 ╰────────┴─────────╯ ╰────────┴───────╯
    >;
-                };
-        };
+     };
 };
+
