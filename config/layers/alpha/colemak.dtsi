@@ -35,7 +35,7 @@
 #define P_D LBII
 #define P_V LBIO
 // THUMB
-#define P_SYM LTI
+#define P_BACKSPACE LTI
 #define P_SPACE LTO
 
 // RIGHT SIDE
@@ -70,7 +70,7 @@
 │ Q  W  F  P  B │ │ J  L  U  Y      │
 │ A  R  S  T  G │ │ M  N  E  I  O   │
 │ Z  X  C  D  V │ │ K  H  ,  . -NUM-│
-╰─────╮-SYM- SPC│ │RET -REP-╭───────╯
+╰─────╮BSPC- SPC│ │RET -REP-╭───────╯
       ╰─────────╯ ╰─────────╯         */
                         bindings = <
 //╭──────┬──────┬──────┬──────┬───────╮╭─────┬──────┬───────────┬───────┬───────╮
@@ -79,9 +79,9 @@
    &kp A  &kp R  &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &kp I   &kp O
 //├──────┼──────┼──────┼──────┼───────┤├─────┼──────┼───────────┼───────┼───────┤
    &kp Z  &kp X  &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT &mo NUM
-//╰──────┴──────┴──╮                  ││                 ╭──────┴───────┴───────╯
-                    &mo SYM  &kp SPACE   &kp RET  &key_repeat 
-//                 ╰────────┴─────────╯ ╰────────┴───────╯
+//╰──────┴──────┴──╮                  ││                     ╭──┴───────┴───────╯
+                    &kp BSPC &kp SPACE   &kp RET  &key_repeat 
+//                 ╰────────┴─────────╯ ╰────────┴───────────╯
          >;
       };
    };
