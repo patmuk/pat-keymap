@@ -31,7 +31,7 @@
 
 #include "definitions/definitions.dtsi"
 
-#include "layers/alpha/handsdown_neu_var_pat.dtsi"
+#include "layers/alpha/colemak.dtsi"
 #include "layers/symbols.dtsi"
 #include "layers/numbers.dtsi"
 #include "layers/chording_layer.dtsi"
