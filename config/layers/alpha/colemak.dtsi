@@ -58,6 +58,7 @@
 #define P_COMMA RBM
 #define P_DOT RBR
 #define P_NUM RBP
+#define P_MINUS RBP
 // THUMB
 #define P_RETURN RTO
 #define P_REP RTI
